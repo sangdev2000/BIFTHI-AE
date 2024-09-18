@@ -25,9 +25,12 @@ const Sampledesign = () => {
                   preview={{
                     destroyOnClose: false,
                     imageRender: () => (
-                      <div>
+                      <AllPaner>
                         <img width="100" src={item.img} />
-                      </div>
+                       <BoderFt>
+                       <h1>Chi Tiết</h1>
+                       </BoderFt>
+                      </AllPaner>
                     ),
                     toolbarRender: () => false,
                   }}
@@ -49,9 +52,12 @@ const Sampledesign = () => {
                   preview={{
                     destroyOnClose: false,
                     imageRender: () => (
-                      <div>
+                      <AllPaner>
                         <img width="100" src={item.img} />
-                      </div>
+                        <BoderFt>
+                       <h1>Chi Tiết</h1>
+                       </BoderFt>
+                      </AllPaner>
                     ),
                     toolbarRender: () => false,
                   }}
@@ -71,27 +77,27 @@ export default Sampledesign;
 const arrimg = [
   {
     img: sp1,
-    title: "Nội thất",
+    title: "Nội Thất",
   },
   {
     img: sp2,
-    title: "Chiếu sáng",
+    title: "Chiếu Sáng",
   },
 ];
 
 const iMT = [
   {
     img: sp3,
-    title: "thiết kế",
+    title: "Thiết Kế",
   },
 
   {
     img: sp4,
-    title: "Phòng tắm",
+    title: "Phòng Bếp",
   },
   {
     img: sp5,
-    title: "Phòng tắm",
+    title: "Phòng Tắm",
   },
 ];
 
@@ -120,8 +126,6 @@ const Wapper = styled.div`
     width: 100%;
     object-fit: contain; /* Đảm bảo ảnh lấp đầy container nhưng không bị méo */
   }
-
-
 `;
 
 const Containerr = styled.div`
@@ -149,6 +153,7 @@ const Right = styled.div`
   position: relative;
   gap: 10px;
   padding-top: 10px;
+  overflow: hidden;
 
   img {
     width: 100%;
@@ -172,7 +177,11 @@ const Title = styled.div`
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
   width: 400px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) -58.4%, rgba(0, 0, 0, 0.00) 114.8%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) -58.4%,
+    rgba(0, 0, 0, 0) 114.8%
+  );
 
   h1 {
     color: #fff;
@@ -235,4 +244,33 @@ const TitleConten = styled.div`
       text-align: center;
     }
   }
+`;
+const AllPaner = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+`;
+const BoderFt = styled.div`
+width: 200px;
+height: 40px;
+border-radius: 10px;
+border: 2px solid #ccc;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) -58.4%, rgba(0, 0, 0, 0.00) 114.8%);
+top: 95%;
+cursor: pointer;
 `;
