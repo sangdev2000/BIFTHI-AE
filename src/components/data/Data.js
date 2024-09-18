@@ -85,7 +85,8 @@ export const list = [
     relatedImages: [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
-    ], // Add related images to show at the bottom
+    ],
+    detail: "chi tiết",
   },
   {
     id: 2,
@@ -110,7 +111,8 @@ export const list = [
     relatedImages: [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
-    ], // Add related images to show at the bottom
+    ],
+    detail: "chi tiết",
   },
   {
     id: 3,
@@ -135,7 +137,8 @@ export const list = [
     relatedImages: [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
-    ], // Add related images to show at the bottom
+    ],
+    detail: "chi tiết",
   },
   {
     id: 4,
@@ -160,7 +163,8 @@ export const list = [
     relatedImages: [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
-    ], // Add related images to show at the bottom
+    ],
+    detail: "chi tiết",
   },
   {
     id: 5,
@@ -185,7 +189,8 @@ export const list = [
     relatedImages: [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
-    ], // Add related images to show at the bottom
+    ],
+    detail: "chi tiết",
   },
   {
     id: 6,
@@ -210,7 +215,8 @@ export const list = [
     relatedImages: [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
-    ], // Add related images to show at the bottom
+    ],
+    detail: "chi tiết",
   },
 ];
 export const awards = [

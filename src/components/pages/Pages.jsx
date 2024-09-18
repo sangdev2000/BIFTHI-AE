@@ -11,7 +11,7 @@ import Contact from "../contact/Contact"
 import styled from "styled-components"
 
 import ProductDetail from "../products/ProductDetail";
-import Product from "../products/Products"
+import Product from "../products/Product"
 
 const Pages = () => {
   return (

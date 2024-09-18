@@ -151,13 +151,13 @@
 
 import React, { useState } from "react";
 import Back from "../common/Back";
-import RecentCard from "../home/recent/RecentCard";
 import "../home/recent/recent.css";
 import img from "../images/about.png";
 import { list } from "../data/Data"; // Import dữ liệu sản phẩm
 import "./Product.css"; // Tạo file CSS riêng cho dropdown
+import AllProduct from "./AllProduct";
 
-const Products = () => {
+const Product = () => {
   // State lưu trữ giá trị của các bộ lọc
   const [selectedCategories, setSelectedCategories] = useState([]); // Lưu trữ các danh mục được chọn
   const [minPrice, setMinPrice] = useState(""); // Giá min
@@ -285,12 +285,12 @@ const Products = () => {
 
         {/* Danh sách sản phẩm */}
         <div className="container recent">
-          <RecentCard products={filteredProducts} />
+          <AllProduct products={filteredProducts} />
         </div>
       </section>
     </>
   );
 };
 
-export default Products;
+export default Product;
 

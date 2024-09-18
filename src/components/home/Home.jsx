@@ -1,19 +1,23 @@
 import React from "react"
 import Awards from "./awards/Awards"
-import Featured from "./featured/Featured"
 import Hero from "./hero/Hero"
 import Location from "./location/Location"
 import Price from "./price/Price"
-import Recent from "./recent/Recent"
 import Team from "./team/Team"
 import styled from "styled-components"
+import Freeshapping from "./freeShapping"
+import RecentCard from "./recent/RecentCard"
+import DecorPaner from "./decor"
+import Sampledesign from "./samdesin"
 
 const Home = () => {
   return (
     <Wapper>
       <Hero />
-      <Featured />
-      <Recent />
+      <Freeshapping/>
+      <RecentCard />
+      <DecorPaner/>
+      <Sampledesign/>
       <Awards />
       <Location />
       <Team />
