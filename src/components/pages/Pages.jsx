@@ -1,3 +1,4 @@
+
 import React from "react"
 import Header from "../common/header/Header"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
@@ -9,6 +10,9 @@ import Services from "../services/Services"
 import Contact from "../contact/Contact"
 import styled from "styled-components"
 
+import ProductDetail from "../products/ProductDetail";
+import Products from "../products/Products"
+
 const Pages = () => {
   return (
     <Wpper>
@@ -18,8 +22,11 @@ const Pages = () => {
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/services' component={Services} />
+          <Route exact path='/poroducts' component={Products} />
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/contact' component={Contact} />
+          {/* Route đến trang chi tiết sản phẩm */}
+          <Route exact path='/product/:id' component={ProductDetail} />
         </Switch>
         <Footer />
       </Router>
@@ -33,3 +40,5 @@ width: 100%;
 max-width: 1440px;
 margin: 0px auto;
 `;
+
+
