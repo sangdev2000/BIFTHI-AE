@@ -3,10 +3,10 @@ export const nav = [
     text: "home",
     path: "/",
   },
-  {
-    text: "đương đại",
-    path: "/contemporary",
-  },
+  // {
+  //   text: "đương đại",
+  //   path: "/contemporary",
+  // },
   {
     text: "thiết kế mẫu",
     path: "/design",
@@ -17,10 +17,10 @@ export const nav = [
     path: "/poroducts",
 
   },
-  {
-    text: "thanh lịch",
-    path: "/elegant",
-  },
+  // {
+  //   text: "Decor",
+  //   path: "/elegant",
+  // },
   {
     text: "liên hệ",
     path: "/contact",
