@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+
 }
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #fff;
+  font-family: "Work Sans", sans-serif;
+
 }
-.container {
-  max-width: 80%;
-  margin: auto;
-}
+
 .flex {
   display: flex;
   justify-content: space-between;

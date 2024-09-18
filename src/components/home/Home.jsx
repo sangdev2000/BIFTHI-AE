@@ -6,10 +6,11 @@ import Location from "./location/Location"
 import Price from "./price/Price"
 import Recent from "./recent/Recent"
 import Team from "./team/Team"
+import styled from "styled-components"
 
 const Home = () => {
   return (
-    <>
+    <Wapper>
       <Hero />
       <Featured />
       <Recent />
@@ -17,8 +18,13 @@ const Home = () => {
       <Location />
       <Team />
       <Price />
-    </>
+    </Wapper>
   )
 }
 
 export default Home
+const Wapper = styled.div`
+width: 100%;
+max-width: 1440px;
+margin: 0px auto;
+`;

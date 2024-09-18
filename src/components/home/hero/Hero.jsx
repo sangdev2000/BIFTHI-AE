@@ -1,38 +1,382 @@
-import React from "react"
-import Heading from "../../common/Heading"
-import "./hero.css"
+import React from "react";
+import "./hero.css";
+import styled from "styled-components";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import slice1 from "../../../acsset/slice/slice1.png";
+import search from "../../../acsset/slice/search1.png";
+import br1 from "../../../acsset/slice/br1.png";
+import br2 from "../../../acsset/slice/br2.png";
 
 const Hero = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+  };
   return (
-    <>
-      <section className='hero'>
-        <div className='container'>
-          <Heading title='Search Your Next Home ' subtitle='Find new & featured property located in your local city.' />
+    <Wapper>
+      <Container>
+        <Slider {...settings}>
+          <ImgSlice>
+            <img src={slice1} />
+          </ImgSlice>
+          <ImgSlice>
+            <img src={slice1} />
+          </ImgSlice>
+          <ImgSlice>
+            <img src={slice1} />
+          </ImgSlice>
+        </Slider>
+        <ContenSlice>
+          <h1>$65.00</h1>
+          <p>Dracena Fragnas</p>
+        </ContenSlice>
+        <ContenLeft>
+          <ContenIFT>
+            <h1>milan jack</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+              beatae error laborum.
+            </p>
+            <ContenIFTbr>
+              <img src={br2} />
+            </ContenIFTbr>
+          </ContenIFT>
+        </ContenLeft>
+      </Container>
+      <div className="container">
+        <h1>
+          Bring Serenity to Your Place <br />
+          With Interior
+        </h1>
+        <h3>
+          Bring Serenity to<br/> Your Place
+        </h3>
+        <p>
+          find your dream plant for you home decoration with us
+          <br /> and we will make it happen.
+        </p>
+        <Searchplant>
+          <input placeholder="Search plant" />
+          <ConImg>
+            <img src={search} />
+          </ConImg>
+        </Searchplant>
+      </div>
+    </Wapper>
+  );
+};
 
-          <form className='flex'>
-            <div className='box'>
-              <span>City/Street</span>
-              <input type='text' placeholder='Location' />
-            </div>
-            <div className='box'>
-              <span>Property Type</span>
-              <input type='text' placeholder='Property Type' />
-            </div>
-            <div className='box'>
-              <span>Price Range</span>
-              <input type='text' placeholder='Price Range' />
-            </div>
-            <div className='box'>
-              <h4>Advance Filter</h4>
-            </div>
-            <button className='btn1'>
-              <i className='fa fa-search'></i>
-            </button>
-          </form>
-        </div>
-      </section>
-    </>
-  )
-}
+export default Hero;
+const Slice = styled.div`
+  overflow: hidden;
+`;
 
-export default Hero
+const ImgSlice = styled.div`
+  width: 100%;
+  aspect-ratio: 1920/1041;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+`;
+const ContenSlice = styled.div`
+  background-image: url(${br1});
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-40%);
+  width: 205px;
+  height: 196px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  h1 {
+    color: #fff;
+    font-family: "Work Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  p {
+    color: #fff;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  @media screen and (min-width: 320px) and (max-width: 760px) {
+    display: none;
+  }
+`;
+const Container = styled.div`
+  position: relative;
+
+`;
+const Searchplant = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 463px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  input {
+    color: #fff !important;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  @media screen and (min-width: 460px) {
+  width: 80%;
+  }
+  @media screen and (min-width: 320px) and (max-width: 460px) {
+  display: none;
+  }
+`;
+const ConImg = styled.div`
+  background: #525a55;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const ContenLeft = styled.div`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+  top: 70%;
+  left: 60px;
+  width: 304px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  @media screen and (min-width: 320px) and (max-width: 760px) {
+    display: none;
+  }
+`;
+const ContenIFT = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  h1 {
+    color: #fff;
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: capitalize;
+  }
+  p {
+    color: #fff;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+  }
+  @media screen and (min-width: 320px) and (max-width: 760px) {
+    display: none;
+  }
+`;
+const ContenIFTbr = styled.div`
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 60px;
+  height: 60px;
+`;
+const Wapper = styled.div`
+  width: 100%;
+  max-width: 1440px;
+  margin: 0px auto;
+  overflow: hidden;
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    h1 {
+      color: #fff;
+      text-align: center;
+      font-family: "Work Sans";
+      font-size: 52px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    h3 {
+      color: #fff;
+      text-align: center;
+      font-family: "Work Sans";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    p {
+      color: #fff;
+      text-align: center;
+      font-family: "Work Sans";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .slick-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) -58.4%,
+      rgba(0, 0, 0, 0) 114.8%
+    );
+    z-index: 2;
+    height: 100%;
+    padding: 20px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .slick-next {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) -58.4%,
+      rgba(0, 0, 0, 0) 114.8%
+    );
+    z-index: 2;
+    height: 100%;
+    padding: 20px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  @media screen and (min-width: 320px) and (max-width: 460px) {
+    ${ContenSlice} {
+      h1 {
+        color: #fff;
+        font-family: "Work Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      p {
+        color: #fff;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+    .container {
+      top: 20%;
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      p {
+        display: none;
+      }
+    }
+    
+  }
+  @media screen and (min-width: 460px) and (max-width: 760px) {
+    ${ContenSlice} {
+      h1 {
+        color: #fff;
+        font-family: "Work Sans";
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      p {
+        color: #fff;
+        font-family: "Work Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+    .container {
+      top: 20%;
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      p {
+        display: none;
+      }
+    }
+    
+  }
+  @media screen and (min-width: 760px) {
+    h3{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 760px) {
+    h1{
+      display: none ;
+    }
+  }
+`;

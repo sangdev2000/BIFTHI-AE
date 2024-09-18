@@ -4,23 +4,23 @@ export const nav = [
     path: "/",
   },
   {
-    text: "about",
-    path: "/about",
+    text: "đương đại",
+    path: "/contemporary",
   },
   {
-    text: "services",
-    path: "/services",
+    text: "thiết kế mẫu",
+    path: "/design",
   },
   {
-    text: "blog",
-    path: "/blog",
+    text: "sản phẩm",
+    path: "/poroducts",
   },
   {
-    text: "pricing",
-    path: "/pricing",
+    text: "thanh lịch",
+    path: "/elegant",
   },
   {
-    text: "contact",
+    text: "liên hệ",
     path: "/contact",
   },
 ]
