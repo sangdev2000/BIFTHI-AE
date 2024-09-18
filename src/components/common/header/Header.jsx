@@ -90,7 +90,7 @@ const MenuMobile = styled.div`
   top: 0;
   right: 40px;
   z-index: 2;
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 840px) {
     display: none;
   }
 `;
@@ -121,7 +121,7 @@ const ConMenumobileConten = styled.div`
   }
 `;
 const MenuLeft = styled.div`
-  @media screen and (min-width: 320px) and (max-width: 760px) {
+  @media screen and (min-width: 320px) and (max-width: 840px) {
     display: none;
   }
 `;

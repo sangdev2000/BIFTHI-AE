@@ -57,7 +57,8 @@ const Hero = () => {
           With Interior
         </h1>
         <h3>
-          Bring Serenity to<br/> Your Place
+          Bring Serenity to
+          <br /> Your Place
         </h3>
         <p>
           find your dream plant for you home decoration with us
@@ -122,10 +123,29 @@ const ContenSlice = styled.div`
   @media screen and (min-width: 320px) and (max-width: 760px) {
     display: none;
   }
+  @media screen and (min-width: 760px) and (max-width: 860px) {
+    h1 {
+    color: #fff;
+    font-family: "Work Sans";
+    font-size: 28px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  p {
+    color: #fff;
+    font-family: "Work Sans";
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  }
+
 `;
 const Container = styled.div`
   position: relative;
-
+  overflow: hidden;
 `;
 const Searchplant = styled.div`
   display: flex;
@@ -138,8 +158,7 @@ const Searchplant = styled.div`
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   img {
-    width: 20px;
-    height: 20px;
+    width: 100%;
   }
   input {
     color: #fff !important;
@@ -151,16 +170,17 @@ const Searchplant = styled.div`
     line-height: normal;
   }
   @media screen and (min-width: 460px) {
-  width: 80%;
+    width: 360px;
+    height: 50px;
   }
   @media screen and (min-width: 320px) and (max-width: 460px) {
-  display: none;
+    display: none;
   }
 `;
 const ConImg = styled.div`
   background: #525a55;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -180,7 +200,7 @@ const ContenLeft = styled.div`
   border: 1px solid #fff;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  @media screen and (min-width: 320px) and (max-width: 760px) {
+  @media screen and (min-width: 320px) and (max-width: 860px) {
     display: none;
   }
 `;
@@ -223,6 +243,7 @@ const Wapper = styled.div`
   max-width: 1440px;
   margin: 0px auto;
   overflow: hidden;
+
   .container {
     position: absolute;
     top: 50%;
@@ -261,14 +282,13 @@ const Wapper = styled.div`
       line-height: 150%;
     }
   }
-  .slider-container {
-    position: relative;
-    overflow: hidden;
-  }
+
   .slick-prev {
-    top: 50%;
+    position: absolute;
+    top: 45%;
     transform: translateY(-50%);
     left: 0;
+    bottom: 0;
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.5) -58.4%,
@@ -282,7 +302,7 @@ const Wapper = styled.div`
     justify-content: center !important;
   }
   .slick-next {
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     right: 0;
     background: linear-gradient(
@@ -331,9 +351,8 @@ const Wapper = styled.div`
         display: none;
       }
     }
-    
   }
-  @media screen and (min-width: 460px) and (max-width: 760px) {
+  @media screen and (min-width: 460px) and (max-width: 860px) {
     ${ContenSlice} {
       h1 {
         color: #fff;
@@ -367,16 +386,15 @@ const Wapper = styled.div`
         display: none;
       }
     }
-    
   }
   @media screen and (min-width: 760px) {
-    h3{
+    h3 {
       display: none;
     }
   }
   @media screen and (min-width: 320px) and (max-width: 760px) {
-    h1{
-      display: none ;
+    h1 {
+      display: none;
     }
   }
 `;
