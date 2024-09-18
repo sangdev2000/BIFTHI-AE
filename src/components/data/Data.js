@@ -4,25 +4,23 @@ export const nav = [
     path: "/",
   },
   {
-    text: "đương đại",
-    path: "/contemporary",
+    text: "about",
+    path: "/about",
   },
   {
-    text: "thiết kế mẫu",
-    path: "/design",
+    text: "services",
+    path: "/services",
   },
   {
-
-    text: "sản phẩm",
-    path: "/poroducts",
-
+    text: "Sản Phẩm",
+    path: "/product",
   },
   {
-    text: "thanh lịch",
-    path: "/elegant",
+    text: "pricing",
+    path: "/pricing",
   },
   {
-    text: "liên hệ",
+    text: "contact",
     path: "/contact",
   },
 ];
@@ -54,56 +52,84 @@ export const featured = [
   },
 ];
 export const list = [
+  // {
+  //   id: 1,
+  //   cover: "../images/list/p-1.png",
+  //   name: "Armchair + Đôn Cabo PMA42005 KD1092-12",
+  //   description:
+  //     "Armchair Cabo được thiết kế nhỏ gọn nhằm tiết kiệm diện tích. Phần khung được làm từ gỗ walnut bền bỉ và nệm ghế được bọc vải mềm mại tạo nên tổng thể thiết kế sang trọng. Armchair Cabo sử dụng kết hợp với Đôn Cabo càng làm tăng cảm giác dễ chịu khi ngồi khi đọc sách hoặc làm việc.",
+  //   category: "Nội Thất",
+  //   price: "18.800.000₫",
+  //   type: "Căn hộ",
+  // },
   {
     id: 1,
-    cover: "../images/list/p-1.png",
-    name: "Red Carpet Real Estate",
-    location: "210 Zirak Road, Canada",
-    category: "For Rent",
-    price: "$3,700",
-    type: "Apartment",
+    name: "Armchair + Đôn Cabo",
+    price: "18.800.000₫",
+    category: "Nội Thất",
+    material: "Leather",
+    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    shortDescription:
+      "Armchair Cabo được thiết kế nhỏ gọn nhằm tiết kiệm diện tích. Phần khung được làm từ gỗ walnut bền bỉ và nệm ghế được bọc vải mềm mại tạo nên tổng thể thiết kế sang trọng. Armchair Cabo sử dụng kết hợp với Đôn Cabo càng làm tăng cảm giác dễ chịu khi ngồi khi đọc sách hoặc làm việc.",
+    longDescription:
+      "This modern accent chair is upholstered in high-quality leather, offering both comfort and style. The perfect addition to any living room, bedroom, or office space. With its sleek design and durable material, this chair will be a favorite for years to come.",
+    reviews: 12, // Add a field for customer reviews
+    sku: "PMA42005 KD1092-12", // Add a field for SKU
+    tags: ["Furniture", "Chair", "Modern"], // Add tags
+    images: [
+      "../images/list/p-1.png", // Main image
+      "../images/list/p-2.png", // Thumbnail image
+      "../images/list/p-7.png", // Thumbnail image
+    ],
+    cover: "../images/list/p-2.png",
+    relatedImages: [
+      "../images/list/p-7.png", // Related image 1
+      "../images/list/p-7.png", // Related image 2
+    ], // Add related images to show at the bottom
   },
   {
     id: 2,
     cover: "../images/list/p-2.png",
-    name: "Fairmount Properties",
-    location: "5698 Zirak Road, NewYork",
-    category: "For Sale",
-    price: "$9,750",
-    type: "Condos",
+    name: "Ghế ăn Moretti vải VACT10635",
+    description: "",
+    category: "Nội Thất",
+    price: "5,865,000₫",
+    type: "Căn hộ",
   },
   {
     id: 3,
     cover: "../images/list/p-7.png",
-    name: "The Real Estate Corner",
-    location: "5624 Mooker Market, USA",
-    category: "For Rent",
-    price: "$5,860",
-    type: "Offices",
+    name: "Tủ bếp Paris",
+    description: "Sang trọng, tinh tế",
+    category: "Phòng Bếp",
+    price: "82.000.000₫",
+    type: "Căn Hộ",
   },
   {
     id: 4,
     cover: "../images/list/p-4.png",
-    name: "Herringbone Realty",
-    location: "5621 Liverpool, London",
-    category: "For Sale",
-    price: "$7,540",
-    type: "Homes & Villas",
+    name: "Bồn tắm đá nhân tạo cao cấp GM9108",
+    description:
+      "Bồn tắm  giúp tạo cảm giác thoải mái sau một ngày làm việc mệt mỏi , dễ chịu khi sử dụng . Thiết kế tinh xảo đến từng đường nét mang lại cho gia đình bạn không gian phòng tắm hiện đại theo phong cách phương tây",
+    category: "Phòng Tắm",
+    price: "113.030.000₫",
+    type: "Italia",
   },
   {
     id: 5,
     cover: "../images/list/p-5.png",
-    name: "Brick Lane Realty",
-    location: "210 Montreal Road, Canada",
-    category: "For Rent",
-    price: "$4,850",
-    type: "Commercial",
+    name: "Gương Soi Toàn Thân Có Đèn Led Cao Cấp Dehome",
+    description:
+      "Gương đứng toàn thân là sản phẩm không thể thiếu trong các căn hộ hiện đại. Gương được thiết kế hệ thống đèn led dây phía sau, là giải pháp tối ưu cho không gian thiếu ánh sáng tự nhiên.",
+    category: "Thiết kế nội thất",
+    price: "4.110.000₫",
+    type: "Bỉ",
   },
   {
     id: 6,
     cover: "../images/list/p-6.png",
     name: "Banyon Tree Realty",
-    location: "210 Zirak Road, Canada",
+    description: "210 Zirak Road, Canada",
     category: "For Sale",
     price: "$2,742",
     type: "Apartment",
