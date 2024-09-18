@@ -1,58 +1,103 @@
-.footerContact {
-  background-color: #27ae60;
-  padding: 40px 0;
+/* General styles for the footer */
+.footer {
+  background-color: #111;
   color: #fff;
+  padding: 40px 20px;
+  text-align: left;
+  font-family: Arial, sans-serif;
 }
-.footerContact h1 {
-  font-size: 40px;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-footer {
-  background-color: #1d2636;
-  padding: 50px 0;
-  color: #fff;
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-footer .container {
-  display: grid;
-  grid-template-columns: 6fr 2fr 2fr 1fr;
-  grid-gap: 20px;
+
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
 }
-footer img {
-  width: 150px;
-}
-footer h2 {
-  font-weight: 500;
-}
-footer p {
-  color: grey;
-  margin: 20px 0;
-}
-footer input {
-  background-color: #fff;
-  padding: 17px;
-  width: 100%;
-  border-radius: 5px;
-}
-footer h3 {
-  font-weight: 500;
-  margin-bottom: 30px;
-}
-footer ul {
-  display: block;
-}
-footer ul li {
-  display: block;
-  color: grey;
+
+.footer-column h3 {
+  font-size: 16px;
+  text-transform: uppercase;
   margin-bottom: 20px;
+  color: #fff;
 }
-.legal {
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ccc;
+}
+
+/* Contact info and social icons */
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info li i {
+  margin-right: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+/* Footer bottom text */
+.footer-bottom {
   text-align: center;
-  padding: 20px;
-  background: #1d2636;
-  color: rgba(255, 255, 255, 0.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
 }
-@media screen and (max-width: 800px) {
-  footer .container {
-    grid-template-columns: repeat(2, 1fr);
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+  }
+  
+  .footer-column {
+    margin-bottom: 20px;
   }
 }

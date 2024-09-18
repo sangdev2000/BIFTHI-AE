@@ -1,133 +1,128 @@
 import React, { useState } from "react";
-import "./header.css";
-import { nav } from "../../data/Data";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import mn1 from "../../../acsset/slice/mn1.png";
+import { FaUser, FaSearch, FaHeart, FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
-  const [navList, setNavList] = useState(false);
-  const handleShow = () => {
-    setNavList(!navList);
-  };
   return (
-    <Wapper>
+    <Wrapper>
       <Container>
-        {/* <div className="logo">
-          <img src="./images/logo.png" alt="" />
-        </div> */}
+        {/* Menu bên trái cho các mục điều hướng */}
         <MenuLeft>
-          <ul className={navList ? "small" : "flex"}>
-            {nav.map((list, index) => (
-              <Menudestop key={index}>
-                <Link to={list.path}>{list.text}</Link>
-              </Menudestop>
-            ))}
+          <ul>
+            <MenuItem>
+              <Link to="/">Home</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link to="/product">Sản Phẩm</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link to="/about">About</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link to="/contact">Contact</Link>
+            </MenuItem>
           </ul>
         </MenuLeft>
 
-        <MenuMobile>
-          <img src={mn1} onClick={handleShow}></img>
-        </MenuMobile>
-        {navList && (
-          <ConMenumobileConten navList={navList}>
-            {nav?.map((item, index) => {
-              return (
-                <HoverStyled>
-                  <Link to={item.path} onClick={handleShow}>
-                    {item.text}
-                  </Link>
-                </HoverStyled>
-              );
-            })}
-          </ConMenumobileConten>
-        )}
+        {/* Phần icon bên phải */}
+        <MenuRight>
+          <ul>
+            <li>
+              <Link to="/account">
+                <FaUser />
+              </Link>
+            </li>
+            <li>
+              <FaSearch />
+            </li>
+            <li>
+              <FaHeart />
+            </li>
+            <li>
+              <Link to="/cart">
+                <FaShoppingCart />
+              </Link>
+            </li>
+          </ul>
+        </MenuRight>
       </Container>
-    </Wapper>
+    </Wrapper>
   );
 };
 
 export default Header;
-const Wapper = styled.div`
+const Wrapper = styled.div`
   width: 100%;
-  max-width: 1440px;
-  margin: 0px auto;
-  background-color: transparent !important;
+  background-color: white; /* Đặt màu nền trắng */
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
   display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 999999999;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho header */
+  height: 60px; /* Chiều cao cố định */
 `;
+
 const Container = styled.div`
   width: 100%;
-  max-width: 1440px;
-  margin: 0px auto;
+  max-width: 1200px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  padding: 0px 60px;
-`;
-const Menudestop = styled.div`
-  display: flex;
   align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  padding: 10px;
-  a {
-    color: #fff;
-    text-align: center;
-    font-family: "Work Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
+  padding: 0 40px; /* Căn chỉnh nội dung trong header */
 `;
-const MenuMobile = styled.div`
-  position: absolute;
-  top: 0;
-  right: 40px;
-  z-index: 2;
-  @media screen and (min-width: 760px) {
-    display: none;
+
+const MenuLeft = styled.div`
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 40px; /* Khoảng cách giữa các mục điều hướng */
   }
-`;
-const ConMenumobileConten = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  position: absolute;
-  top: 0;
-  gap: 10px;
-  right: 0;
-  background: #fff;
-  height: 100vh;
-  width: ${(props) => (props.navList ? "50%" : "0")};
-  padding: ${(props) => (props.navList ? "10px" : "0")};
-  z-index: 1;
-  transition: width 0.5s ease, padding 0.5s ease;
-  overflow: hidden;
 
   a {
-    color: rgba(17, 16, 16, 1);
-    text-align: left;
-    font-family: "Work Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Arial", sans-serif;
+  }
+
+  a:hover {
+    color: gray;
   }
 `;
-const MenuLeft = styled.div`
-  @media screen and (min-width: 320px) and (max-width: 760px) {
-    display: none;
-  }
+
+const MenuItem = styled.li`
+  display: flex;
+  align-items: center;
 `;
-const HoverStyled = styled.div`
-  padding: 10px;
-  &:hover {
-    background: #ccc;
+
+const MenuRight = styled.div`
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+  }
+
+  li {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+  }
+
+  li:hover {
+    color: gray;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: gray;
   }
 `;
