@@ -1,28 +1,39 @@
 export const nav = [
   {
-    text: "home",
+    text: "Trang Chủ",
     path: "/",
   },
+
   // {
   //   text: "đương đại",
   //   path: "/contemporary",
   // },
-  {
-    text: "thiết kế mẫu",
-    path: "/design",
-  },
-  {
 
-    text: "sản phẩm",
-    path: "/poroducts",
-
+  {
+    text: "Về Chúng Tôi",
+    path: "/about",
   },
+  // {
+  //   text: "",
+  //   path: "/services",
+  // },
+  {
+    text: "Sản Phẩm",
+    path: "/product",
+  },
+
   // {
   //   text: "Decor",
   //   path: "/elegant",
   // },
+
   {
-    text: "liên hệ",
+    text: "Thiết Kế Mẫu",
+    path: "/pricing",
+  },
+
+  {
+    text: "Liên Hệ",
     path: "/contact",
   },
 ];
@@ -54,59 +65,171 @@ export const featured = [
   },
 ];
 export const list = [
+  // {
+  //   id: 1,
+  //   cover: "../images/list/p-1.png",
+  //   name: "Armchair + Đôn Cabo PMA42005 KD1092-12",
+  //   description:
+  //     "Armchair Cabo được thiết kế nhỏ gọn nhằm tiết kiệm diện tích. Phần khung được làm từ gỗ walnut bền bỉ và nệm ghế được bọc vải mềm mại tạo nên tổng thể thiết kế sang trọng. Armchair Cabo sử dụng kết hợp với Đôn Cabo càng làm tăng cảm giác dễ chịu khi ngồi khi đọc sách hoặc làm việc.",
+  //   category: "Nội Thất",
+  //   price: "18.800.000₫",
+  //   type: "Căn hộ",
+  // },
   {
     id: 1,
-    cover: "../images/list/p-1.png",
-    name: "Red Carpet Real Estate",
-    location: "210 Zirak Road, Canada",
-    category: "For Rent",
-    price: "$3,700",
-    type: "Apartment",
+    name: "Armchair + Đôn Cabo",
+    price: "18.800.000₫",
+    category: "Nội Thất",
+    material: "Leather",
+    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    shortDescription:
+      "Armchair Cabo được thiết kế nhỏ gọn nhằm tiết kiệm diện tích. Phần khung được làm từ gỗ walnut bền bỉ và nệm ghế được bọc vải mềm mại tạo nên tổng thể thiết kế sang trọng. Armchair Cabo sử dụng kết hợp với Đôn Cabo càng làm tăng cảm giác dễ chịu khi ngồi khi đọc sách hoặc làm việc.",
+    longDescription:
+      "This modern accent chair is upholstered in high-quality leather, offering both comfort and style. The perfect addition to any living room, bedroom, or office space. With its sleek design and durable material, this chair will be a favorite for years to come.",
+    reviews: 12, // Add a field for customer reviews
+    sku: "PMA42005 KD1092-12", // Add a field for SKU
+    tags: ["Furniture", "Chair", "Modern"], // Add tags
+    images: [
+      "../images/list/p-1.png", // Main image
+      "../images/list/p-2.png", // Thumbnail image
+      "../images/list/p-7.png", // Thumbnail image
+    ],
+    cover: "../images/list/p-2.png",
+    relatedImages: [
+      "../images/list/p-7.png", // Related image 1
+      "../images/list/p-7.png", // Related image 2
+    ],
+    detail: "chi tiết",
   },
   {
     id: 2,
+    name: "Armchair + Đôn Cabo",
+    price: "18.800.000₫",
+    category: "Chiếu sáng",
+    material: "Leather",
+    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    shortDescription:
+      "Armchair Cabo được thiết kế nhỏ gọn nhằm tiết kiệm diện tích. Phần khung được làm từ gỗ walnut bền bỉ và nệm ghế được bọc vải mềm mại tạo nên tổng thể thiết kế sang trọng. Armchair Cabo sử dụng kết hợp với Đôn Cabo càng làm tăng cảm giác dễ chịu khi ngồi khi đọc sách hoặc làm việc.",
+    longDescription:
+      "This modern accent chair is upholstered in high-quality leather, offering both comfort and style. The perfect addition to any living room, bedroom, or office space. With its sleek design and durable material, this chair will be a favorite for years to come.",
+    reviews: 12, // Add a field for customer reviews
+    sku: "PMA42005 KD1092-12", // Add a field for SKU
+    tags: ["Furniture", "Chair", "Modern"], // Add tags
+    images: [
+      "../images/list/p-1.png", // Main image
+      "../images/list/p-2.png", // Thumbnail image
+      "../images/list/p-7.png", // Thumbnail image
+    ],
     cover: "../images/list/p-2.png",
-    name: "Fairmount Properties",
-    location: "5698 Zirak Road, NewYork",
-    category: "For Sale",
-    price: "$9,750",
-    type: "Condos",
+    relatedImages: [
+      "../images/list/p-7.png", // Related image 1
+      "../images/list/p-7.png", // Related image 2
+    ],
+    detail: "chi tiết",
   },
   {
     id: 3,
-    cover: "../images/list/p-7.png",
-    name: "The Real Estate Corner",
-    location: "5624 Mooker Market, USA",
-    category: "For Rent",
-    price: "$5,860",
-    type: "Offices",
+    name: "Ghế",
+    price: "18.800.000₫",
+    category: "Thiết kế nội thất",
+    material: "Leather",
+    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    shortDescription:
+      "Armchair Cabo được thiết kế nhỏ gọn nhằm tiết kiệm diện tích. Phần khung được làm từ gỗ walnut bền bỉ và nệm ghế được bọc vải mềm mại tạo nên tổng thể thiết kế sang trọng. Armchair Cabo sử dụng kết hợp với Đôn Cabo càng làm tăng cảm giác dễ chịu khi ngồi khi đọc sách hoặc làm việc.",
+    longDescription:
+      "This modern accent chair is upholstered in high-quality leather, offering both comfort and style. The perfect addition to any living room, bedroom, or office space. With its sleek design and durable material, this chair will be a favorite for years to come.",
+    reviews: 12, // Add a field for customer reviews
+    sku: "PMA42005 KD1092-12", // Add a field for SKU
+    tags: ["Furniture", "Chair", "Modern"], // Add tags
+    images: [
+      "../images/list/p-1.png", // Main image
+      "../images/list/p-2.png", // Thumbnail image
+      "../images/list/p-7.png", // Thumbnail image
+    ],
+    cover: "../images/list/p-2.png",
+    relatedImages: [
+      "../images/list/p-7.png", // Related image 1
+      "../images/list/p-7.png", // Related image 2
+    ],
+    detail: "chi tiết",
   },
   {
     id: 4,
-    cover: "../images/list/p-4.png",
-    name: "Herringbone Realty",
-    location: "5621 Liverpool, London",
-    category: "For Sale",
-    price: "$7,540",
-    type: "Homes & Villas",
+    name: "Bàn",
+    price: "18.800.000₫",
+    category: "Phòng bếp",
+    material: "Leather",
+    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    shortDescription:
+      "Armchair Cabo được thiết kế nhỏ gọn nhằm tiết kiệm diện tích. Phần khung được làm từ gỗ walnut bền bỉ và nệm ghế được bọc vải mềm mại tạo nên tổng thể thiết kế sang trọng. Armchair Cabo sử dụng kết hợp với Đôn Cabo càng làm tăng cảm giác dễ chịu khi ngồi khi đọc sách hoặc làm việc.",
+    longDescription:
+      "This modern accent chair is upholstered in high-quality leather, offering both comfort and style. The perfect addition to any living room, bedroom, or office space. With its sleek design and durable material, this chair will be a favorite for years to come.",
+    reviews: 12, // Add a field for customer reviews
+    sku: "PMA42005 KD1092-12", // Add a field for SKU
+    tags: ["Furniture", "Chair", "Modern"], // Add tags
+    images: [
+      "../images/list/p-1.png", // Main image
+      "../images/list/p-2.png", // Thumbnail image
+      "../images/list/p-7.png", // Thumbnail image
+    ],
+    cover: "../images/list/p-2.png",
+    relatedImages: [
+      "../images/list/p-7.png", // Related image 1
+      "../images/list/p-7.png", // Related image 2
+    ],
+    detail: "chi tiết",
   },
   {
     id: 5,
-    cover: "../images/list/p-5.png",
-    name: "Brick Lane Realty",
-    location: "210 Montreal Road, Canada",
-    category: "For Rent",
-    price: "$4,850",
-    type: "Commercial",
+    name: "Đèn",
+    price: "18.800.000₫",
+    category: "Phòng tắm",
+    material: "Leather",
+    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    shortDescription:
+      "Armchair Cabo được thiết kế nhỏ gọn nhằm tiết kiệm diện tích. Phần khung được làm từ gỗ walnut bền bỉ và nệm ghế được bọc vải mềm mại tạo nên tổng thể thiết kế sang trọng. Armchair Cabo sử dụng kết hợp với Đôn Cabo càng làm tăng cảm giác dễ chịu khi ngồi khi đọc sách hoặc làm việc.",
+    longDescription:
+      "This modern accent chair is upholstered in high-quality leather, offering both comfort and style. The perfect addition to any living room, bedroom, or office space. With its sleek design and durable material, this chair will be a favorite for years to come.",
+    reviews: 12, // Add a field for customer reviews
+    sku: "PMA42005 KD1092-12", // Add a field for SKU
+    tags: ["Furniture", "Chair", "Modern"], // Add tags
+    images: [
+      "../images/list/p-1.png", // Main image
+      "../images/list/p-2.png", // Thumbnail image
+      "../images/list/p-7.png", // Thumbnail image
+    ],
+    cover: "../images/list/p-2.png",
+    relatedImages: [
+      "../images/list/p-7.png", // Related image 1
+      "../images/list/p-7.png", // Related image 2
+    ],
+    detail: "chi tiết",
   },
   {
     id: 6,
-    cover: "../images/list/p-6.png",
-    name: "Banyon Tree Realty",
-    location: "210 Zirak Road, Canada",
-    category: "For Sale",
-    price: "$2,742",
-    type: "Apartment",
+    name: "Thảm",
+    price: "18.800.000₫",
+    category: "Nội Thất",
+    material: "Leather",
+    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    shortDescription:
+      "Armchair Cabo được thiết kế nhỏ gọn nhằm tiết kiệm diện tích. Phần khung được làm từ gỗ walnut bền bỉ và nệm ghế được bọc vải mềm mại tạo nên tổng thể thiết kế sang trọng. Armchair Cabo sử dụng kết hợp với Đôn Cabo càng làm tăng cảm giác dễ chịu khi ngồi khi đọc sách hoặc làm việc.",
+    longDescription:
+      "This modern accent chair is upholstered in high-quality leather, offering both comfort and style. The perfect addition to any living room, bedroom, or office space. With its sleek design and durable material, this chair will be a favorite for years to come.",
+    reviews: 12, // Add a field for customer reviews
+    sku: "PMA42005 KD1092-12", // Add a field for SKU
+    tags: ["Furniture", "Chair", "Modern"], // Add tags
+    images: [
+      "../images/list/p-1.png", // Main image
+      "../images/list/p-2.png", // Thumbnail image
+      "../images/list/p-7.png", // Thumbnail image
+    ],
+    cover: "../images/list/p-2.png",
+    relatedImages: [
+      "../images/list/p-7.png", // Related image 1
+      "../images/list/p-7.png", // Related image 2
+    ],
+    detail: "chi tiết",
   },
 ];
 export const awards = [

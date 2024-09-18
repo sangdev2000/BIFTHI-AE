@@ -1,11 +1,100 @@
-import React from "react";
+// import React from "react";
 // import { list } from "../../data/Data";
+// import { Link } from "react-router-dom"; // Import Link từ react-router-dom
+
+// const RecentCard = () => {
+//   return (
+//     <>
+//       <div className="content grid3 mtop">
+//         {list.map((val) => {
+//           const { id, cover, category, location, name, price, type } = val;
+//           return (
+//             <div className="box shadow" key={id}>
+//               <Link to={`/product/${id}`}> {/* Thêm Link */}
+//                 <div className="img">
+//                   <img src={cover} alt={name} />
+//                 </div>
+//                 <div className="text">
+//                   <div className="category flex">
+//                     <span
+//                       style={{
+//                         background:
+//                           category === "For Sale" ? "#25b5791a" : "#ff98001a",
+//                         color: category === "For Sale" ? "#25b579" : "#ff9800",
+//                       }}
+//                     >
+//                       {category}
+//                     </span>
+//                     <i className="fa fa-heart"></i>
+//                   </div>
+//                   <h4>{name}</h4>
+//                   <p>
+//                     <i className="fa fa-location-dot"></i> {location}
+//                   </p>
+//                 </div>
+//                 <div className="button flex">
+//                   <div>
+//                     <button className="btn2">{price}</button>{" "}
+//                     <label htmlFor="">/sqft</label>
+//                   </div>
+//                   <span>{type}</span>
+//                 </div>
+//               </Link>
+//             </div>
+//           );
+//         })}
+//       </div>
+//     </>
+//   );
+// };
+
+// export default RecentCard;
+
+import React from "react";
+import { list } from "../../data/Data";
 import styled from "styled-components";
 import pr1 from "../../../acsset/slice/pr1.png"
 import li1 from "../../../acsset/slice/li1.png"
+import { Link } from "react-router-dom";
 
-const RecentCard = () => {
+const RecentCard = ({ products }) => {
   return (
+      // <div className="content grid3 mtop">
+      //   {products?.map((val) => {
+      //     const { id, cover, category, name, price, type } = val;
+      //     return (
+      //       <div className="box shadow" key={id}>
+      //         <Link to={`/product/${id}`}>
+      //           <div className="img">
+      //             <img src={cover} alt={name} />
+      //           </div>
+      //           <div className="text">
+      //             <div className="category flex">
+      //               <span
+      //                 style={{
+      //                   background:
+      //                     category === "Phòng tắm" ? "#25b5791a" : "#ff98001a",
+      //                   color: category === "Phòng tắm" ? "#25b579" : "#ff9800",
+      //                 }}
+      //               >
+      //                 {category}
+      //               </span>
+      //               <i className="fa fa-heart"></i>
+      //             </div>
+      //             <h4>{name}</h4>
+      //             {/* Nếu cần hiển thị thêm thông tin khác như location, có thể thêm vào đây */}
+      //           </div>
+      //           <div className="button flex">
+      //             <div>
+      //               <button className="btn2">{price}</button>{" "}
+      //             </div>
+      //             <span>{type}</span>
+      //           </div>
+      //         </Link>
+      //       </div>
+      //     );
+      //   })}
+      // </div>
     <Wapper>
       <TitleWaper>
         <h1>Sản phẩm nổi bật</h1>
@@ -17,19 +106,22 @@ const RecentCard = () => {
         </Spanet>
       </TitleWaper>
       <Container>
-      {product?.map((item,index)=>{
+      {list?.map((item,index)=>{
         return(
           <ContainerAll>
-          <img src={item.img}/>
+            <Link to={`/product/${item.id}`}>
+          <img src={item.images[0]}/>
           <div>
-            <h1>{item.title}</h1>
+            <h1>{item.name}</h1>
           </div>
           <p>{item.price}</p>
 
           <div>
-            <button>{item.detaill}</button>
+            <button>{item.detail}</button>
           </div>
+          </Link>
           </ContainerAll>
+          
         )
       })}
       </Container>
@@ -38,6 +130,8 @@ const RecentCard = () => {
 };
 
 export default RecentCard;
+
+
 const product = [
 
 {

@@ -55,17 +55,18 @@ const Container = styled.div`
 width: 100%;
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: space-between;
 flex-wrap: wrap;
 `;
 const ContainerAll = styled.div`
-width: calc((100% - 72px) / 3);
+width: calc((100% - 84px) / 3);
 display: flex;
 gap: 10px;
 align-items: center;
+justify-content: center;
 img{
-width: 70px;
-height: 70px;
+width: 40px;
+height: 40px;
 }
 @media screen and (min-width: 320px) and (max-width: 460px) {
     width: 100%;

@@ -1,53 +1,55 @@
 import React from "react"
-import { footer } from "../../data/Data"
 import "./footer.css"
 
 const Footer = () => {
   return (
-    <>
-      <section className='footerContact'>
-        <div className='container'>
-          <div className='send flex'>
-            <div className='text'>
-              <h1>Do You Have Questions ?</h1>
-              <p>We'll help you to grow your career and growth.</p>
-            </div>
-            <button className='btn5'>Contact Us Today</button>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <div className='container'>
-          <div className='box'>
-            <div className='logo'>
-              <img src='../images/logo-light.png' alt='' />
-              <h2>Do You Need Help With Anything?</h2>
-              <p>Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month</p>
-
-              <div className='input flex'>
-                <input type='text' placeholder='Email Address' />
-                <button>Subscribe</button>
-              </div>
-            </div>
-          </div>
-
-          {footer.map((val) => (
-            <div className='box'>
-              <h3>{val.title}</h3>
-              <ul>
-                {val.text.map((items) => (
-                  <li> {items.list} </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </footer>
-      <div className='legal'>
-        <span>© 2021 RentUP. Designd By GorkCoder.</span>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h3>CÔNG TY</h3>
+        <ul>
+          <li><a href="#">Về Fitzone</a></li>
+          <li><a href="#">Đội ngũ Fitzone</a></li>
+          <li><a href="#">Việc làm</a></li>
+        </ul>
       </div>
-    </>
+      <div class="footer-column">
+        <h3>THÔNG TIN</h3>
+        <ul>
+          <li><a href="#">Chính sách thành viên</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Fitzone Rewards</a></li>
+          <li><a href="#">Điều khoản website</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>HỖ TRỢ</h3>
+        <ul>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Ý kiến phản hồi</a></li>
+          <li><a href="#">Câu hỏi thường gặp</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3></h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> XXXXXXXXXXXXXXXXXXXXXXXXXX</li>
+          <li><i class="fas fa-phone-alt"></i> 00.000.00000</li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 BIFITHI SAI GON</p>
+    </div>
+  </div>
+</footer>
+
   )
 }
 

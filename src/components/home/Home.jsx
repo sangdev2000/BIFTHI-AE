@@ -18,10 +18,10 @@ const Home = () => {
       <RecentCard />
       <DecorPaner/>
       <Sampledesign/>
-      <Awards />
-      <Location />
-      <Team />
-      <Price />
+      {/* <Awards /> */}
+      {/* <Location /> */}
+      {/* <Team /> */}
+      {/* <Price /> */}
     </Wapper>
   )
 }
