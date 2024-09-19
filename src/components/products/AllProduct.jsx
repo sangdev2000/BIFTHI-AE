@@ -135,7 +135,7 @@ const AllProduct = ({ products }) => {
               <ButtonWrapper>
                 <button>{price}</button>
               </ButtonWrapper>
-              <Overlay className="overlay">Xem chi tiết</Overlay>
+              <Overlay className="overlay">See More</Overlay>
             </Link>
           </Box>
         );

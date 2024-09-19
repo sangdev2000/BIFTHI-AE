@@ -56,25 +56,25 @@ const product = [
     img: pr1,
     title: "gế sofa",
     price: "$15.00",
-    detaill: "chi tiết",
+    detaill: "See More",
   },
   {
     img: pr1,
     title: "gế sofa",
     price: "$15.00",
-    detaill: "chi tiết",
+    detaill: "See More",
   },
   {
     img: pr1,
     title: "gế sofa",
     price: "$15.00",
-    detaill: "chi tiết",
+    detaill: "See More",
   },
   {
     img: pr1,
     title: "gế sofa",
     price: "$15.00",
-    detaill: "chi tiết",
+    detaill: "See More  ",
   },
 ];
 const Wapper = styled.div`
