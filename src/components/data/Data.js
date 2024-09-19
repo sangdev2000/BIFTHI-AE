@@ -105,7 +105,7 @@ export const list = [
     id: 2,
     name: "Armchair + Đôn Cabo",
     price: "18.800.000₫",
-    category: "Chiếu sáng",
+    category: "Chiếu Sáng",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -131,7 +131,7 @@ export const list = [
     id: 3,
     name: "Ghế",
     price: "18.800.000₫",
-    category: "Thiết kế nội thất",
+    category: "Thiết Kế Nội Thất",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -157,7 +157,7 @@ export const list = [
     id: 4,
     name: "Bàn",
     price: "18.800.000₫",
-    category: "Phòng bếp",
+    category: "Phòng Bếp",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -183,7 +183,7 @@ export const list = [
     id: 5,
     name: "Đèn",
     price: "18.800.000₫",
-    category: "Phòng tắm",
+    category: "Phòng Tắm",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:

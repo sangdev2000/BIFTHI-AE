@@ -12,6 +12,11 @@ import styled from "styled-components"
 
 import ProductDetail from "../products/ProductDetail";
 import Product from "../products/Product"
+import Interior from "../pagesProduct/Interior"
+import Bathroom from "../pagesProduct/Bathroom"
+import Illumination from "../pagesProduct/Illumination"
+import InteriorDesign from "../pagesProduct/InteriorDesign"
+import RoomKitchen from "../pagesProduct/RoomKitchen"
 
 const Pages = () => {
   return (
@@ -25,6 +30,11 @@ const Pages = () => {
           <Route exact path='/product' component={Product} />
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/contact' component={Contact} />
+          <Route exact path='/interior' component={Interior} />
+          <Route exact path='/bathroom' component={Bathroom} />
+          <Route exact path='/illumination' component={Illumination} />
+          <Route exact path='/interiordesign' component={InteriorDesign} />
+          <Route exact path='/roomkitchen' component={RoomKitchen} />
           {/* Route đến trang chi tiết sản phẩm */}
           <Route exact path='/product/:id' component={ProductDetail} />
         </Switch>
