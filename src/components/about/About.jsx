@@ -4,6 +4,7 @@ import about3 from "../images/about2-bg-1.jpg";
 import about2 from "../images/about2-bg-2.jpg";
 import about1 from "../images/about2-bg-3.jpg";
 import { FaLightbulb, FaTools, FaPencilRuler, FaHome, FaChair, FaTree, FaQuoteLeft } from 'react-icons/fa';
+import Ourteam from '../home/ourteam';
 
 const PageContent = () => {
   return (
@@ -52,7 +53,7 @@ const PageContent = () => {
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
         </ServiceGrid>
-
+       
         <ServiceGrid>
           <ServiceCard>
             <ServiceIcon><FaHome /></ServiceIcon>
@@ -63,7 +64,7 @@ const PageContent = () => {
             </ServiceDescription>
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
-
+   
           <ServiceCard>
             <ServiceIcon><FaChair /></ServiceIcon>
             <ServiceHeading>FURNITURE</ServiceHeading>
@@ -73,7 +74,6 @@ const PageContent = () => {
             </ServiceDescription>
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
-
           <ServiceCard>
             <ServiceIcon><FaTree /></ServiceIcon>
             <ServiceHeading>OUTDOOR</ServiceHeading>
@@ -85,7 +85,7 @@ const PageContent = () => {
           </ServiceCard>
         </ServiceGrid>
       </ServiceSection>
-
+      <Ourteam/>
       <TestimonialSection>
         <TestimonialTitle>Testimonial</TestimonialTitle>
         <TestimonialGrid>
