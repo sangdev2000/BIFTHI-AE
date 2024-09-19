@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import { list } from "../data/Data";
 import "./ProductDetail.css";
 import styled from "styled-components";
-
+import facebook from "../images/facebook.png"
+import twitter from "../images/twitter.png"
+import instagram from "../images/instagram.png"
 const ProductDetail = () => {
   const { id } = useParams();
   const [showimage, setShowimage] = useState(null);
@@ -72,16 +74,16 @@ const ProductDetail = () => {
               </div>
 
               <div className="product-details">
-                <p>Mã: {product.sku}</p>
-                <p>Danh Mục: {product.category}</p>
+                <p>Id: {product.sku}</p>
+                <p>Category: {product.category}</p>
                 <p>Tags: {product.tags.join(", ")}</p>
               </div>
 
               <div className="social-share">
                 <span>Share:</span>
-                <i className="fab fa-facebook"></i>
-                <i className="fab fa-linkedin"></i>
-                <i className="fab fa-twitter"></i>
+                <Icon><img src={facebook}/></Icon>
+                <Icon><img src={twitter}/></Icon>
+                <Icon><img src={instagram}/></Icon>
               </div>
             </div>
           </div>
@@ -106,7 +108,7 @@ const ProductDetail = () => {
             ))}
           </div>
 
-          <h2 className="related-title">Sản phẩm liên quan</h2>
+          <h2 className="related-title">Related products</h2>
         </div>
       </div>
     </Wapper>
@@ -122,3 +124,9 @@ const Wapper = styled.div`
     }
   }
 `;
+const Icon = styled.div`
+  img{
+    width: 100%;
+  }
+  display: flex;
+  align-items: center;`

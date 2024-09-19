@@ -23,12 +23,14 @@ const RecentCard = ({ products }) => {
     <Wapper>
       <TitleWaper data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
-        <h1>Sản phẩm nổi bật</h1>
+        <h1>Featured Products</h1>
         <Spanet>
-          <p>Xem thêm</p>
+        <p>See More</p>
+          <Link to={"/product"}>
           <div>
             <img src={li1}></img>
           </div>
+          </Link>
         </Spanet>
       </TitleWaper>
       <Container data-aos="fade-up"
@@ -63,25 +65,25 @@ const product = [
     img: pr1,
     title: "gế sofa",
     price: "$15.00",
-    detaill: "chi tiết",
+    detaill: "See More",
   },
   {
     img: pr1,
     title: "gế sofa",
     price: "$15.00",
-    detaill: "chi tiết",
+    detaill: "See More",
   },
   {
     img: pr1,
     title: "gế sofa",
     price: "$15.00",
-    detaill: "chi tiết",
+    detaill: "See More",
   },
   {
     img: pr1,
     title: "gế sofa",
     price: "$15.00",
-    detaill: "chi tiết",
+    detaill: "See More  ",
   },
 ];
 const Wapper = styled.div`
@@ -150,6 +152,7 @@ const ContainerAll = styled.div`
   }
   img {
     width: 100%;
+    height: 300px;
   }
   @media screen and (min-width: 320px) and (max-width: 460px) {
     width: 100%;

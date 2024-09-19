@@ -51,10 +51,9 @@ const Hero = () => {
         </ContenSlice>
         <ContenLeft data-aos="fade-right">
           <ContenIFT>
-            <h1>milan jack</h1>
+            <h1>Milan Jack</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-              beatae error laborum.
+            Homestyle truly brings freshness and uniqueness to your home.
             </p>
             <ContenIFTbr>
               <img src={br2} />
@@ -74,7 +73,7 @@ const Hero = () => {
           <br /> Your Place
         </h3>
         <p>
-          find your dream plant for you home decoration with us
+          Find your dream plant for you home decoration with us
           <br /> and we will make it happen.
         </p>
         <Searchplant>

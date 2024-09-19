@@ -54,7 +54,7 @@ const Pricing = () => {
                 <Allsyteam>
                   <Hover>
                     <HoverImg>
-                  <img src={item.img} />
+                      <img src={item.img} />
                     </HoverImg>
                   </Hover>
                   <p>{item.title}</p>
@@ -84,6 +84,18 @@ const samarr = [
     conten: "10 Ideas for Furnishing a Family Room",
     des: "Diam donec adipiscing tristique risus nec feugiat in fermentum. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tortor condimentum lacinia quis vel eros donec ac. Enim eu turpis egestas pretium aenean pharetra magna ac. Sed velit dignissim sodales ut…",
   },
+  {
+    img: sam,
+    title: "September 10, 2022 by lastudio",
+    conten: "10 Ideas for Furnishing a Family Room",
+    des: "Diam donec adipiscing tristique risus nec feugiat in fermentum. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tortor condimentum lacinia quis vel eros donec ac. Enim eu turpis egestas pretium aenean pharetra magna ac. Sed velit dignissim sodales ut…",
+  },
+  {
+    img: sam,
+    title: "September 10, 2022 by lastudio",
+    conten: "10 Ideas for Furnishing a Family Room",
+    des: "Diam donec adipiscing tristique risus nec feugiat in fermentum. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tortor condimentum lacinia quis vel eros donec ac. Enim eu turpis egestas pretium aenean pharetra magna ac. Sed velit dignissim sodales ut…",
+  },
 ];
 const samright = [
   {
@@ -97,8 +109,6 @@ const Wapper = styled.div`
 `;
 const Container = styled.div`
   /* background: #dfcfb8; */
-  
-
 `;
 const TitlrBlog = styled.div`
   width: 100%;
@@ -166,23 +176,25 @@ const Sample = styled.div`
   justify-content: space-between;
   gap: 20px;
   position: relative;
-  &::after{
+  &::after {
     content: "";
     position: absolute;
-    top: -45%;
+    top: -20%;
     left: 0;
     width: 100%;
-    height: 500px;
+    height: 600px;
     background: #dfcfb8;
     z-index: -1;
   }
 `;
 const SampleLeft = styled.div`
   width: 60%;
+  flex-wrap: wrap;
 `;
 const SampleRight = styled.div`
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding: 20px 10px;
   gap: 20px;
   width: 30%;
@@ -205,7 +217,7 @@ const Allsyteam = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  button{
+  button {
     width: 300px;
     background: #fff;
     color: #000;
@@ -238,10 +250,10 @@ const Allsyteam = styled.div`
     font-weight: 300;
     line-height: 150%;
   }
-  img{
+  img {
     aspect-ratio: 800/400;
     width: 100%;
-    &:hover{
+    &:hover {
       transform: scale(1.05);
       transition: all 0.25s linear;
       cursor: pointer;
@@ -249,21 +261,20 @@ const Allsyteam = styled.div`
   }
 `;
 const Hover = styled.div`
-width: 100%;
-position: relative;
-z-index: 2;
-&:hover{
-    img{
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  &:hover {
+    img {
       transform: scale(1.05);
       transition: all 0.25s linear;
     }
   }
 `;
 const HoverImg = styled.div`
-overflow: hidden;
-img{
-  aspect-ratio: 700/400;
+  overflow: hidden;
+  img {
+    aspect-ratio: 700/400;
     width: 100%;
-
   }
 `;

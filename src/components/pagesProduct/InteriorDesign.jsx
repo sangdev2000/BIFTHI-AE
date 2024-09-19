@@ -25,12 +25,12 @@ const InteriorDesign = () => {
     return parseInt(priceString.replace(/[^0-9]/g, ""), 10);
   };
 
-  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Thiết Kế Nội Thất"
+  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Interior Design"
   const filteredProducts = list.filter((product) => {
     const productPrice = parsePrice(product.price); // Lấy giá sản phẩm dưới dạng số
 
-    // Chỉ hiển thị sản phẩm có category là "Thiết Kế Nội Thất"
-    const matchesCategory = product.category === "Thiết Kế Nội Thất";
+    // Chỉ hiển thị sản phẩm có category là "Interior Design"
+    const matchesCategory = product.category === "Interior Design";
 
     // Lọc theo khoảng giá
     const matchesPrice =
@@ -65,10 +65,10 @@ const InteriorDesign = () => {
                 <img src={pricedown} alt="price down" />
               </Icon>
               <div>
-                <p className="filter-title">Giá thấp nhất</p>
+                <p className="filter-title">Lowest price</p>
                 <input
                   className="filter-description"
-                  placeholder="Hãy nhập giá"
+                  placeholder="Please enter price"
                   value={minPrice}
                   onChange={(e) => setMinPrice(e.target.value)} // Cập nhật giá trị lọc theo giá min
                 />
@@ -80,10 +80,10 @@ const InteriorDesign = () => {
                 <img src={priceup} alt="price up" />
               </Icon>
               <div>
-                <p className="filter-title">Giá tối đa</p>
+                <p className="filter-title">Maximum price</p>
                 <input
                   className="filter-description"
-                  placeholder="Hãy nhập giá"
+                  placeholder="Please enter price"
                   value={maxPrice}
                   onChange={(e) => setMaxPrice(e.target.value)} // Cập nhật giá trị lọc theo giá max
                 />
@@ -96,7 +96,7 @@ const InteriorDesign = () => {
               </Icon>
               <input
                 className="filter-description"
-                placeholder="Tên sản phẩm"
+                placeholder="Product name"
                 value={nameFilter}
                 onChange={(e) => setNameFilter(e.target.value)} // Cập nhật giá trị lọc theo tên
               />

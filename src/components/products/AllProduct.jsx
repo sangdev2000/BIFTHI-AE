@@ -5,7 +5,6 @@ import styled from "styled-components";
 // Bố cục của các sản phẩm, căn giữa và chia khoảng cách
 const Content = styled.div`
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
   padding: 20px;
@@ -45,7 +44,7 @@ const Box = styled.div`
 const ImageWrapper = styled.div`
   img {
     width: 100%;
-    height: auto;
+    height: 391.6px;
     object-fit: cover;
   }
 `;
@@ -135,7 +134,7 @@ const AllProduct = ({ products }) => {
               <ButtonWrapper>
                 <button>{price}</button>
               </ButtonWrapper>
-              <Overlay className="overlay">Xem chi tiết</Overlay>
+              <Overlay className="overlay">See More</Overlay>
             </Link>
           </Box>
         );
