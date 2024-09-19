@@ -45,7 +45,7 @@ const Box = styled.div`
 const ImageWrapper = styled.div`
   img {
     width: 100%;
-    height: auto;
+    height: 391.6px;
     object-fit: cover;
   }
 `;

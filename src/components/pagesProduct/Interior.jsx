@@ -25,12 +25,12 @@ const Interior = () => {
     return parseInt(priceString.replace(/[^0-9]/g, ""), 10);
   };
 
-  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Nội Thất"
+  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Interior"
   const filteredProducts = list.filter((product) => {
     const productPrice = parsePrice(product.price); // Lấy giá sản phẩm dưới dạng số
 
-    // Chỉ hiển thị sản phẩm có category là "Nội Thất"
-    const matchesCategory = product.category === "Nội Thất";
+    // Chỉ hiển thị sản phẩm có category là "Interior"
+    const matchesCategory = product.category === "Interior";
 
     // Lọc theo khoảng giá
     const matchesPrice =

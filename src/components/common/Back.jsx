@@ -7,7 +7,7 @@ const Back = ({ icon1, icon2, icon3, icon4, title, cover }) => {
       <BackgroundImage src={cover} alt="background" />
       <Content>
         <Title>{title}</Title>
-        <Breadcrumb>Home / Shop</Breadcrumb>
+        <Breadcrumb>Bring Serenity to Your Place</Breadcrumb>
         <IconsContainer>
           <IconItem>
             <img src={icon1} alt="Living Room" />

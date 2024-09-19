@@ -18,10 +18,12 @@ const RecentCard = ({ products }) => {
      data-aos-anchor-placement="top-bottom">
         <h1>Featured Products</h1>
         <Spanet>
-          <p>See More</p>
+        <p>See More</p>
+          <Link to={"/product"}>
           <div>
             <img src={li1}></img>
           </div>
+          </Link>
         </Spanet>
       </TitleWaper>
       <Container data-aos="fade-up"
@@ -143,6 +145,7 @@ const ContainerAll = styled.div`
   }
   img {
     width: 100%;
+    height: 300px;
   }
   @media screen and (min-width: 320px) and (max-width: 460px) {
     width: 100%;

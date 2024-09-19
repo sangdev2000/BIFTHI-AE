@@ -25,12 +25,12 @@ const Illumination = () => {
     return parseInt(priceString.replace(/[^0-9]/g, ""), 10);
   };
 
-  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Chiếu Sáng"
+  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Illumination"
   const filteredProducts = list.filter((product) => {
     const productPrice = parsePrice(product.price); // Lấy giá sản phẩm dưới dạng số
 
-    // Chỉ hiển thị sản phẩm có category là "Chiếu Sáng"
-    const matchesCategory = product.category === "Chiếu Sáng";
+    // Chỉ hiển thị sản phẩm có category là "Illumination"
+    const matchesCategory = product.category === "Illumination";
 
     // Lọc theo khoảng giá
     const matchesPrice =

@@ -25,12 +25,12 @@ const Bathroom = () => {
     return parseInt(priceString.replace(/[^0-9]/g, ""), 10);
   };
 
-  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Phòng Tắm"
+  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Bathroom"
   const filteredProducts = list.filter((product) => {
     const productPrice = parsePrice(product.price); // Lấy giá sản phẩm dưới dạng số
 
-    // Chỉ hiển thị sản phẩm có category là "Phòng Tắm"
-    const matchesCategory = product.category === "Phòng Tắm";
+    // Chỉ hiển thị sản phẩm có category là "Bathroom"
+    const matchesCategory = product.category === "Bathroom";
 
     // Lọc theo khoảng giá
     const matchesPrice =

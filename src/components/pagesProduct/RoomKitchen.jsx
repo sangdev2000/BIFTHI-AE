@@ -25,12 +25,12 @@ const RoomKitchen = () => {
     return parseInt(priceString.replace(/[^0-9]/g, ""), 10);
   };
 
-  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Phòng Bếp"
+  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Room Kitchen"
   const filteredProducts = list.filter((product) => {
     const productPrice = parsePrice(product.price); // Lấy giá sản phẩm dưới dạng số
 
-    // Chỉ hiển thị sản phẩm có category là "Phòng Bếp"
-    const matchesCategory = product.category === "Phòng Bếp";
+    // Chỉ hiển thị sản phẩm có category là "Room Kitchen"
+    const matchesCategory = product.category === "Room Kitchen";
 
     // Lọc theo khoảng giá
     const matchesPrice =

@@ -25,12 +25,12 @@ const InteriorDesign = () => {
     return parseInt(priceString.replace(/[^0-9]/g, ""), 10);
   };
 
-  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Thiết Kế Nội Thất"
+  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Interior Design"
   const filteredProducts = list.filter((product) => {
     const productPrice = parsePrice(product.price); // Lấy giá sản phẩm dưới dạng số
 
-    // Chỉ hiển thị sản phẩm có category là "Thiết Kế Nội Thất"
-    const matchesCategory = product.category === "Thiết Kế Nội Thất";
+    // Chỉ hiển thị sản phẩm có category là "Interior Design"
+    const matchesCategory = product.category === "Interior Design";
 
     // Lọc theo khoảng giá
     const matchesPrice =

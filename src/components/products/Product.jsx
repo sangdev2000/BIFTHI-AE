@@ -239,7 +239,7 @@ const Product = () => {
                   onClick={() => setShowDropdown(!showDropdown)}
                   style={{ cursor: "pointer" }}
                 >
-                  Danh mục
+                  categories
                   {showDropdown ? "" : <Icon><img src={up}/></Icon>}
                 </p>
 
@@ -266,7 +266,7 @@ const Product = () => {
             <div className="filter-item">
               <Icon><img src={pricedown}/></Icon>
               <div>
-                <p className="filter-title">Giá thấp nhất</p>
+                <p className="filter-title">price min</p>
                 <input
                   className="filter-description"
                   placeholder="Hãy nhập giá"
@@ -279,7 +279,7 @@ const Product = () => {
             <div className="filter-item">
             <Icon><img src={priceup}/></Icon>
               <div>
-                <p className="filter-title">Giá tối đa</p>
+                <p className="filter-title">price max</p>
                 <input
                   className="filter-description"
                   placeholder="Hãy nhập giá"
