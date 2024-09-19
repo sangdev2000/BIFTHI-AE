@@ -152,11 +152,20 @@
 import React, { useState } from "react";
 import Back from "../common/Back";
 import "../home/recent/recent.css";
-import img from "../images/about.png";
+import img from "../images/about.jpg";
 import { list } from "../data/Data"; // Import dữ liệu sản phẩm
 import "./Product.css"; // Tạo file CSS riêng cho dropdown
 import AllProduct from "./AllProduct";
-
+import map from "../images/map.png"
+import up from "../images/up-down.png"
+import styled from "styled-components";
+import icon1 from "../images/Armchair.png"
+import icon2 from "../images/Roundchair.png"
+import icon3 from "../images/Stool.png"
+import icon4 from "../images/Wardrobe.png"
+import priceup from "../images/priceup.png"
+import pricedown from "../images/pricedown.png"
+import search from "../images/search.png"
 const Product = () => {
   // State lưu trữ giá trị của các bộ lọc
   const [selectedCategories, setSelectedCategories] = useState([]); // Lưu trữ các danh mục được chọn
@@ -186,7 +195,7 @@ const Product = () => {
   const filteredProducts = list.filter((product) => {
     const productPrice = parsePrice(product.price); // Lấy giá sản phẩm dưới dạng số
 
-    // Lọc theo category (Loại phòng)
+    // Lọc theo category
     const matchesCategory = selectedCategories.length > 0
       ? selectedCategories.includes(product.category)
       : true;
@@ -207,14 +216,23 @@ const Product = () => {
   return (
     <>
       <section className="blog-out mb">
-        <Back title="SẢN PHẨM" name="Home > Sản Phẩm" cover={img} />
+        <Back title="SẢN PHẨM" cover={img} 
+        icon1={icon1}
+        icon2={icon2}
+        icon3={icon3}
+        icon4={icon4}
+        />
 
         {/* Bộ lọc sản phẩm */}
         <div className="filter-wrapper">
           <div className="filter-container">
             {/* Lọc theo loại phòng */}
             <div className="filter-item dropdown">
-              <i className="fas fa-map-marker-alt"></i>
+              {/* <i className="fas fa-map-marker-alt"></i> */}
+              <div>
+              <img src={map} alt="map" style={{width:"100%"}}/>
+
+              </div>
               <div>
                 <p
                   className="filter-title"
@@ -222,7 +240,7 @@ const Product = () => {
                   style={{ cursor: "pointer" }}
                 >
                   Danh mục
-                  <i className={`fas ${showDropdown ? "fa-chevron-up" : "fa-chevron-down"}`}></i>
+                  {showDropdown ? "" : <Icon><img src={up}/></Icon>}
                 </p>
 
                 {/* Hiển thị dropdown khi nhấn vào */}
@@ -246,7 +264,7 @@ const Product = () => {
             </div>
 
             <div className="filter-item">
-              <i className="fas fa-tag"></i>
+              <Icon><img src={pricedown}/></Icon>
               <div>
                 <p className="filter-title">Giá thấp nhất</p>
                 <input
@@ -259,7 +277,7 @@ const Product = () => {
             </div>
 
             <div className="filter-item">
-              <i className="fas fa-tag"></i>
+            <Icon><img src={priceup}/></Icon>
               <div>
                 <p className="filter-title">Giá tối đa</p>
                 <input
@@ -272,7 +290,7 @@ const Product = () => {
             </div>
 
             <div className="search-bar">
-              <i className="fas fa-search"></i>
+            <Icon><img src={search}/></Icon>
               <input
                 className="filter-description"
                 placeholder="Tên sản phảm"
@@ -294,3 +312,10 @@ const Product = () => {
 
 export default Product;
 
+const Icon = styled.div`
+  img{
+    width: 100%;
+  }
+  display: flex;
+  align-items: center;
+`

@@ -5,18 +5,21 @@ import sp2 from "../../../acsset/slice/sp2.png";
 import sp3 from "../../../acsset/slice/sp3.png";
 import sp4 from "../../../acsset/slice/sp4.png";
 import sp5 from "../../../acsset/slice/sp5.png";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 const Sampledesign = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000});
+    AOS.init({ duration: 1000 });
   }, []);
   return (
     <Wapper>
       <div>
-        <TitleConten data-aos="fade-up"
-     data-aos-anchor-placement="center-center">
+        <TitleConten
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
           <h1>interior Design</h1>
           <p>make your home so</p>
         </TitleConten>
@@ -28,15 +31,17 @@ const Sampledesign = () => {
                   <h1>{item.title}</h1>
                 </Title>
                 <Image
-                data-aos="fade-right"
+                  data-aos="fade-right"
                   preview={{
                     destroyOnClose: true,
                     imageRender: () => (
-                      <AllPaner >
-                        <img src={item.img}/>
-                       <BoderFt>
-                       <h1>Chi Tiết</h1>
-                       </BoderFt>
+                      <AllPaner>
+                        <img src={item.img} />
+                        <BoderFt>
+                          <Link to={item.link}>
+                            <h1>Chi Tiết</h1>
+                          </Link>
+                        </BoderFt>
                       </AllPaner>
                     ),
                     toolbarRender: () => false,
@@ -56,15 +61,17 @@ const Sampledesign = () => {
                   <h1>{item.title}</h1>
                 </Title>
                 <Image
-                data-aos="fade-left"
+                  data-aos="fade-left"
                   preview={{
                     destroyOnClose: false,
                     imageRender: () => (
                       <AllPaner>
-                        <img  src={item.img} />
+                        <img src={item.img} />
                         <BoderFt>
-                       <h1>Chi Tiết</h1>
-                       </BoderFt>
+                          <Link to={item.link}>
+                            <h1>Chi Tiết</h1>
+                          </Link>
+                        </BoderFt>
                       </AllPaner>
                     ),
                     toolbarRender: () => false,
@@ -86,10 +93,12 @@ const arrimg = [
   {
     img: sp1,
     title: "Nội Thất",
+    link: "/Interior",
   },
   {
     img: sp2,
     title: "Chiếu Sáng",
+    link: "/illumination",
   },
 ];
 
@@ -97,15 +106,18 @@ const iMT = [
   {
     img: sp3,
     title: "Thiết Kế",
+    link: "/interiordesign",
   },
 
   {
     img: sp4,
     title: "Phòng Bếp",
+    link: "/roomkitchen",
   },
   {
     img: sp5,
     title: "Phòng Tắm",
+    link: "/bathroom",
   },
 ];
 
@@ -122,8 +134,8 @@ const Wapper = styled.div`
 
   .ant-image-preview-root .ant-image-preview-img {
     width: 100% !important;
-    height: auto !important; 
-    object-fit: contain; 
+    height: auto !important;
+    object-fit: contain;
   }
 
   .ant-image-mask {
@@ -132,7 +144,7 @@ const Wapper = styled.div`
 
   .css-dev-only-do-not-override-qnu6hi.ant-image .ant-image-img {
     width: 100%;
-    object-fit: contain; 
+    object-fit: contain;
   }
 `;
 
@@ -254,10 +266,10 @@ const TitleConten = styled.div`
   }
 `;
 const AllPaner = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
   h1 {
     color: #fff;
     text-align: center;
@@ -270,15 +282,19 @@ position: relative;
   }
 `;
 const BoderFt = styled.div`
-width: 200px;
-height: 40px;
-border-radius: 10px;
-border: 2px solid #ccc;
-display: flex;
-align-items: center;
-justify-content: center;
-position: absolute;
-background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) -58.4%, rgba(0, 0, 0, 0.00) 114.8%);
-top: 95%;
-cursor: pointer;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) -58.4%,
+    rgba(0, 0, 0, 0) 114.8%
+  );
+  top: 95%;
+  cursor: pointer;
 `;
