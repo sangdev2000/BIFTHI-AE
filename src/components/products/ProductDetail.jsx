@@ -74,8 +74,8 @@ const ProductDetail = () => {
               </div>
 
               <div className="product-details">
-                <p>Mã: {product.sku}</p>
-                <p>Danh Mục: {product.category}</p>
+                <p>Id: {product.sku}</p>
+                <p>Category: {product.category}</p>
                 <p>Tags: {product.tags.join(", ")}</p>
               </div>
 
@@ -108,7 +108,7 @@ const ProductDetail = () => {
             ))}
           </div>
 
-          <h2 className="related-title">Sản phẩm liên quan</h2>
+          <h2 className="related-title">Related products</h2>
         </div>
       </div>
     </Wapper>

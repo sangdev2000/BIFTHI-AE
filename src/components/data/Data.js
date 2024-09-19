@@ -1,6 +1,6 @@
 export const nav = [
   {
-    text: "Trang Chủ",
+    text: "Home",
     path: "/",
   },
 
@@ -10,7 +10,7 @@ export const nav = [
   // },
 
   {
-    text: "Về Chúng Tôi",
+    text: "About Us",
     path: "/about",
   },
   // {
@@ -18,7 +18,7 @@ export const nav = [
   //   path: "/services",
   // },
   {
-    text: "Sản Phẩm",
+    text: "Products",
     path: "/product",
   },
 
@@ -28,12 +28,12 @@ export const nav = [
   // },
 
   {
-    text: "Thiết Kế Mẫu",
+    text: "Template",
     path: "/pricing",
   },
 
   {
-    text: "Liên Hệ",
+    text: "Contact",
     path: "/contact",
   },
 ];
@@ -99,7 +99,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 2,
@@ -125,7 +125,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 3,
@@ -151,7 +151,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 4,
@@ -177,7 +177,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 5,
@@ -203,7 +203,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 6,
@@ -229,7 +229,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 7,
@@ -255,7 +255,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 8,
@@ -281,7 +281,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 9,
@@ -307,7 +307,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 10,
@@ -333,7 +333,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 11,
@@ -359,7 +359,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 12,
@@ -386,7 +386,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
 
   {
@@ -414,7 +414,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 14,
@@ -441,7 +441,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 15,
@@ -468,7 +468,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 16,
@@ -495,7 +495,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 17,
@@ -522,7 +522,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 18,
@@ -549,7 +549,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 19,
@@ -576,7 +576,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
 
   {
@@ -604,7 +604,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 22,
@@ -631,7 +631,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 23,
@@ -658,7 +658,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 24,
@@ -685,7 +685,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 25,
@@ -712,7 +712,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 26,
@@ -739,7 +739,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 27,
@@ -766,7 +766,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 28,
@@ -793,7 +793,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 30,
@@ -821,7 +821,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 31,
@@ -849,7 +849,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 32,
@@ -877,7 +877,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 33,
@@ -905,7 +905,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 34,
@@ -933,7 +933,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 35,
@@ -961,7 +961,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 36,
@@ -989,7 +989,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
 
   {
@@ -1018,7 +1018,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 38,
@@ -1046,7 +1046,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 39,
@@ -1074,7 +1074,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 40,
@@ -1102,7 +1102,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 41,
@@ -1130,7 +1130,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 42,
@@ -1158,7 +1158,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
 
   {
@@ -1187,7 +1187,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
   {
     id: 44,
@@ -1215,7 +1215,7 @@ export const list = [
       "../images/list/p-7.png", // Related image 1
       "../images/list/p-7.png", // Related image 2
     ],
-    detail: "chi tiết",
+    detail: "See More",
   },
 ];
 

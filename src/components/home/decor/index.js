@@ -30,7 +30,7 @@ const DecorPaner = () => {
   return (
     <Wapeer>
         <TitlePaner>
-          <p>make your home</p>
+          
           <h1  data-aos="fade-right">Just for your home</h1>
         </TitlePaner>
       <Container>

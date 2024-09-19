@@ -216,7 +216,7 @@ const Product = () => {
   return (
     <>
       <section className="blog-out mb">
-        <Back title="SẢN PHẨM" cover={img} 
+        <Back title="Products" cover={img} 
         icon1={icon1}
         icon2={icon2}
         icon3={icon3}
@@ -233,13 +233,13 @@ const Product = () => {
               <img src={map} alt="map" style={{width:"100%"}}/>
 
               </div>
+              <p class="filter-title">categories</p>
               <div>
                 <p
                   className="filter-title"
                   onClick={() => setShowDropdown(!showDropdown)}
                   style={{ cursor: "pointer" }}
                 >
-                  categories
                   {showDropdown ? "" : <Icon><img src={up}/></Icon>}
                 </p>
 
@@ -266,10 +266,10 @@ const Product = () => {
             <div className="filter-item">
               <Icon><img src={pricedown}/></Icon>
               <div>
-                <p className="filter-title">price min</p>
+                <p className="filter-title">Lowest price</p>
                 <input
                   className="filter-description"
-                  placeholder="Hãy nhập giá"
+                  placeholder="Please enter price"
                   value={minPrice}
                   onChange={(e) => setMinPrice(e.target.value)} // Cập nhật giá trị lọc theo giá min
                 />
@@ -279,10 +279,10 @@ const Product = () => {
             <div className="filter-item">
             <Icon><img src={priceup}/></Icon>
               <div>
-                <p className="filter-title">price max</p>
+                <p className="filter-title">Maximum price</p>
                 <input
                   className="filter-description"
-                  placeholder="Hãy nhập giá"
+                  placeholder="Please enter price"
                   value={maxPrice}
                   onChange={(e) => setMaxPrice(e.target.value)} // Cập nhật giá trị lọc theo giá max
                 />
@@ -293,7 +293,7 @@ const Product = () => {
             <Icon><img src={search}/></Icon>
               <input
                 className="filter-description"
-                placeholder="Tên sản phảm"
+                placeholder="Product name"
                 value={nameFilter}
                 onChange={(e) => setNameFilter(e.target.value)} // Cập nhật giá trị lọc theo tên
               />

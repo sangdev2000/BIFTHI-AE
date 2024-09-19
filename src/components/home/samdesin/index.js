@@ -20,7 +20,7 @@ const Sampledesign = () => {
           data-aos="fade-up"
           data-aos-anchor-placement="center-center"
         >
-          <h1>Product sample</h1>
+          <h1>Product Sample</h1>
           
         </TitleConten>
         <Containerr>
