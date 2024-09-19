@@ -65,7 +65,7 @@ const Ourteam = () => {
   return (
     <EvaluateWapper>
       <ContenEvaluate>
-        <img src={member}/>
+        <img src={member} />
         <div
           data-aos="fade-right"
           data-aos-offset="300"
@@ -83,19 +83,22 @@ const Ourteam = () => {
                   data-aos="fade-up"
                   data-aos-anchor-placement="bottom-bottom"
                 >
-                  <ImgSlicert  data-aos="fade-up"
-                      data-aos-anchor-placement="center-center">
+                  <ImgSlicert
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-center"
+                  >
                     <img src={item.img} />
                   </ImgSlicert>
                   <h1>{item.name}</h1>
                   <h3>{item.conten}</h3>
                   <div style={{ display: "flex", alignItems: "center" }}>
-                    <Contusfd
-                     
-                    >
+                    <Contusfd>
                       <Facebook>
                         {item.star.map((item) => (
-                          <img style={{width: "40px", height: "40px"}} src={item} />
+                          <img
+                            style={{ width: "40px", height: "40px" }}
+                            src={item}
+                          />
                         ))}
                       </Facebook>
                     </Contusfd>
@@ -133,7 +136,7 @@ const arrconten = [
   {
     img: avatar3,
     conten: "CEO",
-    name: "HieuCT",
+    name: "MINH HIEU",
     star: [t1, t2, t3],
   },
   {
@@ -149,7 +152,7 @@ const EvaluateWapper = styled.div`
   max-width: 1440px;
   margin: 0px auto;
   padding-top: 80px;
-padding-bottom: 100px;
+  padding-bottom: 100px;
   @media screen and (min-width: 320px) and (max-width: 780px) {
     margin: 80px auto;
   }
@@ -306,7 +309,7 @@ const Facebook = styled.div`
   align-items: center;
   gap: 10px;
   padding: 5px;
-  img{
+  img {
     width: 40px;
     width: 40px;
   }

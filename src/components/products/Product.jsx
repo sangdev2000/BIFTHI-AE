@@ -240,7 +240,7 @@ const Product = () => {
                   onClick={() => setShowDropdown(!showDropdown)}
                   style={{ cursor: "pointer" }}
                 >
-                  {showDropdown ? "" : <Icon><img src={up}/></Icon>}
+                  {showDropdown ? <Icon><img src={up}/></Icon> : <Icon><img src={up}/></Icon>}
                 </p>
 
                 {/* Hiển thị dropdown khi nhấn vào */}

@@ -28,13 +28,15 @@ const Header = () => {
     <Wapper>
       <Container scrollPosition={scrollPosition}>
         <LogoImg>
-          <img src={mlogo1} />
+          <Link to={"/"}>
+            <img src={mlogo1} />
+          </Link>
         </LogoImg>
         <MenuLeft>
           <ul className={navList ? "small" : "flex"}>
             {nav.map((list, index) => (
               <Menudestop scrollPosition={scrollPosition} key={index}>
-                <NavLink   exact={list.path === "/"}  key={index} to={list.path}>
+                <NavLink exact={list.path === "/"} key={index} to={list.path}>
                   <p>{list.text}</p>
                 </NavLink>
               </Menudestop>
@@ -73,7 +75,6 @@ const Wapper = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 999999999;
-
 `;
 const Container = styled.div`
   width: 100%;
@@ -83,7 +84,8 @@ const Container = styled.div`
   justify-content: space-between;
   gap: 10px;
   padding: 10px 60px;
-  background: ${(props) => (props.scrollPosition > 50 ? "rgba(255, 255, 255, 0.8)" : "")};
+  background: ${(props) =>
+    props.scrollPosition > 50 ? "rgba(255, 255, 255, 0.8)" : ""};
 `;
 const Menudestop = styled.div`
   display: flex;
@@ -91,7 +93,7 @@ const Menudestop = styled.div`
   flex-direction: column;
   gap: 20px;
   padding: 10px;
-  .active{
+  .active {
     color: #826112;
   }
   a {

@@ -54,6 +54,7 @@ const Title = styled.h1`
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 20px;
 `;
 
 const Breadcrumb = styled.p`

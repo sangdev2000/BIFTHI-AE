@@ -6,7 +6,7 @@ import about1 from "../images/about2-bg-3.jpg";
 import { FaLightbulb, FaTools, FaPencilRuler, FaHome, FaChair, FaTree, FaQuoteLeft } from 'react-icons/fa';
 import Ourteam from '../home/ourteam';
 
-const PageContent = () => {
+const About = () => {
   return (
     <Container>
       <TitleSection>
@@ -121,7 +121,7 @@ const PageContent = () => {
   );
 };
 
-export default PageContent;
+export default About;
 
 const Container = styled.div`
   width: 100%;

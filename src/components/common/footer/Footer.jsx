@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { FaFacebookF, FaTwitter, FaInstagram, FaPinterestP, FaLeaf, FaArrowUp } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaPinterestP,
+  FaLeaf,
+  FaArrowUp,
+} from "react-icons/fa";
+import aptech from "../../images/aptech.png";
+import Logo from "../../images/Logo1.png";
 
 const Footer = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -29,8 +38,10 @@ const Footer = () => {
   return (
     <FooterContainer>
       <TopSection>
-        <BrandName>Befthi.</BrandName>
-        <SubscriptionText>Subscribe to get 10% off your first order</SubscriptionText>
+        <BrandName>HomeStyler.</BrandName>
+        <SubscriptionText>
+          Subscribe to get 10% off your first order
+        </SubscriptionText>
         <EmailInputWrapper>
           <EmailInput type="email" placeholder="Enter your email..." />
           <SendButton>
@@ -41,11 +52,21 @@ const Footer = () => {
       <Border />
       <BottomSection>
         <SocialIcons>
-          <a href="#"><FaFacebookF /></a>
-          <a href="#"><FaTwitter /></a>
-          <a href="#"><FaInstagram /></a>
-          <a href="#"><FaPinterestP /></a>
-          <a href="#"><FaLeaf /></a>
+          <a href="#">
+            <FaFacebookF />
+          </a>
+          <a href="#">
+            <FaTwitter />
+          </a>
+          <a href="#">
+            <FaInstagram />
+          </a>
+          <a href="#">
+            <FaPinterestP />
+          </a>
+          <a href="#">
+            <FaLeaf />
+          </a>
         </SocialIcons>
         <FooterNav>
           <a href="#">About</a>
@@ -55,8 +76,13 @@ const Footer = () => {
           <a href="#">Contact</a>
         </FooterNav>
       </BottomSection>
-      <CopyrightText>COPYRIGHT 2022 © LA-STUDIO. ALL RIGHTS RESERVED.</CopyrightText>
-
+      <CopyrightText>
+        COPYRIGHT 2024 © BEFTHI. ALL RIGHTS RESERVED.
+      </CopyrightText>
+      <Logo1>
+        <img src={aptech} alt="" />
+        <img src={Logo} alt="" />
+      </Logo1>
       {/* Nút cuộn lên */}
       <ScrollArrow onClick={scrollTop} show={showScroll}>
         <FaArrowUp />
@@ -192,5 +218,17 @@ const ScrollArrow = styled.div`
   &:hover {
     background: #bdbdbd;
     color: #2d2d2d;
+  }
+`;
+const Logo1 = styled.div`
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  img {
+    width: 100px;
+    height: auto;
   }
 `;
