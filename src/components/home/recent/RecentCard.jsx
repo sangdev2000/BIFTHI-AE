@@ -9,6 +9,13 @@ import 'aos/dist/aos.css';
 const RecentCard = ({ products }) => {
   useEffect(() => {
     AOS.init({ duration: 1000});
+    const handleScroll = () => {
+      AOS.refresh();
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
   AOS.init();
   console.log("dssadsa", list);

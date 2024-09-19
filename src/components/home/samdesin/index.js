@@ -12,6 +12,13 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 const Sampledesign = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    const handleScroll = () => {
+      AOS.refresh();
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
   return (
     <Wapper>

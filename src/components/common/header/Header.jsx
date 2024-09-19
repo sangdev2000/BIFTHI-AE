@@ -1,31 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.css";
 import { nav } from "../../data/Data";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import mn1 from "../../../acsset/slice/mn1.png";
+import mlogo1 from "../../../acsset/slice/Logo 1.png";
 
 const Header = () => {
   const [navList, setNavList] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const handleShow = () => {
     setNavList(!navList);
   };
+  console.log("sdsad", scrollPosition);
   return (
     <Wapper>
-      <Container>
-        {/* <div className="logo">
-          <img src="./images/logo.png" alt="" />
-        </div> */}
+      <Container scrollPosition={scrollPosition}>
+        <LogoImg>
+          <img src={mlogo1} />
+        </LogoImg>
         <MenuLeft>
           <ul className={navList ? "small" : "flex"}>
             {nav.map((list, index) => (
-              <Menudestop key={index}>
-                <Link to={list.path}>{list.text}</Link>
+              <Menudestop scrollPosition={scrollPosition} key={index}>
+                <NavLink   exact={list.path === "/"}  key={index} to={list.path}>
+                  <p>{list.text}</p>
+                </NavLink>
               </Menudestop>
             ))}
           </ul>
         </MenuLeft>
-
         <MenuMobile>
           <img src={mn1} onClick={handleShow}></img>
         </MenuMobile>
@@ -34,9 +49,9 @@ const Header = () => {
             {nav?.map((item, index) => {
               return (
                 <HoverStyled>
-                  <Link to={item.path} onClick={handleShow}>
-                    {item.text}
-                  </Link>
+                  <NavLink to={item.path} onClick={handleShow}>
+                    <p>{item.text}</p>
+                  </NavLink>
                 </HoverStyled>
               );
             })}
@@ -58,16 +73,17 @@ const Wapper = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 999999999;
+
 `;
 const Container = styled.div`
   width: 100%;
-  max-width: 1440px;
   margin: 0px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  padding: 0px 60px;
+  padding: 10px 60px;
+  background: ${(props) => (props.scrollPosition > 50 ? "rgba(255, 255, 255, 0.8)" : "")};
 `;
 const Menudestop = styled.div`
   display: flex;
@@ -75,8 +91,11 @@ const Menudestop = styled.div`
   flex-direction: column;
   gap: 20px;
   padding: 10px;
+  .active{
+    color: #826112;
+  }
   a {
-    color: #fff;
+    color: ${(props) => (props.scrollPosition > 50 ? "#000" : "#fff")};
     text-align: center;
     font-family: "Work Sans";
     font-size: 20px;
@@ -109,16 +128,6 @@ const ConMenumobileConten = styled.div`
   z-index: 1;
   transition: width 0.5s ease, padding 0.5s ease;
   overflow: hidden;
-
-  a {
-    color: rgba(17, 16, 16, 1);
-    text-align: left;
-    font-family: "Work Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
 `;
 const MenuLeft = styled.div`
   @media screen and (min-width: 320px) and (max-width: 840px) {
@@ -127,7 +136,21 @@ const MenuLeft = styled.div`
 `;
 const HoverStyled = styled.div`
   padding: 10px;
+  p {
+    color: rgba(17, 16, 16, 1);
+    text-align: left;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
   &:hover {
     background: #ccc;
+  }
+`;
+const LogoImg = styled.div`
+  img {
+    width: 100%;
   }
 `;

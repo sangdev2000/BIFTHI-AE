@@ -8,6 +8,13 @@ import { useEffect } from "react";
 const Freeshapping = () => {
     useEffect(() => {
         AOS.init({ duration: 1000});
+        const handleScroll = () => {
+            AOS.refresh();
+          };
+          window.addEventListener('scroll', handleScroll);
+          return () => {
+            window.removeEventListener('scroll', handleScroll);
+          };
       }, []);
     return(
         <Wapper data-aos="fade-down"

@@ -7,12 +7,19 @@ import paner1 from "../../../acsset/slice/paner1.png";
 import paner2 from "../../../acsset/slice/slice1.png";
 import p1 from "../../../acsset/slice/p1.png";
 import { Image } from "antd";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 const DecorPaner = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   useEffect(() => {
-    AOS.init({ duration: 1000});
+    AOS.init({ duration: 1000 });
+    const handleScroll = () => {
+      AOS.refresh();
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
   const settings = {
     className: "center",
@@ -26,23 +33,21 @@ const DecorPaner = () => {
     autoplaySpeed: 4000,
     beforeChange: (oldIndex, newIndex) => setActiveSlide(newIndex),
   };
-
   return (
     <Wapeer>
-        <TitlePaner>
-          <p>make your home</p>
-          <h1  data-aos="fade-right">Just for your home</h1>
-        </TitlePaner>
+      <TitlePaner>
+        <p>make your home</p>
+        <h1 data-aos="fade-right">Just for your home</h1>
+      </TitlePaner>
       <Container>
         <Slider {...settings}>
           {paner.map((item, index) => {
             const isActive = index === activeSlide;
             return (
-              <ContainF key={index}  data-aos="flip-right">
+              <ContainF key={index} data-aos="flip-right">
                 <Image.PreviewGroup items={paner?.map((icon) => icon.img)}>
                   <ImgPaner isActive={isActive}>
-                    <Image 
-                    src={item.img} width={700} />
+                    <Image src={item.img} width={700} />
                   </ImgPaner>
                 </Image.PreviewGroup>
               </ContainF>
@@ -92,9 +97,9 @@ const Wapeer = styled.div`
     width: 100%;
     height: 100%;
     position: absolute;
- background-image: url(${p1});
- background-repeat: no-repeat;
- background-size: cover;
+    background-image: url(${p1});
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: -2;
   }
 `;
@@ -155,7 +160,7 @@ const Container = styled.div`
     color: #fff;
     font-family: "auto";
     padding: 10px;
-}
+  }
 `;
 
 const ImgPaner = styled.div`
@@ -176,7 +181,7 @@ const ImgPaner = styled.div`
 `;
 
 const TitlePaner = styled.div`
-width: 100%;
+  width: 100%;
   position: absolute;
   top: 2%;
   left: 10%;

@@ -13,6 +13,13 @@ import 'aos/dist/aos.css';
 const Hero = () => {
   useEffect(() => {
     AOS.init({ duration: 1000});
+    const handleScroll = () => {
+      AOS.refresh();
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
   const settings = {
     dots: false,
