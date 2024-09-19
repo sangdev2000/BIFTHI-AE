@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./hero.css";
 import styled from "styled-components";
 import Slider from "react-slick";
@@ -8,8 +8,12 @@ import slice1 from "../../../acsset/slice/slice1.png";
 import search from "../../../acsset/slice/search1.png";
 import br1 from "../../../acsset/slice/br1.png";
 import br2 from "../../../acsset/slice/br2.png";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000});
+  }, []);
   const settings = {
     dots: false,
     infinite: true,
@@ -34,11 +38,11 @@ const Hero = () => {
             <img src={slice1} />
           </ImgSlice>
         </Slider>
-        <ContenSlice>
+        <ContenSlice data-aos="fade-right">
           <h1>$65.00</h1>
           <p>Dracena Fragnas</p>
         </ContenSlice>
-        <ContenLeft>
+        <ContenLeft data-aos="fade-right">
           <ContenIFT>
             <h1>milan jack</h1>
             <p>
@@ -52,7 +56,9 @@ const Hero = () => {
         </ContenLeft>
       </Container>
       <div className="container">
-        <h1>
+        <h1 data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
           Bring Serenity to Your Place <br />
           With Interior
         </h1>
@@ -82,7 +88,7 @@ const Slice = styled.div`
 
 const ImgSlice = styled.div`
   width: 100%;
-  aspect-ratio: 1920/1041;
+  /* aspect-ratio: 1920/1041; */
   img {
     max-width: 100%;
     max-height: 100%;

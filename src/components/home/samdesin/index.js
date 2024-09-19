@@ -5,13 +5,19 @@ import sp2 from "../../../acsset/slice/sp2.png";
 import sp3 from "../../../acsset/slice/sp3.png";
 import sp4 from "../../../acsset/slice/sp4.png";
 import sp5 from "../../../acsset/slice/sp5.png";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 const Sampledesign = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000});
+  }, []);
   return (
     <Wapper>
       <div>
-        <TitleConten>
-          <h1>thiết kế nội thất</h1>
+        <TitleConten data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+          <h1>interior Design</h1>
           <p>make your home so</p>
         </TitleConten>
         <Containerr>
@@ -22,11 +28,12 @@ const Sampledesign = () => {
                   <h1>{item.title}</h1>
                 </Title>
                 <Image
+                data-aos="fade-right"
                   preview={{
-                    destroyOnClose: false,
+                    destroyOnClose: true,
                     imageRender: () => (
-                      <AllPaner>
-                        <img width="100" src={item.img} />
+                      <AllPaner >
+                        <img src={item.img}/>
                        <BoderFt>
                        <h1>Chi Tiết</h1>
                        </BoderFt>
@@ -49,11 +56,12 @@ const Sampledesign = () => {
                   <h1>{item.title}</h1>
                 </Title>
                 <Image
+                data-aos="fade-left"
                   preview={{
                     destroyOnClose: false,
                     imageRender: () => (
                       <AllPaner>
-                        <img width="100" src={item.img} />
+                        <img  src={item.img} />
                         <BoderFt>
                        <h1>Chi Tiết</h1>
                        </BoderFt>
@@ -114,8 +122,8 @@ const Wapper = styled.div`
 
   .ant-image-preview-root .ant-image-preview-img {
     width: 100% !important;
-    height: auto !important; /* Duy trì tỷ lệ khung hình */
-    object-fit: contain; /* Giữ nguyên tỷ lệ và không bị cắt */
+    height: auto !important; 
+    object-fit: contain; 
   }
 
   .ant-image-mask {
@@ -124,7 +132,7 @@ const Wapper = styled.div`
 
   .css-dev-only-do-not-override-qnu6hi.ant-image .ant-image-img {
     width: 100%;
-    object-fit: contain; /* Đảm bảo ảnh lấp đầy container nhưng không bị méo */
+    object-fit: contain; 
   }
 `;
 
@@ -187,7 +195,7 @@ const Title = styled.div`
     color: #fff;
     text-align: center;
     font-family: "Work Sans";
-    font-size: 42px;
+    font-size: 24px;
     font-weight: 600;
     line-height: normal;
   }
@@ -215,12 +223,12 @@ const TitleConten = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding: 40px;
   h1 {
     color: var(--font, #081323);
     text-align: center;
     font-family: "Work Sans";
-    font-size: 64px;
+    font-size: 52px;
     font-weight: 600;
     line-height: normal;
 

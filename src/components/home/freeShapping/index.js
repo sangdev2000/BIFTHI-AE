@@ -2,10 +2,17 @@ import styled from "styled-components";
 import fee1 from "../../../acsset/slice/fee1.png"
 import fee2 from "../../../acsset/slice/fee2.png"
 import fee3 from "../../../acsset/slice/fee3.png"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 const Freeshapping = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1000});
+      }, []);
     return(
-        <Wapper>
+        <Wapper data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <Container>
                 {
                     arr?.map((item,index)=>{

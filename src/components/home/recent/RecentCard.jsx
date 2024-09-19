@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { list } from "../../data/Data";
 import styled from "styled-components";
 import pr1 from "../../../acsset/slice/pr1.png";
 import li1 from "../../../acsset/slice/li1.png";
 import { Link } from "react-router-dom";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const RecentCard = ({ products }) => {
+  useEffect(() => {
+    AOS.init({ duration: 1000});
+  }, []);
+  AOS.init();
   console.log("dssadsa", list);
   return (
     <Wapper>
-      <TitleWaper>
+      <TitleWaper data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
         <h1>Sản phẩm nổi bật</h1>
         <Spanet>
           <p>Xem thêm</p>
@@ -18,7 +24,8 @@ const RecentCard = ({ products }) => {
           </div>
         </Spanet>
       </TitleWaper>
-      <Container>
+      <Container data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
         {
         list?.slice(0,4).map((item, index) => {
             return (
@@ -92,7 +99,8 @@ const ContainerAll = styled.div`
   width: calc((100% - 156px) / 4);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 40px;
+  padding: 10px 5px;
   &:hover {
     transform: scale(1.05);
     transition: all 0.25s linear;
@@ -127,6 +135,11 @@ const ContainerAll = styled.div`
     border: 1.615px solid #dcb47a;
     background: var(--main-colors-green-05, #f6fff6);
     padding: 6.459px 12.918px;
+  }
+  a{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
   }
   img {
     width: 100%;
