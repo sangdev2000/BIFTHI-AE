@@ -20,8 +20,8 @@ const Sampledesign = () => {
           data-aos="fade-up"
           data-aos-anchor-placement="center-center"
         >
-          <h1>interior Design</h1>
-          <p>make your home so</p>
+          <h1>Product sample</h1>
+          
         </TitleConten>
         <Containerr>
           {arrimg?.map((item, index) => {
@@ -39,7 +39,7 @@ const Sampledesign = () => {
                         <img src={item.img} />
                         <BoderFt>
                           <Link to={item.link}>
-                            <h1>Chi Tiết</h1>
+                            <h1>See More</h1>
                           </Link>
                         </BoderFt>
                       </AllPaner>
@@ -69,7 +69,7 @@ const Sampledesign = () => {
                         <img src={item.img} />
                         <BoderFt>
                           <Link to={item.link}>
-                            <h1>Chi Tiết</h1>
+                            <h1>See More</h1>
                           </Link>
                         </BoderFt>
                       </AllPaner>
@@ -92,12 +92,12 @@ export default Sampledesign;
 const arrimg = [
   {
     img: sp1,
-    title: "Nội Thất",
+    title: "Interior",
     link: "/Interior",
   },
   {
     img: sp2,
-    title: "Chiếu Sáng",
+    title: "Illumination",
     link: "/illumination",
   },
 ];
@@ -105,18 +105,18 @@ const arrimg = [
 const iMT = [
   {
     img: sp3,
-    title: "Thiết Kế",
+    title: "Design",
     link: "/interiordesign",
   },
 
   {
     img: sp4,
-    title: "Phòng Bếp",
+    title: "Kitchen",
     link: "/roomkitchen",
   },
   {
     img: sp5,
-    title: "Phòng Tắm",
+    title: "Bathroom",
     link: "/bathroom",
   },
 ];

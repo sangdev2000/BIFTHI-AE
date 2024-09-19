@@ -16,9 +16,9 @@ const RecentCard = ({ products }) => {
     <Wapper>
       <TitleWaper data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
-        <h1>Sản phẩm nổi bật</h1>
+        <h1>Featured Products</h1>
         <Spanet>
-          <p>Xem thêm</p>
+          <p>See More</p>
           <div>
             <img src={li1}></img>
           </div>
