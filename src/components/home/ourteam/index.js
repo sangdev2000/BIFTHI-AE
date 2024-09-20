@@ -115,12 +115,7 @@ const Ourteam = () => {
 export default Ourteam;
 
 const arrconten = [
-  {
-    img: avatar,
-    conten: "CEO",
-    name: "SangVIP",
-    star: [t1, t2, t3],
-  },
+
   {
     img: avatar1,
     conten: "CEO",
@@ -130,7 +125,13 @@ const arrconten = [
   {
     img: avatar2,
     conten: "CEO",
-    name: "VietBeDe",
+    name: "VietBD",
+    star: [t1, t2, t3],
+  },
+  {
+    img: avatar,
+    conten: "CEO",
+    name: "Sang-VIP",
     star: [t1, t2, t3],
   },
   {

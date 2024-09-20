@@ -1,12 +1,15 @@
 import styled from "styled-components";
 import "./App.css"
 import Pages from "./components/pages/Pages"
+import Provider from "./components/providertocar";
 
 function App() {
   return(
+    <Provider>
     <Wapper>
     <Pages />
     </Wapper>
+    </Provider>
     ) 
 }
 

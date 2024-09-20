@@ -22,7 +22,7 @@ const Contact = () => {
         />
         <ContactContainer>
           <FormSection>
-            <Title>Your Information</Title>
+            <Title><h1>Your Information</h1></Title>
             <form>
               <InputWrapper>
                 <label>Full name</label>
@@ -61,13 +61,11 @@ const Contact = () => {
 };
 
 export default Contact;
-
 const ContactContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 50px auto;
   max-width: 1200px;
-
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -75,12 +73,10 @@ const ContactContainer = styled.div`
 
 const FormSection = styled.div`
   width: 45%;
-
   @media (max-width: 768px) {
     width: 100%;
     margin-bottom: 30px;
   }
-
   form {
     display: flex;
     flex-direction: column;
@@ -88,9 +84,24 @@ const FormSection = styled.div`
 `;
 
 const Title = styled.h2`
+padding: 10px;
+h1{
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+  @media screen and (min-width: 320px) and (max-width: 460px) {
+h1{
+  font-size: 18px;
+  text-align: center;
+}
+  }
+  @media screen and (min-width: 460px) and (max-width: 760px) {
+h1{
+  font-size: 24px;
+  text-align: center;
+}
+  }
 `;
 
 const InputWrapper = styled.div`
@@ -110,7 +121,6 @@ const InputWrapper = styled.div`
     border-radius: 5px;
     font-size: 16px;
   }
-
   textarea {
     height: 100px;
     resize: none;

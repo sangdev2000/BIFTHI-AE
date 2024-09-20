@@ -10,10 +10,20 @@ import {
 } from "react-icons/fa";
 import aptech from "../../images/aptech.png";
 import Logo from "../../images/Logo1.png";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Footer = () => {
   const [showScroll, setShowScroll] = useState(false);
-
+  useEffect(() => {
+    AOS.init({ duration: 1000});
+    const handleScroll = () => {
+      AOS.refresh();
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   // Hàm theo dõi sự kiện cuộn
   const checkScrollTop = () => {
     if (!showScroll && window.pageYOffset > 400) {
@@ -38,11 +48,11 @@ const Footer = () => {
   return (
     <FooterContainer>
       <TopSection>
-        <BrandName>HomeStyler.</BrandName>
+        <BrandName data-aos="fade-up">HomeStyler.</BrandName>
         <SubscriptionText>
           Subscribe to get 10% off your first order
         </SubscriptionText>
-        <EmailInputWrapper>
+        <EmailInputWrapper data-aos="fade-down">
           <EmailInput type="email" placeholder="Enter your email..." />
           <SendButton>
             <FaLeaf />
@@ -51,7 +61,7 @@ const Footer = () => {
       </TopSection>
       <Border />
       <BottomSection>
-        <SocialIcons>
+        <SocialIcons data-aos="fade-up">
           <a href="#">
             <FaFacebookF />
           </a>
@@ -68,7 +78,7 @@ const Footer = () => {
             <FaLeaf />
           </a>
         </SocialIcons>
-        <FooterNav>
+        <FooterNav  data-aos="fade-left">
           <a href="#">About</a>
           <a href="#">Licenses</a>
           <a href="#">FAQs</a>

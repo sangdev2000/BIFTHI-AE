@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import about3 from "../images/about2-bg-1.jpg";
 import about2 from "../images/about2-bg-2.jpg";
@@ -13,8 +13,19 @@ import {
   FaQuoteLeft,
 } from "react-icons/fa";
 import Ourteam from "../home/ourteam";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000});
+    const handleScroll = () => {
+      AOS.refresh();
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <Container>
       <TitleSection>
@@ -23,15 +34,15 @@ const About = () => {
       </TitleSection>
 
       <ImageGallery>
-        <GalleryImage src={about1} alt="Image 1" />
+        <GalleryImage src={about1} alt="Image 1" data-aos="fade-right"/>
         <GalleryImage src={about2} alt="Image 2" />
-        <GalleryImage src={about3} alt="Image 3" />
+        <GalleryImage src={about3} alt="Image 3" data-aos="fade-left"/>
       </ImageGallery>
 
       <ServiceSection>
-        <ServiceTitle>What We Do</ServiceTitle>
+        <ServiceTitle data-aos="fade-left">What We Do</ServiceTitle>
         <ServiceGrid>
-          <ServiceCard>
+          <ServiceCard data-aos="fade-up-right">
             <ServiceIcon>
               <FaLightbulb />
             </ServiceIcon>
@@ -43,7 +54,7 @@ const About = () => {
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
 
-          <ServiceCard>
+          <ServiceCard data-aos="fade-up-left">
             <ServiceIcon>
               <FaPencilRuler />
             </ServiceIcon>
@@ -55,7 +66,7 @@ const About = () => {
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
 
-          <ServiceCard>
+          <ServiceCard data-aos="fade-down-right">
             <ServiceIcon>
               <FaTools />
             </ServiceIcon>
@@ -68,7 +79,7 @@ const About = () => {
           </ServiceCard>
         </ServiceGrid>
 
-        <ServiceGrid>
+        <ServiceGrid  data-aos="fade-down-left">
           <ServiceCard>
             <ServiceIcon>
               <FaHome />
@@ -81,7 +92,7 @@ const About = () => {
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
 
-          <ServiceCard>
+          <ServiceCard data-aos="flip-left">
             <ServiceIcon>
               <FaChair />
             </ServiceIcon>
@@ -107,9 +118,9 @@ const About = () => {
       </ServiceSection>
       <Ourteam />
       <TestimonialSection>
-        <TestimonialTitle>Testimonial</TestimonialTitle>
+        <TestimonialTitle data-aos="flip-left">Testimonial</TestimonialTitle>
         <TestimonialGrid>
-          <TestimonialCard>
+          <TestimonialCard data-aos="flip-left">
             <FaQuoteLeft className="quote-icon" />
             <TestimonialText>
               Nibh sed pulvinar proin gravida hendrerit lectus a. Vestibulum
@@ -119,7 +130,7 @@ const About = () => {
             <TestimonialInfo>Client - New York</TestimonialInfo>
           </TestimonialCard>
 
-          <TestimonialCard>
+          <TestimonialCard data-aos="flip-left">
             <FaQuoteLeft className="quote-icon" />
             <TestimonialText>
               Egestas fringilla phasellus faucibus scelerisque. Neque gravida in
@@ -129,7 +140,7 @@ const About = () => {
             <TestimonialInfo>Client - California</TestimonialInfo>
           </TestimonialCard>
 
-          <TestimonialCard>
+          <TestimonialCard data-aos="flip-left">
             <FaQuoteLeft className="quote-icon" />
             <TestimonialText>
               Aleifend mi in nulla posuere sollicitudin aliquam ultrices
@@ -150,7 +161,7 @@ const Container = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 120px 20px;
   text-align: center;
 `;
 
@@ -184,6 +195,7 @@ const ImageGallery = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  padding-top: 120px;
 
   @media (max-width: 768px) {
     flex-direction: column;

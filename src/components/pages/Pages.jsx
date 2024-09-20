@@ -17,12 +17,14 @@ import Bathroom from "../pagesProduct/Bathroom"
 import Illumination from "../pagesProduct/Illumination"
 import InteriorDesign from "../pagesProduct/InteriorDesign"
 import RoomKitchen from "../pagesProduct/RoomKitchen"
+// import Addtocar from "../home/tocar"
 
 const Pages = () => {
   return (
     <Wpper>
       <Router>
         <Header />
+        {/* <Addtocar/> */}
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
@@ -49,6 +51,7 @@ const Wpper = styled.div`
 width: 100%;
 max-width: 1440px;
 margin: 0px auto;
+/* position: relative; */
 `;
 
 

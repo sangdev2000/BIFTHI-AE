@@ -40,6 +40,7 @@ const BackgroundImage = styled.img`
   width: 100%;
   height: auto;
   object-fit: cover;
+  aspect-ratio: 1920/400;
 `;
 
 const Content = styled.div`
