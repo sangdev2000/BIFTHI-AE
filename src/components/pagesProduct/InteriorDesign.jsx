@@ -13,16 +13,24 @@ import pricedown from "../images/pricedown.png";
 import search from "../images/search.png";
 import AllProduct from "../products/AllProduct";
 
-
 const InteriorDesign = () => {
   // State lưu trữ giá trị của các bộ lọc
-  const [minPrice, setMinPrice] = useState(""); // Giá min
-  const [maxPrice, setMaxPrice] = useState(""); // Giá max
+  const [minPrice, setMinPrice] = useState(1000000);
+  const [maxPrice, setMaxPrice] = useState(102000000);
   const [nameFilter, setNameFilter] = useState("");
 
   // Hàm để chuyển giá từ chuỗi về số
   const parsePrice = (priceString) => {
-    return parseInt(priceString.replace(/[^0-9]/g, ""), 10);
+    // Kiểm tra nếu priceString là chuỗi, nếu không thì trả về 0 hoặc giá trị mặc định
+    if (typeof priceString === "string") {
+      return parseInt(priceString.replace(/[^0-9]/g, ""), 10);
+    } else if (typeof priceString === "number") {
+      // Nếu priceString đã là số, không cần xử lý, chỉ trả về giá trị đó
+      return priceString;
+    } else {
+      // Trường hợp priceString không hợp lệ (null, undefined, v.v.), trả về giá trị mặc định
+      return 0;
+    }
   };
 
   // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Interior Design"
@@ -62,31 +70,43 @@ const InteriorDesign = () => {
           <div className="filter-container">
             <div className="filter-item">
               <Icon>
-                <img src={pricedown} alt="price down" />
+                <img src={pricedown} />
               </Icon>
               <div>
                 <p className="filter-title">Lowest price</p>
-                <input
-                  className="filter-description"
-                  placeholder="Please enter price"
-                  value={minPrice}
-                  onChange={(e) => setMinPrice(e.target.value)} // Cập nhật giá trị lọc theo giá min
-                />
+                <label>
+                  From: {minPrice.toLocaleString()}₫
+                  <input
+                    type="range"
+                    min="1000000"
+                    max="3000000"
+                    value={minPrice}
+                    onChange={(e) => setMinPrice(Number(e.target.value))}
+                    step="100000"
+                    className="slider"
+                  />
+                </label>
               </div>
             </div>
 
             <div className="filter-item">
               <Icon>
-                <img src={priceup} alt="price up" />
+                <img src={priceup} />
               </Icon>
               <div>
                 <p className="filter-title">Maximum price</p>
-                <input
-                  className="filter-description"
-                  placeholder="Please enter price"
-                  value={maxPrice}
-                  onChange={(e) => setMaxPrice(e.target.value)} // Cập nhật giá trị lọc theo giá max
-                />
+                <label>
+                  To: {maxPrice.toLocaleString()}₫
+                  <input
+                    type="range"
+                    min="4000000"
+                    max="200000000"
+                    value={maxPrice}
+                    onChange={(e) => setMaxPrice(Number(e.target.value))}
+                    step="1000000"
+                    className="slider"
+                  />
+                </label>
               </div>
             </div>
 

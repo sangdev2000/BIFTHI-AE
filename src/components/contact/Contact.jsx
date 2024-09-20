@@ -9,6 +9,63 @@ import icon3 from "../images/Stool.png";
 import icon4 from "../images/Wardrobe.png";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phoneNumber: "",
+    email: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  // Hàm xử lý khi người dùng nhập liệu
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Hàm kiểm tra email hợp lệ
+  const validateEmail = (email) => {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  };
+
+  // Hàm xử lý khi gửi form
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    let formErrors = {};
+
+    // Kiểm tra Full name
+    if (!formData.fullName.trim()) {
+      formErrors.fullName = "Full name is required.";
+    }
+
+    // Kiểm tra Phone number
+    if (!formData.phoneNumber.trim()) {
+      formErrors.phoneNumber = "Phone number is required.";
+    } else if (!/^\d+$/.test(formData.phoneNumber)) {
+      formErrors.phoneNumber = "Phone number must be numeric.";
+    }
+
+    // Kiểm tra Email
+    if (!formData.email.trim()) {
+      formErrors.email = "Email is required.";
+    } else if (!validateEmail(formData.email)) {
+      formErrors.email = "Invalid email address.";
+    }
+
+    // Kiểm tra Message
+    if (!formData.message.trim()) {
+      formErrors.message = "Message is required.";
+    }
+
+    // Nếu không có lỗi thì submit form
+    if (Object.keys(formErrors).length === 0) {
+      alert("Form submitted successfully!");
+    } else {
+      setErrors(formErrors);
+    }
+  };
   return (
     <>
       <section className="blog-out mb">
@@ -23,23 +80,56 @@ const Contact = () => {
         <ContactContainer>
           <FormSection>
             <Title>Your Information</Title>
-            <form>
+            <form onSubmit={handleSubmit}>
               <InputWrapper>
                 <label>Full name</label>
-                <input type="text" placeholder="Full name" />
+                <input
+                  type="text"
+                  name="fullName"
+                  placeholder="Full name"
+                  value={formData.fullName}
+                  onChange={handleChange}
+                />
+                {errors.fullName && <ErrorText>{errors.fullName}</ErrorText>}
               </InputWrapper>
+
               <InputWrapper>
                 <label>Phone number</label>
-                <input type="text" placeholder="Phone number" />
+                <input
+                  type="text"
+                  name="phoneNumber"
+                  placeholder="Phone number"
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
+                />
+                {errors.phoneNumber && (
+                  <ErrorText>{errors.phoneNumber}</ErrorText>
+                )}
               </InputWrapper>
+
               <InputWrapper>
                 <label>Email Address</label>
-                <input type="email" placeholder="Email Address" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+                {errors.email && <ErrorText>{errors.email}</ErrorText>}
               </InputWrapper>
+
               <InputWrapper>
                 <label>Leave a message</label>
-                <textarea placeholder="Leave a message" />
+                <textarea
+                  name="message"
+                  placeholder="Leave a message"
+                  value={formData.message}
+                  onChange={handleChange}
+                />
+                {errors.message && <ErrorText>{errors.message}</ErrorText>}
               </InputWrapper>
+
               <SubmitButton type="submit">Send a message</SubmitButton>
             </form>
           </FormSection>
@@ -144,4 +234,8 @@ const MapSection = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
+`;
+const ErrorText = styled.p`
+  color: red;
+  font-size: 14px;
 `;

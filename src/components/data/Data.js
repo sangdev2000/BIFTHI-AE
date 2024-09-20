@@ -283,32 +283,7 @@ export const list = [
     ],
     detail: "See More",
   },
-  {
-    id: 9,
-    name: "Square Bed",
-    price: "24.800.000₫",
-    category: "Interior",
-    material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
-    shortDescription:
-      "The Square Bed features a high, gently rounded headboard upholstered in soft, cool, and comfortable genuine leather. This design element adds both elegance and comfort to your bedroom, making it a standout piece in any modern decor.",
-    longDescription:
-      "Design: High, gently rounded headboard with soft, genuine leather upholstery. Materials: Premium quality leather for a luxurious feel and durability. Features: Provides both style and comfort, enhancing the overall aesthetic of your bedroom. The Square Bed features a high, gently rounded headboard upholstered in soft, genuine leather or smart, water-resistant, antibacterial fabric. This versatile design enhances both comfort and durability.",
-    reviews: 10, // Add a field for customer reviews
-    sku: " GNU4561 KD1092-12", // Add a field for SKU
-    tags: ["Furniture", "bed", "Modern"], // Add tags
-    images: [
-      "../images/list/giuong1.webp", // Main image
-      "../images/list/giuong2.webp", // Thumbnail image
-      "../images/list/giuong3.webp", // Thumbnail image
-    ],
-    cover: "../images/list/giuong1.webp",
-    relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
-    ],
-    detail: "See More",
-  },
+
   {
     id: 10,
     name: "Historian Display Cabinet",
