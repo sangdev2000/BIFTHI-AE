@@ -16,7 +16,7 @@ import priceup from "../images/priceup.png";
 import pricedown from "../images/pricedown.png";
 import search from "../images/search.png";
 
-const Product = () => {
+const Product = ({ onUpdateWishlistCount }) => {
   // State lưu trữ giá trị của các bộ lọc
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [nameFilter, setNameFilter] = useState("");
@@ -234,7 +234,10 @@ const Product = () => {
 
         {/* Danh sách sản phẩm */}
         <div className="container recent">
-          <AllProduct products={sortedProducts} />
+          <AllProduct
+            products={sortedProducts}
+            onUpdateWishlistCount={onUpdateWishlistCount}
+          />
         </div>
       </section>
     </>
