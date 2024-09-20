@@ -1,122 +1,84 @@
 import React from "react";
 import styled from "styled-components";
 import search from "../../acsset/slice/search1.png";
-import sam from "../../acsset/slice/sam.png";
+import sam from "../../acsset/slice/templatephongtam.jpg";
 import sam1 from "../../acsset/slice/sam1.png";
-import dd from "../../acsset/slice/dd.png";
+import sam2 from "../../acsset/slice/templatephongbep.webp";
+import sam3 from "../../acsset/slice/templateden.jpg";
+import classic from "../../acsset/slice/templatenhatamcd.jpg";
+import classic1 from "../../acsset/slice/templatephongbepcd.png";
+import classic2 from "../../acsset/slice/templatedencd.jpg";
+import elegan from "../../acsset/slice/templatephongtamtl.jpg";
+import elegan2 from "../../acsset/slice/templatephongbeptl.jpg";
+import elegan3 from "../../acsset/slice/templatedentl.jpg";
+
 import dd1 from "../../acsset/slice/dd1.png";
-import ct1 from "../../acsset/slice/cd1.png";
-import ct2 from "../../acsset/slice/cd2.png";
-import ct3 from "../../acsset/slice/cd3.png";
-import ct4 from "../../acsset/slice/cd4.png";
-import f1 from "../../acsset/slice/f1.png";
-import f2 from "../../acsset/slice/f2.png";
-import f3 from "../../acsset/slice/f3.png";
-import f4 from "../../acsset/slice/f4.png";
-import tl1 from "../../acsset/slice/tl1.png";
-import tl2 from "../../acsset/slice/tl2.png";
-import tl3 from "../../acsset/slice/tl3.png";
-import tl4 from "../../acsset/slice/tl4.png";
 import { Tabs } from "antd";
 import { useState } from "react";
 
 const Pricing = () => {
   const [activeTab, setActiveTab] = useState("1");
+
   const onChange = (key) => {
     setActiveTab(key);
     console.log(key);
   };
+
   const items = [
     {
       key: "1",
-      label: "Modern",
+      label: "Luxury",
       children: (
-        <Tabstext>
+        <TextConten>
           <p>
-            Contemporary interior design is the perfect blend of modern style
-            and the unique, creative trends of the new era. With a focus on
-            simplicity, contemporary design offers open, airy spaces while
-            ensuring elegance and comfort.
-            <br />
-            Neutral tones such as white, gray, and black are favored in
-            contemporary interiors, combined with accent colors to create focal
-            points. The furniture in this style typically features minimalist
-            lines, flat surfaces, and uses materials like metal, glass, and
-            natural wood to evoke a modern feel.
-            <br />
-            Moreover, lighting plays a crucial role, not just for illumination
-            but also as an artistic expression in the living space. Ceiling
-            lights, table lamps, or recessed lighting are all meticulously
-            designed to serve both functional and aesthetic purposes.
-            <br />
-            Contemporary interior design not only emphasizes external beauty but
-            also focuses on optimizing space usage. From small apartments to
-            large villas, this style brings a living environment that is
-            comfortable, sophisticated, and luxurious.
-          </p>
-        </Tabstext>
+            A luxurious home design combines elegance and functionality, using
+            high-quality materials like marble, hardwood, and sleek metals.
+            Sophisticated lighting, spacious layouts, and custom details such as
+            bespoke furniture create a refined, timeless aesthetic, offering
+            both comfort and a sense of grandeur.
+          </p>{" "}
+        </TextConten>
       ),
     },
     {
       key: "2",
-      label: "Elegant",
+      label: "Classic",
       children: (
-        <Tabstext>
+        <TextConten>
           <p>
-            Elegant interior design is all about creating spaces that exude
-            sophistication, grace, and understated luxury. It focuses on clean
-            lines, soft color palettes, and carefully curated details that come
-            together to form a harmonious and refined atmosphere.
-            <br />
-            Neutral tones like beige, ivory, and soft gray often serve as the
-            foundation, while subtle accents of gold, silver, or muted jewel
-            tones bring a touch of richness to the space. High-quality materials
-            such as silk, velvet, and polished wood add texture and depth,
-            enhancing the feeling of elegance.
-            <br />
-            Furniture in an elegant design is sleek, with graceful curves and
-            timeless appeal. Statement pieces, such as a beautiful chandelier, a
-            classic sofa, or an artful mirror, serve as focal points that draw
-            attention without overpowering the space.
-            <br />
-            The key to elegant interior design is balance — nothing feels too
-            extravagant or too minimal. Instead, every element complements each
-            other, creating a serene, luxurious environment that feels
-            effortlessly stylish and comfortable.
+            {" "}
+            Classic home design exudes timeless elegance, characterized by rich
+            materials, intricate details, and a warm color palette. Features
+            like ornate moldings, hardwood floors, and vintage furnishings
+            create a sense of sophistication and charm. Traditional elements
+            such as chandeliers, antique decor, and grand fireplaces enhance the
+            inviting atmosphere, while symmetrical layouts provide balance and
+            harmony. This style emphasizes comfort and craftsmanship, making
+            each space feel both luxurious and welcoming. Classic design
+            celebrates history and artistry, ensuring that a home remains both
+            stylish and functional for generations to come.,
           </p>
-        </Tabstext>
+        </TextConten>
       ),
     },
     {
       key: "3",
-      label: "Classic",
+      label: "Elegant",
       children: (
-        <Tabstext>
+        <TextConten>
           <p>
-            Classical interior design is a timeless style that evokes elegance,
-            grandeur, and a sense of refined luxury. Inspired by the
-            architecture and design elements of ancient Greece and Rome,
-            classical interiors are known for their symmetry, balance, and
-            meticulous attention to detail.
-            <br />
-            Rich, warm color palettes dominate the space, often featuring shades
-            of gold, cream, burgundy, and deep green. Furniture in classical
-            design is typically crafted from high-quality materials like
-            mahogany, walnut, and marble, with ornate carvings and intricate
-            embellishments.
-            <br />
-            Decorative moldings, columns, and arches are frequently used to add
-            depth and dimension to the rooms, creating a sense of opulence.
-            Chandeliers, luxurious drapes, and gilded mirrors are also key
-            features, enhancing the grandeur and sophistication of the overall
-            design.
-            <br />
-            Classical interior design embodies a timeless beauty that transcends
-            trends, offering a sense of regality and grace in every room. It's
-            perfect for those who appreciate art, history, and the beauty of
-            traditional craftsmanship.
+            Elegant home design focuses on simplicity and sophistication,
+            characterized by clean lines, neutral color palettes, and
+            high-quality materials. This style incorporates minimalist furniture
+            and refined decor, creating a serene atmosphere. Large windows allow
+            natural light to flood the space, enhancing its openness. Thoughtful
+            details, such as tasteful artwork and stylish lighting fixtures, add
+            charm without overwhelming the design. The emphasis on functionality
+            ensures that each element serves a purpose while maintaining
+            aesthetic appeal, resulting in a harmonious environment that exudes
+            modern luxury and timeless grace.3,
           </p>
-        </Tabstext>
+        </TextConten>
       ),
     },
   ];
@@ -190,13 +152,13 @@ const Pricing = () => {
           </Search>
         </TitlrBlog>
 
-        <Sample >
+        <Sample>
           <SampleLeft>{renderTabContent()}</SampleLeft>
+
           <SampleRight>
             <img src={sam1} />
             <h1>design pattern</h1>
             <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
-            <Tabstext></Tabstext>
           </SampleRight>
         </Sample>
       </Container>
@@ -207,80 +169,62 @@ const Pricing = () => {
 export default Pricing;
 const samarr = [
   {
-    img: ct1,
-    title: "European style",
-    conten: "Creative and luxurious design",
-    des: "The product is used by many customers and is satisfied when experiencing this luxurious contemporary European-style decor.",
+    img: sam,
+    title: "September 14, 2024 by HomeStyler",
+    conten: "Luxury Bathroom Design",
+    des: "A luxurious bathroom is more than just a functional space; it's a retreat where relaxation and style converge. To create such an atmosphere, every design element must be thoughtfully curated, from the choice of materials to the layout and decor. The foundation of a luxurious bathroom often starts with a sophisticated color palette. Neutral tones like ivory, soft beige, or light gray are commonly used to evoke a sense of calm and elegance. These shades not only make the space feel expansive but also serve as a perfect backdrop for the luxurious accents that will be introduced. For those seeking a bolder, more dramatic aesthetic, deep colors like charcoal, navy blue, or emerald green can be paired with gold or brass fixtures, lending a rich, opulent feel to the room.",
   },
   {
-    img: ct2,
-    title: "airy and luxurious style",
-    conten: "popular in every country",
-    des: "This design gives you soothing eyes that can relax during a tiring day at work",
+    img: sam2,
+    title: "September 18, 2024 by HomeStyler",
+    conten: "Ideas For Your Luxury Kitchen",
+    des: "A luxurious kitchen design is a perfect blend of functionality, style, and sophistication, creating a space that not only serves as the heart of the home but also exudes elegance. A luxurious kitchen often starts with a carefully selected color palette that sets the tone for the overall aesthetic. Neutral tones such as white, beige, or soft gray are popular choices for a sleek, modern look, as they provide a clean backdrop that highlights other design elements. For a bolder, more dramatic effect, rich hues like deep navy, emerald green, or even matte black can be incorporated to add depth and richness to the space. These colors are often complemented by metallic accents in gold, brass, or stainless steel, giving the kitchen a timeless and high-end appeal",
   },
   {
-    img: ct3,
-    title: "gentle style",
-    conten: "Very suitable for families",
-    des: "This is a design for your family with a quiet and gentle style, bringing a warm, cozy feeling",
-  },
-  {
-    img: ct4,
-    title: "youthful style",
-    conten: "popular with young people",
-    des: "This design is very popular with young people today and is also trusted by many people and the decor with a youthful design exudes the luxurious beauty of the room.",
+    img: sam3,
+    title: "September 20, 2024 by HomeStyler",
+    conten: "The Role of Lighting in Your Home",
+    des: "Lighting plays a crucial role in creating a luxurious ambiance in any home, transforming both the aesthetic and functionality of a space. A well-designed lighting scheme can enhance the elegance of a room, highlight architectural features, and create a warm, inviting atmosphere. Luxurious lighting is not just about brightness; it's about layering light in a way that blends both practicality and style. Here’s how luxurious lighting can elevate the sophistication of your home.",
   },
 ];
 const samadd = [
   {
-    img: f1,
-    title: "European style",
-    conten: "Creative and luxurious design",
-    des: "The product is used by many customers and is satisfied when experiencing this luxurious contemporary European-style decor.",
+    img: elegan,
+    title: "September 20, 2024 by HomeStyer",
+    conten: "Elegant Bathroom Design",
+    des: "An elegant bathroom design blends luxury with functionality, creating a serene retreat. Key features include soft color palettes, such as whites and muted pastels, complemented by high-quality materials like marble or granite. Freestanding bathtubs and sleek vanities add sophistication, while polished fixtures in brass or chrome enhance the overall aesthetic. Thoughtful lighting, including wall sconces and ambient fixtures, creates a warm glow. Decorative elements like fresh flowers or tasteful artwork contribute to the inviting atmosphere, ensuring the bathroom is both a functional space and a tranquil escape from everyday life.",
   },
   {
-    img: f2,
-    title: "airy and luxurious style",
-    conten: "popular in every country",
-    des: "This design gives you soothing eyes that can relax during a tiring day at work",
+    img: elegan2,
+    title: "September 19, 2024 by HomeStyler",
+    conten: "Elegant Kitchen That Expresses Your Unique Style",
+    des: "An elegant kitchen design combines sophistication with practicality, featuring sleek cabinetry and high-quality materials. A neutral color palette, complemented by subtle accents, creates a harmonious atmosphere. Elegant countertops in marble or quartz enhance functionality while adding luxury. Thoughtfully placed pendant lights illuminate workspaces, while open shelving displays stylish dishware. A large kitchen island serves as both a prep area and a gathering spot, promoting social interaction. Decorative elements, such as fresh herbs or tasteful art, contribute to the inviting ambiance, making the kitchen not only a place for cooking but also a beautiful space for entertaining and family gatherings.",
   },
   {
-    img: f3,
-    title: "gentle style",
-    conten: "Very suitable for families",
-    des: "This is a design for your family with a quiet and gentle style, bringing a warm, cozy feeling",
-  },
-  {
-    img: f4,
-    title: "youthful style",
-    conten: "popular with young people",
-    des: "This design is very popular with young people today and is also trusted by many people and the decor with a youthful design exudes the luxurious beauty of the room.",
+    img: elegan3,
+    title: "September 18, 2022 by lastudio",
+    conten: "Make Your Home Space More Sophisticated With Pendant Lights",
+    des: "Elegant pendant lighting adds a touch of sophistication to any space, serving as both a functional and decorative element. Available in various styles, from minimalist to ornate, these fixtures enhance the room's ambiance. Choosing materials like glass, brass, or polished metals elevates the aesthetic, while thoughtful placement above dining tables or kitchen islands creates focal points. Dimmable options allow for adjustable brightness, setting the perfect mood for any occasion. With their stylish designs and versatility, elegant pendant lights not only illuminate spaces but also contribute to the overall charm and character of a home.",
   },
 ];
 const samadd1 = [
   {
-    img: tl1,
-    title: "European style",
-    conten: "Creative and luxurious design",
-    des: "The product is used by many customers and is satisfied when experiencing this luxurious contemporary European-style decor.",
+    img: classic,
+    title: "September 21, 2024 by HomeStyler",
+    conten: "Ideas For Classic Bathrooms",
+    des: "A classic bathroom design exudes timeless elegance and charm, making it a perfect choice for those who appreciate traditional aesthetics. The key to creating a classic bathroom lies in the careful selection of fixtures, materials, and colors that evoke a sense of history and sophistication. One of the standout features of a classic bathroom is the clawfoot bathtub, which serves as a stunning focal point. These freestanding tubs not only offer a luxurious bathing experience but also add an element of vintage appeal. Paired with a floor-mounted tub filler or a vintage-style faucet, the bathtub becomes a statement piece that enhances the overall ambiance",
   },
   {
-    img: tl2,
-    title: "airy and luxurious style",
-    conten: "popular in every country",
-    des: "This design gives you soothing eyes that can relax during a tiring day at work",
+    img: classic1,
+    title: "September 19, 2024 by HomeStyler",
+    conten: "The Kitchen Is The Heart Of The Home",
+    des: "A classic kitchen design evokes warmth and timeless elegance, making it the heart of the home. Characterized by rich cabinetry, often in deep wood tones or soft pastels, a classic kitchen exudes a welcoming atmosphere. Custom-built cabinetry with detailed moldings and antique finishes enhances the charm, providing both beauty and functionality. Open shelving can be incorporated to display fine china or vintage cookware, adding a personal touch to the decor.",
   },
   {
-    img: tl3,
-    title: "gentle style",
-    conten: "Very suitable for families",
-    des: "This is a design for your family with a quiet and gentle style, bringing a warm, cozy feeling",
-  },
-  {
-    img: tl4,
-    title: "youthful style",
-    conten: "popular with young people",
-    des: "This design is very popular with young people today and is also trusted by many people and the decor with a youthful design exudes the luxurious beauty of the room.",
+    img: classic2,
+    title: "September 16, 2024 by HomeStyler",
+    conten: "European Classic Lamps Are A Timeless Design",
+    des: "European classic lighting decor brings an air of sophistication and timeless elegance to any home. Chandeliers with intricate designs, often made from crystal or wrought iron, serve as stunning focal points in living rooms and dining areas, casting a warm, inviting glow. Wall sconces featuring antique finishes can enhance hallways or entryways, adding character and depth. Pendant lights in vintage styles, adorned with ornate details, are perfect for kitchens or breakfast nooks, blending functionality with beauty. The use of soft, ambient lighting creates a cozy atmosphere, while elegant lamps with fabric shades offer additional illumination. Incorporating these classic lighting elements not only enhances the overall aesthetic but also evokes a sense of history and luxury throughout the home.",
   },
 ];
 const samright = [
@@ -332,18 +276,6 @@ const Titlesample = styled.div`
     line-height: 100%;
     padding: 10px;
   }
-  @media screen and (min-width: 320px) and (max-width: 460px) {
-    padding-top: 20px;
-    h1 {
-      font-size: 32px;
-    }
-    p {
-      font-size: 16px;
-    }
-    span {
-      font-size: 16px;
-    }
-  }
 `;
 const Search = styled.div`
   width: 100%;
@@ -374,6 +306,9 @@ const Sample = styled.div`
   justify-content: space-between;
   gap: 20px;
   position: relative;
+  @media screen and (min-width: 320px) and (max-width: 760px) {
+    flex-direction: column-reverse;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -384,24 +319,12 @@ const Sample = styled.div`
     background: #dfcfb8;
     z-index: -1;
   }
-  @media screen and (min-width: 320px) and (max-width: 760px) {
-    flex-direction: column-reverse;
-  }
 `;
 const SampleLeft = styled.div`
   width: 60%;
   flex-wrap: wrap;
   @media screen and (min-width: 320px) and (max-width: 760px) {
     width: 100%;
-    h1 {
-      font-size: 24px;
-    }
-    p {
-      font-size: 18px;
-    }
-    span {
-      font-size: 18px;
-    }
   }
 `;
 const SampleRight = styled.div`
@@ -412,6 +335,18 @@ const SampleRight = styled.div`
   gap: 20px;
   overflow: hidden;
   width: 30%;
+  @media screen and (min-width: 320px) and (max-width: 760px) {
+    width: 100%;
+    h1{
+      font-size: 18px;
+    }
+    p{
+      font-size: 18px;
+    }
+    span{
+      font-size: 18px;
+    }
+  }
   img {
     aspect-ratio: 400/200;
     max-width: 100%;
@@ -426,14 +361,12 @@ const SampleRight = styled.div`
     line-height: normal;
     text-transform: uppercase;
   }
-  @media screen and (min-width: 320px) and (max-width: 760px) {
-    width: 100%;
-  }
 `;
 const Allsyteam = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
   button {
     width: 300px;
     background: #fff;
@@ -476,6 +409,17 @@ const Allsyteam = styled.div`
       cursor: pointer;
     }
   }
+  @media screen and (min-width: 320px) and (max-width: 760px) {
+    h1{
+      font-size: 18px;
+    }
+    p{
+      font-size: 18px;
+    }
+    span{
+      font-size: 18px;
+    }
+  }
 `;
 const Hover = styled.div`
   width: 100%;
@@ -495,13 +439,12 @@ const HoverImg = styled.div`
     width: 100%;
   }
 `;
-const Tabstext = styled.div`
+const TextConten = styled.div`
   p {
     color: #9f9f9f;
-    text-align: justify;
+    text-align: left;
     font-family: "Work Sans";
-    font-size: 16px;
-    font-style: normal;
+    font-size: 18px;
     font-weight: 400;
     line-height: normal;
   }

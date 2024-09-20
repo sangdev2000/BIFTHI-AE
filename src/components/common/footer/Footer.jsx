@@ -12,6 +12,8 @@ import aptech from "../../images/aptech.png";
 import Logo from "../../images/Logo1.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+
 const Footer = () => {
   const [showScroll, setShowScroll] = useState(false);
   useEffect(() => {
@@ -71,19 +73,11 @@ const Footer = () => {
           <a href="#">
             <FaInstagram />
           </a>
-          <a href="#">
-            <FaPinterestP />
-          </a>
-          <a href="#">
-            <FaLeaf />
-          </a>
         </SocialIcons>
-        <FooterNav  data-aos="fade-left">
-          <a href="#">About</a>
-          <a href="#">Licenses</a>
-          <a href="#">FAQs</a>
-          <a href="#">Site Map</a>
-          <a href="#">Contact</a>
+        <FooterNav>
+          <Link to="/about">About</Link>
+          <Link to="/product">Product</Link>
+          <Link to="/contact">Contact</Link>
         </FooterNav>
       </BottomSection>
       <CopyrightText>

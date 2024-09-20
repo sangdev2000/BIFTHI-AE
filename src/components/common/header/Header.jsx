@@ -3,16 +3,20 @@ import "./header.css";
 import { nav } from "../../data/Data";
 import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { FaHeart } from "react-icons/fa"; // Import biểu tượng trái tim từ react-icons
 import mn1 from "../../../acsset/slice/mn1.png";
 import mlogo1 from "../../../acsset/slice/Logo 1.png";
 
 const Header = () => {
   const [navList, setNavList] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [wishlistCount, setWishlistCount] = useState(0); // Số lượng sản phẩm trong wishlist
+
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -20,16 +24,25 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Cập nhật số lượng sản phẩm trong wishlist từ localStorage
+  useEffect(() => {
+    const savedWishlist = localStorage.getItem("wishlist");
+    if (savedWishlist) {
+      setWishlistCount(JSON.parse(savedWishlist).length);
+    }
+  }, [wishlistCount]);
+
   const handleShow = () => {
     setNavList(!navList);
   };
-  console.log("sdsad", scrollPosition);
+
   return (
     <Wapper>
       <Container scrollPosition={scrollPosition}>
         <LogoImg>
           <Link to={"/"}>
-            <img src={mlogo1} />
+            <img src={mlogo1} alt="Logo" />
           </Link>
         </LogoImg>
         <MenuLeft>
@@ -43,14 +56,23 @@ const Header = () => {
             ))}
           </ul>
         </MenuLeft>
+        {/* Hiển thị số lượng wishlist bên cạnh biểu tượng trái tim */}
+        <WishlistIcon>
+          <Link to="/wishlist">
+            <FaHeart size={24} />
+            {wishlistCount > 0 && (
+              <WishlistCount>{wishlistCount}</WishlistCount>
+            )}
+          </Link>
+        </WishlistIcon>
         <MenuMobile>
-          <img src={mn1} onClick={handleShow}></img>
+          <img src={mn1} alt="menu" onClick={handleShow} />
         </MenuMobile>
         {navList && (
           <ConMenumobileConten navList={navList}>
             {nav?.map((item, index) => {
               return (
-                <HoverStyled>
+                <HoverStyled key={index}>
                   <NavLink to={item.path} onClick={handleShow}>
                     <p>{item.text}</p>
                   </NavLink>
@@ -65,6 +87,8 @@ const Header = () => {
 };
 
 export default Header;
+
+// Styled components
 const Wapper = styled.div`
   width: 100%;
   max-width: 1440px;
@@ -76,6 +100,7 @@ const Wapper = styled.div`
   justify-content: center;
   z-index: 999999999;
 `;
+
 const Container = styled.div`
   width: 100%;
   margin: 0px auto;
@@ -87,6 +112,7 @@ const Container = styled.div`
   background: ${(props) =>
     props.scrollPosition > 50 ? "rgba(255, 255, 255, 0.8)" : ""};
 `;
+
 const Menudestop = styled.div`
   display: flex;
   align-items: center;
@@ -106,6 +132,7 @@ const Menudestop = styled.div`
     line-height: normal;
   }
 `;
+
 const MenuMobile = styled.div`
   position: absolute;
   top: 0;
@@ -115,6 +142,7 @@ const MenuMobile = styled.div`
     display: none;
   }
 `;
+
 const ConMenumobileConten = styled.div`
   display: flex;
   flex-direction: column;
@@ -131,11 +159,13 @@ const ConMenumobileConten = styled.div`
   transition: width 0.5s ease, padding 0.5s ease;
   overflow: hidden;
 `;
+
 const MenuLeft = styled.div`
   @media screen and (min-width: 320px) and (max-width: 840px) {
     display: none;
   }
 `;
+
 const HoverStyled = styled.div`
   padding: 10px;
   p {
@@ -151,8 +181,36 @@ const HoverStyled = styled.div`
     background: #ccc;
   }
 `;
+
 const LogoImg = styled.div`
   img {
     width: 100%;
   }
+`;
+
+const WishlistIcon = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
+  a {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      color: #ff0000;
+    }
+  }
+`;
+
+const WishlistCount = styled.span`
+  background: #ff0000;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 14px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
 `;

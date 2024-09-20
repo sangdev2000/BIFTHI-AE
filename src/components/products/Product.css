@@ -46,4 +46,39 @@
     margin-left: 8px;
     font-size: 12px;
   }
+  .slider {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .sort-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .dropdown-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .filter-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
   

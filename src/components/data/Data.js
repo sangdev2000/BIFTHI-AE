@@ -78,7 +78,7 @@ export const list = [
   {
     id: 1,
     name: "Armchair Cabo",
-    price: "18.800.000₫",
+    price: "12.000USD",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -97,14 +97,14 @@ export const list = [
     cover: "../images/list/p-2.png",
     relatedImages: [
       "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/banbep2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 2,
     name: "Simple Sofa",
-    price: "18.800.000₫",
+    price: "13.000USD",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -122,15 +122,15 @@ export const list = [
     ],
     cover: "../images/list/sofa1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/sofaL2.webp", // Related image 1
+      "../images/list/sofaL3.webp", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 3,
     name: "Sofa L Zeus",
-    price: "18.800.000₫",
+    price: "18.800USD",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -148,15 +148,15 @@ export const list = [
     ],
     cover: "../images/list/sofaL1.webp",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/sofa1.jpg", // Related image 1
+      "../images/list/sofa3.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 4,
     name: "Leather Recliner Sofa",
-    price: "8.800.000₫",
+    price: "14.800USD",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -174,15 +174,15 @@ export const list = [
     ],
     cover: "../images/list/gheDD1.webp",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/gheTG2.webp", // Related image 1
+      "../images/list/gheTG1.webp", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 5,
     name: "Mayo Recliner Chair",
-    price: "5.800.000₫",
+    price: "2.700USD",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -200,15 +200,15 @@ export const list = [
     ],
     cover: "../images/list/gheTG1.webp",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/gheDD1.webp", // Related image 1
+      "../images/list/gheDD2.webp", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 6,
     name: "Horten Coffee Table",
-    price: "4.800.000₫",
+    price: "4.800USD",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -226,15 +226,15 @@ export const list = [
     ],
     cover: "../images/list/ban1.webp",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/bantr1.jpg", // Related image 1
+      "../images/list/bantr3.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 7,
     name: "Square Bed",
-    price: "24.800.000₫",
+    price: "24.800USD",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -252,15 +252,15 @@ export const list = [
     ],
     cover: "../images/list/giuong1.webp",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/giuongM1.webp", // Related image 1
+      "../images/list/giuongM2.webp", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 8,
     name: "Mikado Bed",
-    price: "25.800.000₫",
+    price: "25.800USD",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -278,41 +278,16 @@ export const list = [
     ],
     cover: "../images/list/giuongM1.webp",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/giuong1.webp", // Related image 1
+      "../images/list/giuong2.webp", // Related image 2
     ],
     detail: "See More",
   },
-  {
-    id: 9,
-    name: "Square Bed",
-    price: "24.800.000₫",
-    category: "Interior",
-    material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
-    shortDescription:
-      "The Square Bed features a high, gently rounded headboard upholstered in soft, cool, and comfortable genuine leather. This design element adds both elegance and comfort to your bedroom, making it a standout piece in any modern decor.",
-    longDescription:
-      "Design: High, gently rounded headboard with soft, genuine leather upholstery. Materials: Premium quality leather for a luxurious feel and durability. Features: Provides both style and comfort, enhancing the overall aesthetic of your bedroom. The Square Bed features a high, gently rounded headboard upholstered in soft, genuine leather or smart, water-resistant, antibacterial fabric. This versatile design enhances both comfort and durability.",
-    reviews: 10, // Add a field for customer reviews
-    sku: " GNU4561 KD1092-12", // Add a field for SKU
-    tags: ["Furniture", "bed", "Modern"], // Add tags
-    images: [
-      "../images/list/giuong1.webp", // Main image
-      "../images/list/giuong2.webp", // Thumbnail image
-      "../images/list/giuong3.webp", // Thumbnail image
-    ],
-    cover: "../images/list/giuong1.webp",
-    relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
-    ],
-    detail: "See More",
-  },
+
   {
     id: 10,
     name: "Historian Display Cabinet",
-    price: "12.800.000₫",
+    price: "12.800USD",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -330,15 +305,15 @@ export const list = [
     ],
     cover: "../images/list/tu1.webp",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/tuH1.jpg", // Related image 1
+      "../images/list/tuH2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 11,
     name: "Cassie Decorative Cabinet",
-    price: "9.800.000₫",
+    price: "9.800USD",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -356,15 +331,15 @@ export const list = [
     ],
     cover: "../images/list/tuH1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/tu1.png", // Related image 1
+      "../images/list/tu2.png", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 12,
     name: "Decorative Lights",
-    price: "2.800.000₫",
+    price: "1.000USD",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -383,8 +358,8 @@ export const list = [
     ],
     cover: "../images/list/dentha1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/dennt1.jpg", // Related image 1
+      "../images/list/denpl1.jpg", // Related image 2
     ],
     detail: "See More",
   },
@@ -392,7 +367,7 @@ export const list = [
   {
     id: 13,
     name: "Crystal Lamp",
-    price: "3.800.000₫",
+    price: "800USD",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -411,15 +386,15 @@ export const list = [
     ],
     cover: "../images/list/denpl1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/dentha1.jpg", // Related image 1
+      "../images/list/dennt1.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 14,
     name: "Wall Lamp",
-    price: "1.800.000₫",
+    price: "1.000USD",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -438,15 +413,15 @@ export const list = [
     ],
     cover: "../images/list/dentuong1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/dennt1.jpg", // Related image 1
+      "../images/list/denpl2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 15,
     name: "Table1 Lamp",
-    price: "800.000₫",
+    price: "500USD",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -465,15 +440,15 @@ export const list = [
     ],
     cover: "../images/list/denban1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/denb1.jpeg", // Related image 1
+      "../images/list/denb2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 16,
     name: "Table 2 Lamp",
-    price: "2.800.000₫",
+    price: "500USD",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -492,15 +467,15 @@ export const list = [
     ],
     cover: "../images/list/denb2.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/denban1.jpg", // Related image 1
+      "../images/list/denban2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 17,
     name: "Outdoor lights 1 ",
-    price: "1.800.000₫",
+    price: "1.200USD",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -519,15 +494,15 @@ export const list = [
     ],
     cover: "../images/list/dennt1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/dentnt1.jpg", // Related image 1
+      "../images/list/dentnt2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 18,
     name: "Outdoor lights 2 ",
-    price: "800.000₫",
+    price: "8.000USD",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -546,15 +521,15 @@ export const list = [
     ],
     cover: "../images/list/dentnt1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/dennt1.jpg", // Related image 1
+      "../images/list/dennt2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 19,
     name: "Carpet 1 ",
-    price: "900.000₫",
+    price: "550USD",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -573,8 +548,8 @@ export const list = [
     ],
     cover: "../images/list/tham1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/thamts1.jpg", // Related image 1
+      "../images/list/thamts3.jpg", // Related image 2
     ],
     detail: "See More",
   },
@@ -582,7 +557,7 @@ export const list = [
   {
     id: 21,
     name: "Carpet 2 ",
-    price: "1.000.000₫",
+    price: "600USD",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -601,15 +576,15 @@ export const list = [
     ],
     cover: "../images/list/thamts1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/tham1.jpg", // Related image 1
+      "../images/list/tham3.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 22,
     name: "Rainbow Curtains",
-    price: "2.000.000₫",
+    price: "300USD",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -628,15 +603,15 @@ export const list = [
     ],
     cover: "../images/list/remcua1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/tranh1.webp", // Related image 1
+      "../images/list/tranh2.webp", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 23,
     name: "Buddha Hanging Painting",
-    price: "3.000.000₫",
+    price: "700USD",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -655,15 +630,15 @@ export const list = [
     ],
     cover: "../images/list/tranh1.webp",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/tranhtr1.webp", // Related image 1
+      "../images/list/tranhtr2.webp", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 24,
     name: "Eight Horses Painting",
-    price: "3.000.000₫",
+    price: "600USD",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -682,15 +657,15 @@ export const list = [
     ],
     cover: "../images/list/tranhtr1.webp",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/tranh1.webp", // Related image 1
+      "../images/list/tranh2.webp", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 25,
     name: "Wall Mirro",
-    price: "500.000₫",
+    price: "450USD",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -709,15 +684,15 @@ export const list = [
     ],
     cover: "../images/list/guong1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/bantr1.jpg", // Related image 1
+      "../images/list/bantr3.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 26,
     name: "Ceramic Vase",
-    price: "500.000₫",
+    price: "600USD",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -736,15 +711,15 @@ export const list = [
     ],
     cover: "../images/list/binhhoa.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/binhgom1.jpg", // Related image 1
+      "../images/list/binhgom2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 27,
     name: "Glossy Ceramic Vase",
-    price: "400.000₫",
+    price: "1.000USD",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -763,15 +738,15 @@ export const list = [
     ],
     cover: "../images/list/binhgom1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/binhhoa2.jpg", // Related image 1
+      "../images/list/binhhoa3.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 28,
     name: "Neoclassical Kitchen Cabinets",
-    price: "10.400.000₫",
+    price: "10.000USD",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -790,15 +765,15 @@ export const list = [
     ],
     cover: "../images/list/tubep1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/tuchen1.webp", // Related image 1
+      "../images/list/tuchen2.webp", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 30,
     name: "Cupboard Kitchen",
-    price: "5.400.000₫",
+    price: "9.000USD",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -818,15 +793,15 @@ export const list = [
     ],
     cover: "../images/list/tuchen1.webp",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/tubep1.jpg", // Related image 1
+      "../images/list/tubep2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 31,
     name: "Table Kitchen",
-    price: "6.400.000₫",
+    price: "10.500.000USD",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -846,15 +821,15 @@ export const list = [
     ],
     cover: "../images/list/banbep1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/ban1.webp", // Related image 1
+      "../images/list/ban2.webp", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 32,
     name: "Faucet 1",
-    price: "3.400.000₫",
+    price: "6.000USD",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -874,15 +849,15 @@ export const list = [
     ],
     cover: "../images/list/voin1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/voinuoc1.jpg", // Related image 1
+      "../images/list/voinuoc2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 33,
     name: "Faucet 2",
-    price: "3.400.000₫",
+    price: "6.500USD",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -902,15 +877,15 @@ export const list = [
     ],
     cover: "../images/list/voinuoc1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/voint1.png", // Related image 1
+      "../images/list/voint2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 34,
     name: "Food Cart 1",
-    price: "1.400.000₫",
+    price: "3.500USD",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -930,15 +905,15 @@ export const list = [
     ],
     cover: "../images/list/xed1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/xeday1.png", // Related image 1
+      "../images/list/xeday2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 35,
     name: "Food Cart 2",
-    price: "1.500.000₫",
+    price: "3.500USD",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -958,15 +933,15 @@ export const list = [
     ],
     cover: "../images/list/xeday1.png",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/xed1.jpg", // Related image 1
+      "../images/list/xed2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 36,
     name: "Dressing Table KY-GH309",
-    price: "2.500.000₫",
+    price: "8.000USD",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -986,8 +961,8 @@ export const list = [
     ],
     cover: "../images/list/bantrang1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/bantr1.jpg", // Related image 1
+      "../images/list/bantr2.jpg", // Related image 2
     ],
     detail: "See More",
   },
@@ -995,7 +970,7 @@ export const list = [
   {
     id: 37,
     name: "Dressing table KY-VH201",
-    price: "2.500.000₫",
+    price: "8.200USD",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1015,15 +990,15 @@ export const list = [
     ],
     cover: "../images/list/bantr1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/bantrang1.jpg", // Related image 1
+      "../images/list/bantrang2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 38,
     name: "Bathtub Faucet DL506",
-    price: "2.500.000₫",
+    price: "900USD",
     category: "Bathroom",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1043,15 +1018,15 @@ export const list = [
     ],
     cover: "../images/list/voinhatam1.png",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/voint2.jpg", // Related image 1
+      "../images/list/voint3.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 39,
     name: "Bathtub Faucet DL776",
-    price: "2.500.000₫",
+    price: "850USD",
     category: "Bathroom",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1071,15 +1046,15 @@ export const list = [
     ],
     cover: "../images/list/voint1.png",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/voinhatam1.png", // Related image 1
+      "../images/list/voinhatam2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 40,
     name: "Shower DL442",
-    price: "500.000₫",
+    price: "500USD",
     category: "Bathroom",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1099,15 +1074,15 @@ export const list = [
     ],
     cover: "../images/list/vois1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/voisen1.jpg", // Related image 1
+      "../images/list/vóien2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 41,
     name: "Bathtub BH223",
-    price: "19.500.000₫",
+    price: "15.000USD",
     category: "Bathroom",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1127,15 +1102,15 @@ export const list = [
     ],
     cover: "../images/list/bontam1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/bonnt1.jpg", // Related image 1
+      "../images/list/bonnt2.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 42,
     name: "Bathtub GH311",
-    price: "19.900.000₫",
+    price: "19.000USD",
     category: "Bathroom",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1155,8 +1130,8 @@ export const list = [
     ],
     cover: "../images/list/bont1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/bontam1.jpg", // Related image 1
+      "../images/list/bontam2.jpg", // Related image 2
     ],
     detail: "See More",
   },
@@ -1164,7 +1139,7 @@ export const list = [
   {
     id: 43,
     name: "Lavabo GH223",
-    price: "5.900.000₫",
+    price: "5.900USD",
     category: "Bathroom",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1184,15 +1159,15 @@ export const list = [
     ],
     cover: "../images/list/bonrm1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/bonnt1.jpg", // Related image 1
+      "../images/list/bontam1.jpg", // Related image 2
     ],
     detail: "See More",
   },
   {
     id: 44,
     name: "Cigar Cabinet",
-    price: "9.900.000₫",
+    price: "9.900USD",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1212,8 +1187,8 @@ export const list = [
     ],
     cover: "../images/list/ciga1.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/p-7.png", // Related image 2
+      "../images/list/tubep1.jpg", // Related image 1
+      "../images/list/tu1.webp", // Related image 2
     ],
     detail: "See More",
   },

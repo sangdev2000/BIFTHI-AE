@@ -5,20 +5,22 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slice1 from "../../../acsset/slice/slice1.png";
+import slice2 from "../../../acsset/slice/thietke.png";
+import slice3 from "../../../acsset/slice/slide2 1.png";
 import search from "../../../acsset/slice/search1.png";
 import br1 from "../../../acsset/slice/br1.png";
-import br2 from "../../../acsset/slice/br2.png";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import avatar from "../../../acsset/slice/avatar.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Hero = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000});
+    AOS.init({ duration: 1000 });
     const handleScroll = () => {
       AOS.refresh();
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   const settings = {
@@ -39,32 +41,33 @@ const Hero = () => {
             <img src={slice1} />
           </ImgSlice>
           <ImgSlice>
-            <img src={slice1} />
+            <img src={slice2} />
           </ImgSlice>
           <ImgSlice>
-            <img src={slice1} />
+            <img src={slice3} />
           </ImgSlice>
         </Slider>
         <ContenSlice data-aos="fade-right">
-          <h1>$65.00</h1>
-          <p>Dracena Fragnas</p>
+          <ContenIFT>
+            <p>Luxury in every little corner</p>
+          </ContenIFT>
         </ContenSlice>
         <ContenLeft data-aos="fade-right">
           <ContenIFT>
-            <h1>Milan Jack</h1>
-            <p>
-            Homestyle truly brings freshness and uniqueness to your home.
-            </p>
+            <h1>Sang Vip</h1>
+            <p>Homestyle truly brings freshness and uniqueness to your home.</p>
             <ContenIFTbr>
-              <img src={br2} />
+              <img src={avatar} />
             </ContenIFTbr>
           </ContenIFT>
         </ContenLeft>
       </Container>
       <div className="container">
-        <h1 data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
+        <h1
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           Bring Serenity to Your Place <br />
           With Interior
         </h1>
@@ -76,12 +79,6 @@ const Hero = () => {
           Find your dream plant for you home decoration with us
           <br /> and we will make it happen.
         </p>
-        <Searchplant>
-          <input placeholder="Search plant" />
-          <ConImg>
-            <img src={search} />
-          </ConImg>
-        </Searchplant>
       </div>
     </Wapper>
   );
@@ -137,23 +134,22 @@ const ContenSlice = styled.div`
   }
   @media screen and (min-width: 760px) and (max-width: 860px) {
     h1 {
-    color: #fff;
-    font-family: "Work Sans";
-    font-size: 28px !important;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+      color: #fff;
+      font-family: "Work Sans";
+      font-size: 28px !important;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    p {
+      color: #fff;
+      font-family: "Work Sans";
+      font-size: 16px !important;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
   }
-  p {
-    color: #fff;
-    font-family: "Work Sans";
-    font-size: 16px !important;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  }
-
 `;
 const Container = styled.div`
   position: relative;
