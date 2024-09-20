@@ -682,7 +682,7 @@ export const list = [
       "../images/list/guong3.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/guong1.jpg",
+    cover: "../images/list/guong2.jpg",
     relatedImages: [
       "../images/list/bantr1.jpg", // Related image 1
       "../images/list/bantr3.jpg", // Related image 2

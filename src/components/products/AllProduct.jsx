@@ -54,9 +54,6 @@ const AllProduct = ({ products }) => {
                 <Price>{price}</Price>
               </Link>
               <Overlay className="overlay">
-                <ButtonWrapper>
-                  <button className="cart-button">ADD TO CART</button>
-                </ButtonWrapper>
                 <button
                   className="wishlist-button"
                   onClick={(e) => {
@@ -180,38 +177,16 @@ const Overlay = styled.div`
   cursor: pointer;
 
   .wishlist-button {
-    background-color: #3d3d3d;
-    color: #fff;
-    padding: 0 30px;
     display: flex;
-    align-items: center;
+    gap: 15px;
+    background-color: #100f0e;
+    width: 100%;
     height: 100%;
-    position: relative;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       background-color: #d2c4ae;
     }
-  }
-`;
-
-const ButtonWrapper = styled.div`
-  display: flex;
-  gap: 15px;
-  background-color: #100f0e;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-
-  &:hover {
-    background-color: #d2c4ae;
-  }
-  .cart-button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-family: "Work Sans";
-    font-size: 16px;
-    cursor: pointer;
   }
 `;

@@ -60,14 +60,7 @@ const WishlistPage = () => {
                 <FaCheck className="in-stock-icon" />
                 In stock
               </td>
-              <td>
-                <button
-                  className="add-to-cart"
-                  onClick={() => handleAddToCart(item)}
-                >
-                  Add to cart
-                </button>
-              </td>
+              <td></td>
             </tr>
           ))}
         </tbody>

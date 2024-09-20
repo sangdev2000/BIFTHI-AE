@@ -107,7 +107,7 @@ const ProductDetail = () => {
           <div className="tab-content">
             <p>{product.longDescription}</p>
           </div>
-
+   
           <div className="related-images">
             {product.relatedImages.map((img, index) => (
               <div key={index} className="related-image-wrapper">
@@ -115,8 +115,6 @@ const ProductDetail = () => {
               </div>
             ))}
           </div>
-
-          <h2 className="related-title">Sản phẩm liên quan</h2>
         </div>
       </div>
     </Wapper>
