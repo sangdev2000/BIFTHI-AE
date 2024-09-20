@@ -70,7 +70,7 @@ const Interior = () => {
                   className="filter-description"
                   placeholder="Please enter price"
                   value={minPrice}
-                  onChange={(e) => setMinPrice(e.target.value)} // Cập nhật giá trị lọc theo giá min
+                  onChange={(e) => setMinPrice(e.target.value)}
                 />
               </div>
             </div>

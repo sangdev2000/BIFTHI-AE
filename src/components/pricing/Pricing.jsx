@@ -3,23 +3,29 @@ import styled from "styled-components";
 import search from "../../acsset/slice/search1.png";
 import sam from "../../acsset/slice/sam.png";
 import sam1 from "../../acsset/slice/sam1.png";
+import dd from "../../acsset/slice/dd.png";
+import dd1 from "../../acsset/slice/dd1.png";
 import { Tabs } from "antd";
+import { useState } from "react";
+
 const Pricing = () => {
+  const [activeTab, setActiveTab] = useState("1");
+
   const onChange = (key) => {
+    setActiveTab(key);
     console.log(key);
   };
+
   const items = [
     {
       key: "1",
       label: "modern",
-      children:
-        "Diam donec adipiscing tristique risus nec feugiat in fermentum. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tortor condimentum lacinia quis vel eros donec ac. Enim eu turpis egestas pretium aenean pharetra magna ac. Sed velit dignissim sodales ut…",
+      children: "page hien dai",
     },
     {
       key: "2",
       label: "elegant",
-      children:
-        "Diam donec adipiscing tristique risus nec feugiat in fermentum. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tortor condimentum lacinia quis vel eros donec ac. Enim eu turpis egestas pretium aenean pharetra magna ac. Sed velit dignissim sodales ut…",
+      children: "page duong dai",
     },
     {
       key: "3",
@@ -27,6 +33,56 @@ const Pricing = () => {
       children: "Content of Tab Pane 3",
     },
   ];
+
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case "1":
+        return samarr.map((item, index) => (
+          <Allsyteam key={index}>
+            <Hover>
+              <HoverImg>
+                <img src={item.img} />
+              </HoverImg>
+            </Hover>
+            <p>{item.title}</p>
+            <h1>{item.conten}</h1>
+            <span>{item.des}</span>
+            <button>------ Read More</button>
+          </Allsyteam>
+        ));
+      case "2":
+        return samadd1.map((item, index) => (
+          <Allsyteam key={index}>
+            <Hover>
+              <HoverImg>
+                <img src={item.img} />
+              </HoverImg>
+            </Hover>
+            <p>{item.title}</p>
+            <h1>{item.conten}</h1>
+            <span>{item.des}</span>
+            <button>------ Read More</button>
+          </Allsyteam>
+        ));
+      case "3":
+        return  samadd.map((item, index) => (
+          <Allsyteam key={index}>
+            <Hover>
+              <HoverImg>
+                <img src={item.img} />
+              </HoverImg>
+            </Hover>
+            <p>{item.title}</p>
+            <h1>{item.conten}</h1>
+            <span>{item.des}</span>
+            <button>------ Read More</button>
+          </Allsyteam>
+        ));
+      default:
+        return "";
+    }
+  };
+
   return (
     <Wapper>
       <Container>
@@ -34,10 +90,9 @@ const Pricing = () => {
           <Titlesample>
             <h1>sample design</h1>
             <span>
-              {" "}
               Netus et malesuada fames ac turpis egestas integer diam quam nulla
               porttitor
-              <p> massa amet purus gravida quis blandit.</p>
+              <p>massa amet purus gravida quis blandit.</p>
             </span>
           </Titlesample>
           <Search>
@@ -47,24 +102,10 @@ const Pricing = () => {
             </Liner>
           </Search>
         </TitlrBlog>
+
         <Sample>
-          <SampleLeft>
-            {samarr?.map((item, index) => {
-              return (
-                <Allsyteam>
-                  <Hover>
-                    <HoverImg>
-                      <img src={item.img} />
-                    </HoverImg>
-                  </Hover>
-                  <p>{item.title}</p>
-                  <h1>{item.conten}</h1>
-                  <span>{item.des}</span>
-                  <button>------ Read More</button>
-                </Allsyteam>
-              );
-            })}
-          </SampleLeft>
+          <SampleLeft>{renderTabContent()}</SampleLeft>
+
           <SampleRight>
             <img src={sam1} />
             <h1>design pattern</h1>
@@ -80,6 +121,46 @@ export default Pricing;
 const samarr = [
   {
     img: sam,
+    title: "September 10, 2022 by lastudio",
+    conten: "10 Ideas for Furnishing a Family Room",
+    des: "Diam donec adipiscing tristique risus nec feugiat in fermentum. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tortor condimentum lacinia quis vel eros donec ac. Enim eu turpis egestas pretium aenean pharetra magna ac. Sed velit dignissim sodales ut…",
+  },
+  {
+    img: sam,
+    title: "September 10, 2022 by lastudio",
+    conten: "10 Ideas for Furnishing a Family Room",
+    des: "Diam donec adipiscing tristique risus nec feugiat in fermentum. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tortor condimentum lacinia quis vel eros donec ac. Enim eu turpis egestas pretium aenean pharetra magna ac. Sed velit dignissim sodales ut…",
+  },
+  {
+    img: sam,
+    title: "September 10, 2022 by lastudio",
+    conten: "10 Ideas for Furnishing a Family Room",
+    des: "Diam donec adipiscing tristique risus nec feugiat in fermentum. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tortor condimentum lacinia quis vel eros donec ac. Enim eu turpis egestas pretium aenean pharetra magna ac. Sed velit dignissim sodales ut…",
+  },
+];
+const samadd = [
+  {
+    img: dd,
+    title: "September 10, 2022 by lastudio",
+    conten: "10 Ideas for Furnishing a Family Room",
+    des: "Diam donec adipiscing tristique risus nec feugiat in fermentum. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tortor condimentum lacinia quis vel eros donec ac. Enim eu turpis egestas pretium aenean pharetra magna ac. Sed velit dignissim sodales ut…",
+  },
+  {
+    img: sam,
+    title: "September 10, 2022 by lastudio",
+    conten: "10 Ideas for Furnishing a Family Room",
+    des: "Diam donec adipiscing tristique risus nec feugiat in fermentum. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tortor condimentum lacinia quis vel eros donec ac. Enim eu turpis egestas pretium aenean pharetra magna ac. Sed velit dignissim sodales ut…",
+  },
+  {
+    img: sam,
+    title: "September 10, 2022 by lastudio",
+    conten: "10 Ideas for Furnishing a Family Room",
+    des: "Diam donec adipiscing tristique risus nec feugiat in fermentum. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tortor condimentum lacinia quis vel eros donec ac. Enim eu turpis egestas pretium aenean pharetra magna ac. Sed velit dignissim sodales ut…",
+  },
+];
+const samadd1 = [
+  {
+    img: dd1,
     title: "September 10, 2022 by lastudio",
     conten: "10 Ideas for Furnishing a Family Room",
     des: "Diam donec adipiscing tristique risus nec feugiat in fermentum. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Tortor condimentum lacinia quis vel eros donec ac. Enim eu turpis egestas pretium aenean pharetra magna ac. Sed velit dignissim sodales ut…",
@@ -197,6 +278,7 @@ const SampleRight = styled.div`
   flex-wrap: wrap;
   padding: 20px 10px;
   gap: 20px;
+  overflow: hidden;
   width: 30%;
   img {
     aspect-ratio: 400/200;
