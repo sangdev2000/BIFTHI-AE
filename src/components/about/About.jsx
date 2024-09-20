@@ -37,8 +37,8 @@ const About = () => {
             </ServiceIcon>
             <ServiceHeading>PLANNING</ServiceHeading>
             <ServiceDescription>
-              Sed risus pretium quam vulputate dignissim suspendisse in.
-              Scelerisque viverra mauris in aliquam. Amet massa vitae tortor.
+            A well-structured interior design plan begins with defining the overall vision and style for the space. Key elements include selecting a color palette, choosing furniture and decor that align with the aesthetic, and ensuring functionality. Incorporating natural light and optimizing layout are essential for creating a harmonious environment. Regular evaluations throughout the process ensure the design remains cohesive and meets the client’s needs.
+
             </ServiceDescription>
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
@@ -49,8 +49,7 @@ const About = () => {
             </ServiceIcon>
             <ServiceHeading>INTERIOR DESIGN</ServiceHeading>
             <ServiceDescription>
-              Sed risus pretium quam vulputate dignissim suspendisse in.
-              Scelerisque viverra mauris in aliquam. Amet massa vitae tortor.
+            Interior design harmonizes aesthetics and functionality, creating spaces that reflect personal style and enhance daily living. By carefully selecting colors, furniture, and decor, designers transform rooms into inviting environments. A successful design considers layout, lighting, and comfort, ensuring each area is both beautiful and practical for everyday use
             </ServiceDescription>
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
@@ -61,8 +60,7 @@ const About = () => {
             </ServiceIcon>
             <ServiceHeading>CONSTRUCTION</ServiceHeading>
             <ServiceDescription>
-              Sed risus pretium quam vulputate dignissim suspendisse in.
-              Scelerisque viverra mauris in aliquam. Amet massa vitae tortor.
+            Interior construction involves turning design ideas into reality, including installation, decoration, and finishing of spaces. The construction team must ensure material quality, adhere to design plans, and meet deadlines, creating a harmonious and comfortable living environment for users.
             </ServiceDescription>
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
@@ -75,8 +73,8 @@ const About = () => {
             </ServiceIcon>
             <ServiceHeading>REMODELING</ServiceHeading>
             <ServiceDescription>
-              Sed risus pretium quam vulputate dignissim suspendisse in.
-              Scelerisque viverra mauris in aliquam. Amet massa vitae tortor.
+              
+Interior renovation improves and refreshes living spaces, from replacing damaged materials to updating decor styles. This process enhances aesthetics while ensuring functionality, providing comfort and convenience for users. It allows homeowners to create an inviting atmosphere that reflects their personal taste and lifestyle.
             </ServiceDescription>
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
@@ -87,8 +85,7 @@ const About = () => {
             </ServiceIcon>
             <ServiceHeading>FURNITURE</ServiceHeading>
             <ServiceDescription>
-              Sed risus pretium quam vulputate dignissim suspendisse in.
-              Scelerisque viverra mauris in aliquam. Amet massa vitae tortor.
+            Furniture arrangement is the process of organizing and positioning furnishings in a living space effectively and aesthetically. This not only optimizes usable area but also creates balance and harmony, resulting in a comfortable and inviting atmosphere for users. Thoughtful layout enhances both functionality and style in any room.
             </ServiceDescription>
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
@@ -98,8 +95,7 @@ const About = () => {
             </ServiceIcon>
             <ServiceHeading>OUTDOOR</ServiceHeading>
             <ServiceDescription>
-              Sed risus pretium quam vulputate dignissim suspendisse in.
-              Scelerisque viverra mauris in aliquam. Amet massa vitae tortor.
+           Outdoor interior design creates relaxing and comfortable living spaces that connect people with nature. By using weather-resistant materials, durable furnishings, and greenery, outdoor areas transform into ideal spots for gatherings, entertainment, and relaxation in a fresh atmosphere. Thoughtful design enhances the enjoyment of outdoor living experiences.
             </ServiceDescription>
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
@@ -112,8 +108,7 @@ const About = () => {
           <TestimonialCard>
             <FaQuoteLeft className="quote-icon" />
             <TestimonialText>
-              Nibh sed pulvinar proin gravida hendrerit lectus a. Vestibulum
-              morbi blandit cursus risus at. Aliquam ut porttitor.
+            The interior design is truly impressive, showcasing a perfect blend of style and functionality. Each space is thoughtfully arranged, creating a harmonious atmosphere that enhances both comfort and aesthetic appeal.
             </TestimonialText>
             <TestimonialAuthor>DIANNE RUSSELL</TestimonialAuthor>
             <TestimonialInfo>Client - New York</TestimonialInfo>
@@ -122,8 +117,7 @@ const About = () => {
           <TestimonialCard>
             <FaQuoteLeft className="quote-icon" />
             <TestimonialText>
-              Egestas fringilla phasellus faucibus scelerisque. Neque gravida in
-              fermentum et sollicitudin ac orci aliquet risus feugiat.
+            I am extremely satisfied with the design company's work. Their professionalism, creativity, and attention to detail exceeded my expectations, resulting in a beautiful space that perfectly reflects my style.
             </TestimonialText>
             <TestimonialAuthor>WADE WARREN</TestimonialAuthor>
             <TestimonialInfo>Client - California</TestimonialInfo>
@@ -132,8 +126,7 @@ const About = () => {
           <TestimonialCard>
             <FaQuoteLeft className="quote-icon" />
             <TestimonialText>
-              Aleifend mi in nulla posuere sollicitudin aliquam ultrices
-              sagittis orci. Neque gravida in fermentum et sollicitudin.
+            I couldn’t be happier with the service provided by the design team. They listened to my ideas, offered valuable suggestions, and transformed my vision into reality. The final result is stunning and functional!
             </TestimonialText>
             <TestimonialAuthor>CAMERON WILLIAMSON</TestimonialAuthor>
             <TestimonialInfo>Client - Florida</TestimonialInfo>
