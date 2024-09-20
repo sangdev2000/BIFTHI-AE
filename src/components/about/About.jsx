@@ -1,10 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import about3 from "../images/about2-bg-1.jpg";
 import about2 from "../images/about2-bg-2.jpg";
 import about1 from "../images/about2-bg-3.jpg";
-import { FaLightbulb, FaTools, FaPencilRuler, FaHome, FaChair, FaTree, FaQuoteLeft } from 'react-icons/fa';
-import Ourteam from '../home/ourteam';
+import {
+  FaLightbulb,
+  FaTools,
+  FaPencilRuler,
+  FaHome,
+  FaChair,
+  FaTree,
+  FaQuoteLeft,
+} from "react-icons/fa";
+import Ourteam from "../home/ourteam";
 
 const About = () => {
   return (
@@ -24,7 +32,9 @@ const About = () => {
         <ServiceTitle>What We Do</ServiceTitle>
         <ServiceGrid>
           <ServiceCard>
-            <ServiceIcon><FaLightbulb /></ServiceIcon>
+            <ServiceIcon>
+              <FaLightbulb />
+            </ServiceIcon>
             <ServiceHeading>PLANNING</ServiceHeading>
             <ServiceDescription>
               Sed risus pretium quam vulputate dignissim suspendisse in.
@@ -34,7 +44,9 @@ const About = () => {
           </ServiceCard>
 
           <ServiceCard>
-            <ServiceIcon><FaPencilRuler /></ServiceIcon>
+            <ServiceIcon>
+              <FaPencilRuler />
+            </ServiceIcon>
             <ServiceHeading>INTERIOR DESIGN</ServiceHeading>
             <ServiceDescription>
               Sed risus pretium quam vulputate dignissim suspendisse in.
@@ -44,7 +56,9 @@ const About = () => {
           </ServiceCard>
 
           <ServiceCard>
-            <ServiceIcon><FaTools /></ServiceIcon>
+            <ServiceIcon>
+              <FaTools />
+            </ServiceIcon>
             <ServiceHeading>CONSTRUCTION</ServiceHeading>
             <ServiceDescription>
               Sed risus pretium quam vulputate dignissim suspendisse in.
@@ -53,10 +67,12 @@ const About = () => {
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
         </ServiceGrid>
-       
+
         <ServiceGrid>
           <ServiceCard>
-            <ServiceIcon><FaHome /></ServiceIcon>
+            <ServiceIcon>
+              <FaHome />
+            </ServiceIcon>
             <ServiceHeading>REMODELING</ServiceHeading>
             <ServiceDescription>
               Sed risus pretium quam vulputate dignissim suspendisse in.
@@ -64,9 +80,11 @@ const About = () => {
             </ServiceDescription>
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
-   
+
           <ServiceCard>
-            <ServiceIcon><FaChair /></ServiceIcon>
+            <ServiceIcon>
+              <FaChair />
+            </ServiceIcon>
             <ServiceHeading>FURNITURE</ServiceHeading>
             <ServiceDescription>
               Sed risus pretium quam vulputate dignissim suspendisse in.
@@ -75,7 +93,9 @@ const About = () => {
             <ServiceLink href="#">check our service →</ServiceLink>
           </ServiceCard>
           <ServiceCard>
-            <ServiceIcon><FaTree /></ServiceIcon>
+            <ServiceIcon>
+              <FaTree />
+            </ServiceIcon>
             <ServiceHeading>OUTDOOR</ServiceHeading>
             <ServiceDescription>
               Sed risus pretium quam vulputate dignissim suspendisse in.
@@ -85,14 +105,15 @@ const About = () => {
           </ServiceCard>
         </ServiceGrid>
       </ServiceSection>
-      <Ourteam/>
+      <Ourteam />
       <TestimonialSection>
         <TestimonialTitle>Testimonial</TestimonialTitle>
         <TestimonialGrid>
           <TestimonialCard>
             <FaQuoteLeft className="quote-icon" />
             <TestimonialText>
-              Nibh sed pulvinar proin gravida hendrerit lectus a. Vestibulum morbi blandit cursus risus at. Aliquam ut porttitor.
+              Nibh sed pulvinar proin gravida hendrerit lectus a. Vestibulum
+              morbi blandit cursus risus at. Aliquam ut porttitor.
             </TestimonialText>
             <TestimonialAuthor>DIANNE RUSSELL</TestimonialAuthor>
             <TestimonialInfo>Client - New York</TestimonialInfo>
@@ -101,7 +122,8 @@ const About = () => {
           <TestimonialCard>
             <FaQuoteLeft className="quote-icon" />
             <TestimonialText>
-              Egestas fringilla phasellus faucibus scelerisque. Neque gravida in fermentum et sollicitudin ac orci aliquet risus feugiat.
+              Egestas fringilla phasellus faucibus scelerisque. Neque gravida in
+              fermentum et sollicitudin ac orci aliquet risus feugiat.
             </TestimonialText>
             <TestimonialAuthor>WADE WARREN</TestimonialAuthor>
             <TestimonialInfo>Client - California</TestimonialInfo>
@@ -110,7 +132,8 @@ const About = () => {
           <TestimonialCard>
             <FaQuoteLeft className="quote-icon" />
             <TestimonialText>
-              Aleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Neque gravida in fermentum et sollicitudin.
+              Aleifend mi in nulla posuere sollicitudin aliquam ultrices
+              sagittis orci. Neque gravida in fermentum et sollicitudin.
             </TestimonialText>
             <TestimonialAuthor>CAMERON WILLIAMSON</TestimonialAuthor>
             <TestimonialInfo>Client - Florida</TestimonialInfo>

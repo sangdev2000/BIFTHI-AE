@@ -22,7 +22,7 @@ const Product = () => {
   const [nameFilter, setNameFilter] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
   const [minPrice, setMinPrice] = useState(0);
-  const [maxPrice, setMaxPrice] = useState(10000);
+  const [maxPrice, setMaxPrice] = useState(30000);
   const [sortBy, setSortBy] = useState("Sort by Rated");
   const [showSortDropdown, setShowSortDropdown] = useState(false);
 
@@ -173,7 +173,7 @@ const Product = () => {
                   <input
                     type="range"
                     min="10000"
-                    max="30000"
+                    max="50000"
                     value={maxPrice}
                     onChange={(e) => setMaxPrice(Number(e.target.value))}
                     step="10000"

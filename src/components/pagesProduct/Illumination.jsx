@@ -15,8 +15,8 @@ import AllProduct from "../products/AllProduct";
 
 const Illumination = () => {
   // State lưu trữ giá trị của các bộ lọc
-  const [minPrice, setMinPrice] = useState(1000000); // Giá trị khởi điểm là 1.000.000
-  const [maxPrice, setMaxPrice] = useState(102000000);
+  const [minPrice, setMinPrice] = useState(0); // Giá trị khởi điểm là 1.000.000
+  const [maxPrice, setMaxPrice] = useState(30000);
   const [nameFilter, setNameFilter] = useState("");
 
   // Hàm để chuyển giá từ chuỗi về số
@@ -75,14 +75,14 @@ const Illumination = () => {
               <div>
                 <p className="filter-title">Lowest price</p>
                 <label>
-                  From: {minPrice.toLocaleString()}₫
+                  From: {minPrice.toLocaleString()}$
                   <input
                     type="range"
-                    min="1000000"
-                    max="3000000"
+                    min="0"
+                    max="3000"
                     value={minPrice}
                     onChange={(e) => setMinPrice(Number(e.target.value))}
-                    step="100000"
+                    step="3000"
                     className="slider"
                   />
                 </label>
@@ -96,14 +96,14 @@ const Illumination = () => {
               <div>
                 <p className="filter-title">Maximum price</p>
                 <label>
-                  To: {maxPrice.toLocaleString()}₫
+                  To: {maxPrice.toLocaleString()}$
                   <input
                     type="range"
-                    min="4000000"
-                    max="200000000"
+                    min="10000"
+                    max="50000"
                     value={maxPrice}
                     onChange={(e) => setMaxPrice(Number(e.target.value))}
-                    step="1000000"
+                    step="10000"
                     className="slider"
                   />
                 </label>
