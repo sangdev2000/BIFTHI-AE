@@ -202,8 +202,9 @@
 
 .related-image-wrapper img {
     width: 100%;
-    height: auto;
+    height: 425.6px;
     object-fit: cover;
+
 }
 
 /* Related products title */

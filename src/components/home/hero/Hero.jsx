@@ -5,6 +5,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slice1 from "../../../acsset/slice/slice1.png";
+import slice2 from "../../../acsset/slice/thietke.png";
+import slice3 from "../../../acsset/slice/slide2 1.png";
 import search from "../../../acsset/slice/search1.png";
 import br1 from "../../../acsset/slice/br1.png";
 import br2 from "../../../acsset/slice/br2.png";
@@ -39,10 +41,10 @@ const Hero = () => {
             <img src={slice1} />
           </ImgSlice>
           <ImgSlice>
-            <img src={slice1} />
+            <img src={slice2} />
           </ImgSlice>
           <ImgSlice>
-            <img src={slice1} />
+            <img src={slice3} />
           </ImgSlice>
         </Slider>
         <ContenSlice data-aos="fade-right">
