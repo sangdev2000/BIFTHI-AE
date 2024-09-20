@@ -18,6 +18,8 @@ const RoomKitchen = () => {
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(30000);
   const [nameFilter, setNameFilter] = useState("");
+  const [sortBy, setSortBy] = useState("Sort by Rated");
+  const [showSortDropdown, setShowSortDropdown] = useState(false);
 
   // Hàm để chuyển giá từ chuỗi về số
   const parsePrice = (priceString) => {
@@ -51,6 +53,19 @@ const RoomKitchen = () => {
       : true;
 
     return matchesCategory && matchesPrice && matchesName;
+  });
+  // Sắp xếp sản phẩm theo sortBy
+  const sortedProducts = filteredProducts.sort((a, b) => {
+    switch (sortBy) {
+      case "Sort by Price: ↑":
+        return parsePrice(a.price) - parsePrice(b.price);
+      case "Sort by Price: ↓":
+        return parsePrice(b.price) - parsePrice(a.price);
+      case "Sort by Rated":
+        return b.reviews - a.reviews;
+      default:
+        return 0;
+    }
   });
 
   return (
@@ -120,6 +135,39 @@ const RoomKitchen = () => {
                 value={nameFilter}
                 onChange={(e) => setNameFilter(e.target.value)} // Cập nhật giá trị lọc theo tên
               />
+            </div>
+            {/* Bộ lọc sắp xếp */}
+            <div className="sort-wrapper">
+              <p
+                className="filter-title"
+                onClick={() => setShowSortDropdown(!showSortDropdown)}
+                style={{ cursor: "pointer" }}
+              >
+                {sortBy} <span>{showSortDropdown ? "▲" : "▼"}</span>
+              </p>
+
+              {showSortDropdown && (
+                <div className="dropdown-content">
+                  <div
+                    className="dropdown-item"
+                    onClick={() => setSortBy("Sort by Rated")}
+                  >
+                    Sort by Rated
+                  </div>
+                  <div
+                    className="dropdown-item"
+                    onClick={() => setSortBy("Sort by Price: ↑")}
+                  >
+                    Sort by Price: ↑
+                  </div>
+                  <div
+                    className="dropdown-item"
+                    onClick={() => setSortBy("Sort by Price: ↓")}
+                  >
+                    Sort by Price: ↓
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

@@ -197,7 +197,6 @@ const Wishlist = ({ wishlistItems, onClose, onRemoveItem }) => {
               </div>
               <div className="price-and-cart">
                 <div className="price">{item.price}</div>
-                <button className="cart-btn">Add to cart</button>
               </div>
             </div>
           ))}
