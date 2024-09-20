@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 import Ourteam from "../home/ourteam";
 
-const PageContent = () => {
+const About = () => {
   return (
     <Container>
       <TitleSection>
@@ -144,7 +144,7 @@ const PageContent = () => {
   );
 };
 
-export default PageContent;
+export default About;
 
 const Container = styled.div`
   width: 100%;
