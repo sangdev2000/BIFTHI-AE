@@ -113,6 +113,9 @@ const BrandName = styled.h1`
   font-size: 48px;
   color: white;
   margin-bottom: 20px;
+  @media screen and (min-width: 320px) and (max-width: 460px) {
+    font-size: 32px;
+  }
 `;
 
 const SubscriptionText = styled.p`
@@ -122,6 +125,9 @@ const SubscriptionText = styled.p`
   line-height: 1.34em;
   text-align: center;
   margin-bottom: 20px;
+  @media screen and (min-width: 320px) and (max-width: 460px) {
+    font-size: 18px;
+  }
 `;
 
 const EmailInputWrapper = styled.div`
@@ -165,6 +171,9 @@ const BottomSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (min-width: 320px) and (max-width: 760px) {
+      flex-wrap: wrap;
+  }
 `;
 
 const SocialIcons = styled.div`
@@ -185,6 +194,7 @@ const SocialIcons = styled.div`
 `;
 
 const FooterNav = styled.div`
+width: 100%;
   margin-bottom: 30px;
 
   a {

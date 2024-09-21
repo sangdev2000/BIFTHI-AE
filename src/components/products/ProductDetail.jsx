@@ -1,14 +1,18 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { list } from "../data/Data";
 import "./ProductDetail.css";
 import styled from "styled-components";
+import facebook from "../images/facebook.png";
+import twitter from "../images/twitter.png";
+import instagram from "../images/instagram.png";
+import Reviews from "../reviews";
 const ProductDetail = () => {
+  const [show, setShow] = useState();
+  const [showdes, setShowdes] = useState();
   const { id } = useParams();
   const [showimage, setShowimage] = useState(null);
   const product = list.find((item) => item.id === parseInt(id));
-  // const [car, setCar] = useState([])
-  // const {car, setCar} = useContext(Crecontext)
   console.log("image", showimage);
   const handleshow = (img) => {
     setShowimage(img);
@@ -16,10 +20,12 @@ const ProductDetail = () => {
   if (!product) {
     return <h2>Product not found!</h2>;
   }
-  // const handleAddToCart = (productId) => {
-  //   setCar([...car, productId]); 
-  //   console.log("Product added to cart:", productId);
-  // };
+  const handleshowT = () => {
+    setShow(!show);
+  };
+  const handledes = () => {
+    setShowdes(!showdes);
+  };
   return (
     <Wapper>
       <div className="product-detail-page" id="conten-a">
@@ -74,40 +80,45 @@ const ProductDetail = () => {
                   ))}
                 </div>
               </div>
-              <div></div>
-              {/* <WpperCar>
-                <img src={addcar} />
-                <ButonTocar onClick={()=> handleAddToCart(product)}>
-                  <h1>add to car</h1>
-                </ButonTocar>
-              </WpperCar> */}
+
               <div className="product-details">
-                <p>Mã: {product.sku}</p>
-                <p>Danh Mục: {product.category}</p>
+                <p>Id: {product.sku}</p>
+                <p>Category: {product.category}</p>
                 <p>Tags: {product.tags.join(", ")}</p>
               </div>
 
               <div className="social-share">
                 <span>Share:</span>
-                <i className="fab fa-facebook"></i>
-                <i className="fab fa-linkedin"></i>
-                <i className="fab fa-twitter"></i>
+                <Icon>
+                  <img src={facebook} />
+                </Icon>
+                <Icon>
+                  <img src={twitter} />
+                </Icon>
+                <Icon>
+                  <img src={instagram} />
+                </Icon>
               </div>
             </div>
           </div>
         </div>
-
         <div className="product-bottom">
           <div className="tabs">
-            <button className="active-tab">Description</button>
-            <button>Additional Information</button>
-            <button>Reviews ({product.reviews})</button>
+            <button className="active-tab" onClick={handledes}>
+              Description
+            </button>
+            <button onClick={handleshowT}>Reviews ({product.reviews})</button>
           </div>
+          {show ? <Reviews /> : "" || showdes ? "" : ""}
 
-          <div className="tab-content">
-            <p>{product.longDescription}</p>
-          </div>
-   
+          {showdes ? (
+            <div className="tab-content">
+              <p>{product.longDescription}</p>
+            </div>
+          ) : (
+            ""
+          )}
+
           <div className="related-images">
             {product.relatedImages.map((img, index) => (
               <div key={index} className="related-image-wrapper">
@@ -115,6 +126,8 @@ const ProductDetail = () => {
               </div>
             ))}
           </div>
+
+          <h2 className="related-title">Related products</h2>
         </div>
       </div>
     </Wapper>
@@ -130,26 +143,10 @@ const Wapper = styled.div`
     }
   }
 `;
-// const WpperCar = styled.div`
-//   display: flex;
-//   align-items: center;
-//   gap: 20px;
-// `;
-// const ButonTocar = styled.div`
-//   border: 1px solid #000;
-//   width: 200px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border-radius: 5px;
-//   h1 {
-//     color: #000;
-//     text-align: center;
-//     font-family: "Work Sans";
-//     font-size: 18px;
-//     font-style: normal;
-//     font-weight: 500;
-//     line-height: normal;
-//     cursor: pointer;
-//   }
-// `;
+const Icon = styled.div`
+  img {
+    width: 100%;
+  }
+  display: flex;
+  align-items: center;
+`;

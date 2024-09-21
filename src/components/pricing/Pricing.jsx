@@ -146,8 +146,8 @@ const Pricing = () => {
           </Titlesample>
           <Search>
             <Liner>
-              <input placeholder="Search..." />
-              <img src={search} />
+              {/* <input /> */}
+              {/* <img src={search} /> */}
             </Liner>
           </Search>
         </TitlrBlog>
@@ -285,6 +285,7 @@ const Search = styled.div`
 `;
 const Liner = styled.div`
   width: 600px;
+  height: 1px;
   display: flex;
   align-items: center;
   justify-content: space-between;

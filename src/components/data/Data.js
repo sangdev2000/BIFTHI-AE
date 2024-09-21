@@ -28,7 +28,7 @@ export const nav = [
   // },
 
   {
-    text: "Template",
+    text: "Design",
     path: "/pricing",
   },
 

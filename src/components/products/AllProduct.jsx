@@ -1,16 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FaHeart, FaCartPlus } from "react-icons/fa";
 import Wishlist from "../wishlist/WistList";
+import { Crecontext } from "../providertocar";
 
 const AllProduct = ({ products }) => {
+  const {car, setCar} = useContext(Crecontext)
+  const handleAddToCart = (product) => {
+    const isAlreadyInCart = car.some((item) => item.id === product.id);
+
+    if (!isAlreadyInCart) {
+      setCar((prevCar) => [...prevCar, product]);
+    }
+  };
   // Lưu trạng thái wishlist vào localStorage
   const [wishlist, setWishlist] = useState(() => {
     const savedWishlist = localStorage.getItem("wishlist");
     return savedWishlist ? JSON.parse(savedWishlist) : [];
   });
-
+  console.log("sang", car)
   const [showWishlist, setShowWishlist] = useState(false);
 
   // Function to add an item to the wishlist
@@ -54,15 +63,19 @@ const AllProduct = ({ products }) => {
                 <Price>{price}</Price>
               </Link>
               <Overlay className="overlay">
+                {/* <Link to={"/wishlist"}> */}
                 <button
                   className="wishlist-button"
-                  onClick={(e) => {
-                    e.preventDefault(); // Prevent navigation on wishlist button click
-                    addToWishlist({ id, cover, category, name, price });
-                  }}
+                  // onClick={(e) => {
+                  //   e.preventDefault(); // Prevent navigation on wishlist button click
+                  //   addToWishlist({ id, cover, category, name, price });
+                  // }}
+                  onClick={()=> handleAddToCart(val)} 
                 >
                   <FaHeart />
                 </button>
+                {/* </Link> */}
+           
               </Overlay>
             </Box>
           );
