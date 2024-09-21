@@ -236,6 +236,7 @@ const Container = styled.div`
   position: relative;
   display: flex;
   gap: 20px;
+  overflow: hidden;
 `;
 
 const TitleConten = styled.div`

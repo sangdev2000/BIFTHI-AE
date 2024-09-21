@@ -68,18 +68,10 @@ const ProductDetail = () => {
 
               <p className="description-short">{product.shortDescription}</p>
 
-              <div className="color-options">
+              {/* <div className="color-options">
                 <label>Color</label>
-                <div className="colors">
-                  {product.colors.map((color, index) => (
-                    <span
-                      key={index}
-                      className="color-circle"
-                      style={{ backgroundColor: color }}
-                    ></span>
-                  ))}
-                </div>
-              </div>
+               
+              </div> */}
 
               <div className="product-details">
                 <p>Id: {product.sku}</p>
@@ -127,7 +119,6 @@ const ProductDetail = () => {
             ))}
           </div>
 
-          <h2 className="related-title">Related products</h2>
         </div>
       </div>
     </Wapper>

@@ -4,7 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import paner1 from "../../../acsset/slice/paner1.png";
-import paner2 from "../../../acsset/slice/slice1.png";
+import paner2 from "../../../acsset/slice/f1.png";
+import paner3 from "../../../acsset/slice/f2.png";
+import paner4 from "../../../acsset/slice/f3.png";
 import p1 from "../../../acsset/slice/p1.png";
 import { Image } from "antd";
 import AOS from "aos";
@@ -69,10 +71,10 @@ const paner = [
     img: paner2,
   },
   {
-    img: paner2,
+    img: paner3,
   },
   {
-    img: paner2,
+    img: paner4,
   },
 ];
 
@@ -128,7 +130,7 @@ const Container = styled.div`
     top: 50%;
     transform: translateY(-50%);
     left: 20px;
-    z-index: 1;
+z-index: 1;
   }
 
   .slick-next {
@@ -240,3 +242,23 @@ const ContainF = styled.div`
     }
   }
 `;
+
+
+
+
+
+
+// const ContainF = styled.div`
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100%;
+//   .ant-image-preview-img {
+//     width: 70% !important;
+//   }
+//   img {
+//     .ant-image-preview-img {
+//       width: 70%;
+//     }
+//   }
+// `; 

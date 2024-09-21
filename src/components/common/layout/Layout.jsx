@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom"; // Import useLocation từ react-router-dom
+import { useLocation } from "react-router-dom";
 
 const Layout = ({ children }) => {
   const location = useLocation();

@@ -10,20 +10,21 @@ import {
 } from "react-icons/fa";
 import aptech from "../../images/aptech.png";
 import Logo from "../../images/Logo1.png";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import Logo5 from "../../images/logo5.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Footer = () => {
   const [showScroll, setShowScroll] = useState(false);
   useEffect(() => {
-    AOS.init({ duration: 1000});
+    AOS.init({ duration: 1000 });
     const handleScroll = () => {
       AOS.refresh();
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   // Hàm theo dõi sự kiện cuộn
@@ -86,6 +87,7 @@ const Footer = () => {
       <Logo1>
         <img src={aptech} alt="" />
         <img src={Logo} alt="" />
+        <img src={Logo5}/>
       </Logo1>
       {/* Nút cuộn lên */}
       <ScrollArrow onClick={scrollTop} show={showScroll}>
@@ -168,11 +170,11 @@ const Border = styled.div`
 `;
 
 const BottomSection = styled.div`
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
   @media screen and (min-width: 320px) and (max-width: 760px) {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 `;
 
@@ -194,7 +196,7 @@ const SocialIcons = styled.div`
 `;
 
 const FooterNav = styled.div`
-width: 100%;
+  width: 100%;
   margin-bottom: 30px;
 
   a {
