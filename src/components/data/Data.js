@@ -26,7 +26,7 @@ export const list = [
   {
     id: 1,
     name: "Armchair Cabo",
-    price: "12.000USD",
+    price: "12.000$",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -52,7 +52,7 @@ export const list = [
   {
     id: 2,
     name: "Simple Sofa",
-    price: "13.000USD",
+    price: "13.000$",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -78,7 +78,7 @@ export const list = [
   {
     id: 3,
     name: "Sofa L Zeus",
-    price: "18.800USD",
+    price: "18.800$",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -104,7 +104,7 @@ export const list = [
   {
     id: 4,
     name: "Leather Recliner Sofa",
-    price: "14.800USD",
+    price: "14.800$",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -130,7 +130,7 @@ export const list = [
   {
     id: 5,
     name: "Mayo Recliner Chair",
-    price: "2.700USD",
+    price: "2.700$",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -156,7 +156,7 @@ export const list = [
   {
     id: 6,
     name: "Horten Coffee Table",
-    price: "4.800USD",
+    price: "4.800$",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -182,7 +182,7 @@ export const list = [
   {
     id: 7,
     name: "Square Bed",
-    price: "24.800USD",
+    price: "24.800$",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -208,7 +208,7 @@ export const list = [
   {
     id: 8,
     name: "Mikado Bed",
-    price: "25.800USD",
+    price: "25.800$",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -235,7 +235,7 @@ export const list = [
   {
     id: 10,
     name: "Historian Display Cabinet",
-    price: "12.800USD",
+    price: "12.800$",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -261,7 +261,7 @@ export const list = [
   {
     id: 11,
     name: "Cassie Decorative Cabinet",
-    price: "9.800USD",
+    price: "9.800$",
     category: "Interior",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -287,7 +287,7 @@ export const list = [
   {
     id: 12,
     name: "Decorative Lights",
-    price: "1.000USD",
+    price: "1.000$",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -315,7 +315,7 @@ export const list = [
   {
     id: 13,
     name: "Crystal Lamp",
-    price: "800USD",
+    price: "800$",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -342,7 +342,7 @@ export const list = [
   {
     id: 14,
     name: "Wall Lamp",
-    price: "1.000USD",
+    price: "1.000$",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -369,7 +369,7 @@ export const list = [
   {
     id: 15,
     name: "Table1 Lamp",
-    price: "500USD",
+    price: "500$",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -396,7 +396,7 @@ export const list = [
   {
     id: 16,
     name: "Table 2 Lamp",
-    price: "500USD",
+    price: "500$",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -423,7 +423,7 @@ export const list = [
   {
     id: 17,
     name: "Outdoor lights 1 ",
-    price: "1.200USD",
+    price: "1.200$",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -450,7 +450,7 @@ export const list = [
   {
     id: 18,
     name: "Outdoor lights 2 ",
-    price: "8.000USD",
+    price: "8.000$",
     category: "Illumination",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -477,7 +477,7 @@ export const list = [
   {
     id: 19,
     name: "Carpet 1 ",
-    price: "550USD",
+    price: "550$",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -505,7 +505,7 @@ export const list = [
   {
     id: 21,
     name: "Carpet 2 ",
-    price: "600USD",
+    price: "600$",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -532,7 +532,7 @@ export const list = [
   {
     id: 22,
     name: "Rainbow Curtains",
-    price: "300USD",
+    price: "300$",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -559,7 +559,7 @@ export const list = [
   {
     id: 23,
     name: "Buddha Hanging Painting",
-    price: "700USD",
+    price: "700$",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -586,7 +586,7 @@ export const list = [
   {
     id: 24,
     name: "Eight Horses Painting",
-    price: "600USD",
+    price: "600$",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -613,7 +613,7 @@ export const list = [
   {
     id: 25,
     name: "Wall Mirro",
-    price: "450USD",
+    price: "450$",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -640,7 +640,7 @@ export const list = [
   {
     id: 26,
     name: "Ceramic Vase",
-    price: "600USD",
+    price: "600$",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -667,7 +667,7 @@ export const list = [
   {
     id: 27,
     name: "Glossy Ceramic Vase",
-    price: "1.000USD",
+    price: "1.000$",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -694,7 +694,7 @@ export const list = [
   {
     id: 28,
     name: "Neoclassical Kitchen Cabinets",
-    price: "10.000USD",
+    price: "10.000$",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -721,7 +721,7 @@ export const list = [
   {
     id: 30,
     name: "Cupboard Kitchen",
-    price: "9.000USD",
+    price: "9.000$",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -749,7 +749,7 @@ export const list = [
   {
     id: 31,
     name: "Table Kitchen",
-    price: "10.500.000USD",
+    price: "10.500.000$",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -777,7 +777,7 @@ export const list = [
   {
     id: 32,
     name: "Faucet 1",
-    price: "6.000USD",
+    price: "6.000$",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -805,7 +805,7 @@ export const list = [
   {
     id: 33,
     name: "Faucet 2",
-    price: "6.500USD",
+    price: "6.500$",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -833,7 +833,7 @@ export const list = [
   {
     id: 34,
     name: "Food Cart 1",
-    price: "3.500USD",
+    price: "3.500$",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -861,7 +861,7 @@ export const list = [
   {
     id: 35,
     name: "Food Cart 2",
-    price: "3.500USD",
+    price: "3.500$",
     category: "Room Kitchen",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -889,7 +889,7 @@ export const list = [
   {
     id: 36,
     name: "Dressing Table KY-GH309",
-    price: "8.000USD",
+    price: "8.000$",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -918,7 +918,7 @@ export const list = [
   {
     id: 37,
     name: "Dressing table KY-VH201",
-    price: "8.200USD",
+    price: "8.200$",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -946,7 +946,7 @@ export const list = [
   {
     id: 38,
     name: "Bathtub Faucet DL506",
-    price: "900USD",
+    price: "900$",
     category: "Bathroom",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -974,7 +974,7 @@ export const list = [
   {
     id: 39,
     name: "Bathtub Faucet DL776",
-    price: "850USD",
+    price: "850$",
     category: "Bathroom",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1002,7 +1002,7 @@ export const list = [
   {
     id: 40,
     name: "Shower DL442",
-    price: "500USD",
+    price: "500$",
     category: "Bathroom",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1030,7 +1030,7 @@ export const list = [
   {
     id: 41,
     name: "Bathtub BH223",
-    price: "15.000USD",
+    price: "15.000$",
     category: "Bathroom",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1058,7 +1058,7 @@ export const list = [
   {
     id: 42,
     name: "Bathtub GH311",
-    price: "19.000USD",
+    price: "19.000$",
     category: "Bathroom",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1087,7 +1087,7 @@ export const list = [
   {
     id: 43,
     name: "Lavabo GH223",
-    price: "5.900USD",
+    price: "5.900$",
     category: "Bathroom",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
@@ -1115,7 +1115,7 @@ export const list = [
   {
     id: 44,
     name: "Cigar Cabinet",
-    price: "9.900USD",
+    price: "9.900$",
     category: "Interior Design",
     material: "Leather",
     colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
