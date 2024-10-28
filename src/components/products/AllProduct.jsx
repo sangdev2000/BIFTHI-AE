@@ -6,7 +6,7 @@ import Wishlist from "../wishlist/WistList";
 import { Crecontext } from "../providertocar";
 
 const AllProduct = ({ products }) => {
-  const {car, setCar} = useContext(Crecontext)
+  const { car, setCar } = useContext(Crecontext);
   const handleAddToCart = (product) => {
     const isAlreadyInCart = car.some((item) => item.id === product.id);
 
@@ -19,21 +19,10 @@ const AllProduct = ({ products }) => {
     const savedWishlist = localStorage.getItem("wishlist");
     return savedWishlist ? JSON.parse(savedWishlist) : [];
   });
-  console.log("sang", car)
+  console.log("sang", car);
   const [showWishlist, setShowWishlist] = useState(false);
 
   // Function to add an item to the wishlist
-  const addToWishlist = (product) => {
-    setWishlist((prevWishlist) => {
-      const newWishlist = !prevWishlist.some((item) => item.id === product.id)
-        ? [...prevWishlist, product]
-        : prevWishlist;
-      localStorage.setItem("wishlist", JSON.stringify(newWishlist));
-      return newWishlist;
-    });
-    setShowWishlist(true);
-  };
-
   // Function to remove an item from the wishlist
   const handleRemoveItem = (id) => {
     setWishlist((prevWishlist) => {
@@ -70,12 +59,11 @@ const AllProduct = ({ products }) => {
                   //   e.preventDefault(); // Prevent navigation on wishlist button click
                   //   addToWishlist({ id, cover, category, name, price });
                   // }}
-                  onClick={()=> handleAddToCart(val)} 
+                  onClick={() => handleAddToCart(val)}
                 >
                   <FaHeart />
                 </button>
                 {/* </Link> */}
-           
               </Overlay>
             </Box>
           );

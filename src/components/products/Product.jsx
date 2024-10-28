@@ -152,7 +152,7 @@ const Product = ({ onUpdateWishlistCount }) => {
                   <input
                     type="range"
                     min="0"
-                    max="1000"
+                    max="3000"
                     value={minPrice}
                     onChange={(e) => setMinPrice(Number(e.target.value))}
                     step="1000"
