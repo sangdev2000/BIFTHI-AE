@@ -6,8 +6,19 @@ import av2 from "../../acsset/slice/avatar1.png";
 import av3 from "../../acsset/slice/avatar2.png";
 import av4 from "../../acsset/slice/avatar3.png";
 import av5 from "../../acsset/slice/avatar4.png";
+import { useState } from "react";
 
 const Reviews = () => {
+  const [textvalue, setTextvalue] =  useState("");
+  const [comments, setComments] = useState([]);
+  console.log("text", textvalue);
+  console.log("textvalue", comments);
+  const handleSendComment = () => {
+    if (textvalue.trim()) {
+      setComments([...comments, textvalue]); 
+      setTextvalue(""); 
+    }
+  };
   return (
     <Wapper>
       <Container>
@@ -25,13 +36,14 @@ const Reviews = () => {
               </Imgutem>
             );
           })}
-          <textarea placeholder="Enter your comment" />
+          <textarea placeholder="Enter your comment" onChange={(e)=>{setTextvalue(e.target.value)}}/>
           <Butonky>
-            <button>Send</button>
+            {/* <button onClick={handleSendComment}>Send</button> */}
           </Butonky>
         </TitlePaner>
       </Container>
       <SllTy>
+        
         {contenq?.map((item, index) => {
           return (
             <ContenWap>

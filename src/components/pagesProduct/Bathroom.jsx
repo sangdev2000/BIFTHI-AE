@@ -89,7 +89,7 @@ const Bathroom = ({ onUpdateWishlistCount }) => {
                 <img src={pricedown} />
               </Icon>
               <div>
-                <p className="filter-title">Lowest price</p>
+                <p className="filter-title">Price</p>
                 <label>
                   From: {minPrice.toLocaleString()}$
                   <input

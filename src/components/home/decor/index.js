@@ -39,7 +39,7 @@ const DecorPaner = () => {
     <Wapeer>
       <TitlePaner>
         <p>make your home</p>
-        <h1 data-aos="fade-right">Just for your home</h1>
+        <h1 data-aos="fade-right">A Dream home</h1>
       </TitlePaner>
       <Container>
         <Slider {...settings}>

@@ -181,7 +181,10 @@ const Right = styled.div`
   gap: 10px;
   padding-top: 10px;
   overflow: hidden;
-
+  .ant-image-mask-info{
+    position: absolute;
+    top: 20%;
+  }
   img {
     width: 100%;
   }
@@ -237,6 +240,10 @@ const Container = styled.div`
   display: flex;
   gap: 20px;
   overflow: hidden;
+  .ant-image-mask-info{
+    position: absolute;
+    top: 20%;
+  }
 `;
 
 const TitleConten = styled.div`

@@ -139,9 +139,8 @@ const Pricing = () => {
           <Titlesample>
             <h1>sample design</h1>
             <span>
-              Netus et malesuada fames ac turpis egestas integer diam quam nulla
-              porttitor
-              <p>massa amet purus gravida quis blandit.</p>
+            Explore our insights on the latest design trends and innovative techniques
+              {/* <p>massa amet purus gravida quis blandit.</p> */}
             </span>
           </Titlesample>
           <Search>

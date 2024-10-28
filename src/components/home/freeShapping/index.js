@@ -43,7 +43,7 @@ export default Freeshapping;
 const arr = [
    {
      img: fee1,
-    title: "Free Shapping",
+    title: "Free Shipping",
     conten: "No charge for each delivery"
    },
    {

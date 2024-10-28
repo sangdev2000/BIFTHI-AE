@@ -30,7 +30,7 @@ const About = () => {
     <Container>
       <TitleSection>
         <SubTitle>FURNITURE STORE</SubTitle>
-        <MainTitle>We're a furniture company from the Viet Nam</MainTitle>
+        <MainTitle>We are one of Vietnam’s most trusted partner <br/>for exceptional design solutions</MainTitle>
       </TitleSection>
 
       <ImageGallery>

@@ -51,7 +51,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <TopSection>
-        <BrandName data-aos="fade-up">HomeStyler.</BrandName>
+        <BrandName data-aos="fade-up">HomeStyler</BrandName>
         <SubscriptionText>
           Subscribe to get 10% off your first order
         </SubscriptionText>
@@ -82,7 +82,7 @@ const Footer = () => {
         </FooterNav>
       </BottomSection>
       <CopyrightText>
-        COPYRIGHT 2024 © BEFTHI. ALL RIGHTS RESERVED.
+        COPYRIGHT 2024 © BIFTHI. ALL RIGHTS RESERVED.
       </CopyrightText>
       <Logo1>
         <img src={aptech} alt="" />
