@@ -68,15 +68,15 @@ const Hero = () => {
           data-aos-duration="1500"
         >
           Bring Serenity to Your Place <br />
-          With Interior
+          with Our Thoughtful Designs
         </h1>
         <h3>
           Bring Serenity to
           <br /> Your Place
         </h3>
         <p>
-          Find your dream plant for you home decoration with us
-          <br /> and we will make it happen.
+        Discover the perfect design that reflects your style, 
+          <br /> and we will bring it to life
         </p>
       </div>
     </Wapper>

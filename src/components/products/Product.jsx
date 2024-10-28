@@ -146,7 +146,7 @@ const Product = ({ onUpdateWishlistCount }) => {
                 <img src={pricedown} />
               </Icon>
               <div>
-                <p className="filter-title">Lowest price</p>
+                <p className="filter-title">Price</p>
                 <label>
                   From: {minPrice.toLocaleString()}$
                   <input
@@ -167,7 +167,7 @@ const Product = ({ onUpdateWishlistCount }) => {
                 <img src={priceup} />
               </Icon>
               <div>
-                <p className="filter-title">Maximum price</p>
+                <p className="filter-title">Price</p>
                 <label>
                   To: {maxPrice.toLocaleString()}$
                   <input
